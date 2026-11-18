@@ -1,0 +1,11 @@
+- **Medium — [progress.ts:59](C:/Users/yuiho/projects/pulau_kata/apps/web/src/engine/progress.ts:59): Kenali completion bypasses the card requirement.** Calling `completeStage(emptyProgress(id), 'kenali', 3)` immediately unlocks Uji with no cards opened. `canCompleteKenali` is never enforced by the completion function. Pass the required word IDs into completion and reject Kenali completion until every card is opened; test this through `completeStage`.
+
+- **Medium — [questions.ts:92](C:/Users/yuiho/projects/pulau_kata/apps/web/src/engine/questions.ts:92): Relation distractors can be valid answers.** Only the target word and designated answer are excluded. If content declares `gembira.synonym = 'riang'` and `ceria.synonym = 'gembira'`, the builder can offer `ceria` but mark it wrong. Use reviewed relation-specific distractors, exclude known reciprocal matches, and add an ambiguity regression test.
+
+- **Medium — [queue.ts:34](C:/Users/yuiho/projects/pulau_kata/apps/web/src/engine/queue.ts:34): Inherited object properties corrupt retry tracking.** An item with ID `constructor` reads `Object.prototype.constructor` as its previous result. Its attempt count becomes `NaN`, so repeated wrong answers never exceed `maxRetries` and the queue never finishes. Use an own-property check or a `Map`; test prototype-property IDs.
+
+- **Low — [questions.ts:163](C:/Users/yuiho/projects/pulau_kata/apps/web/src/engine/questions.ts:163): Unscrambles can still start solved.** The ten reshuffles provide no guarantee: word `di` with seed `2046` returns tiles spelling `di`. After the retry limit, deterministically swap two different letters if the arrangement remains solved. Add this short-word regression case.
+
+- **Low — [questions.ts:216](C:/Users/yuiho/projects/pulau_kata/apps/web/src/engine/questions.ts:216): Round boundaries allow avoidable consecutive questions for the same word.** Unit 1 with seed `17` and `perWord: 2` places `picture-word:membela` immediately before `listen-word:membela`. Check each round boundary and swap the next question with one targeting another word; test adjacency across rounds.
+
+Overall verdict: Changes requested before integrating the engine.

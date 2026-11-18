@@ -1,0 +1,278 @@
+{
+  "id": "t5-u01",
+  "year": 5,
+  "tema": 1,
+  "unit": 1,
+  "reviewed": false,
+  "title": {
+    "bm": "Riangnya Keluargaku",
+    "en": "How Happy My Family Is",
+    "zh": "我的家庭多快乐"
+  },
+  "words": [
+    {
+      "id": "idaman",
+      "word": "idaman",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "sesuatu yang sangat diingini atau diimpikan",
+        "en": "a dream, something you long for (as in “dream house”)",
+        "zh": "梦想；心之所向"
+      },
+      "image": "idaman.webp",
+      "audio": "idaman.mp3",
+      "example": {
+        "bm": "Ayah dan ibu membeli rumah idaman mereka di tepi bukit.",
+        "en": "Dad and Mum bought their dream house on a hillside.",
+        "zh": "爸爸和妈妈在山坡上买了他们梦想中的房子。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Rumah di tepi tasik itu ialah rumah ___ keluarga kami."],
+      "jumbled_sentence": ["Kami", "sekeluarga", "membeli", "rumah", "idaman"],
+      "distractors": ["halaman", "hidangan", "kerjaya"]
+    },
+    {
+      "id": "mencadangkan",
+      "word": "mencadangkan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memberikan idea atau pendapat supaya dipertimbangkan",
+        "en": "to suggest, to propose",
+        "zh": "建议；提议"
+      },
+      "image": "mencadangkan.webp",
+      "audio": "mencadangkan.mp3",
+      "example": {
+        "bm": "Kakak mencadangkan kami makan malam di rumah nenek.",
+        "en": "My elder sister suggests that we have dinner at Grandma’s house.",
+        "zh": "姐姐提议我们到奶奶家吃晚饭。"
+      },
+      "synonym": "mengesyorkan",
+      "antonym": null,
+      "blank_sentences": ["Cikgu ___ supaya kami membawa bekal pada hari berkelah."],
+      "jumbled_sentence": ["Abang", "mencadangkan", "kami", "bermain", "bola"],
+      "distractors": ["menyelesaikan", "membayangkan", "bersorak"]
+    },
+    {
+      "id": "keistimewaan",
+      "word": "keistimewaan",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "sifat atau ciri yang istimewa dan tidak ada pada yang lain",
+        "en": "special feature",
+        "zh": "特色；特点"
+      },
+      "image": "keistimewaan.webp",
+      "audio": "keistimewaan.mp3",
+      "example": {
+        "bm": "Keistimewaan rumah baharu kami ialah dapurnya yang luas.",
+        "en": "The special feature of our new house is its spacious kitchen.",
+        "zh": "我们新家的特色是宽敞的厨房。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Salah satu ___ taman itu ialah kolam ikan yang besar."],
+      "jumbled_sentence": ["Keistimewaan", "rumah", "itu", "ialah", "halamannya", "yang", "luas"],
+      "distractors": ["hidangan", "kerjaya", "tugasan"]
+    },
+    {
+      "id": "teruja",
+      "word": "teruja",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "sangat gembira dan tidak sabar menantikan sesuatu",
+        "en": "excited",
+        "zh": "兴奋；激动"
+      },
+      "image": "teruja.webp",
+      "audio": "teruja.mp3",
+      "example": {
+        "bm": "Adik teruja kerana esok kami akan bercuti di Langkawi.",
+        "en": "My little brother is excited because we go on holiday in Langkawi tomorrow.",
+        "zh": "明天我们要去兰卡威度假，弟弟很兴奋。"
+      },
+      "synonym": null,
+      "antonym": "bosan",
+      "blank_sentences": ["Aiman berasa ___ kerana akan menaiki kapal terbang buat kali pertama."],
+      "jumbled_sentence": ["Adik", "berasa", "sangat", "teruja"],
+      "distractors": ["mencabar", "bermutu", "tekun"]
+    },
+    {
+      "id": "membayangkan",
+      "word": "membayangkan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memikirkan atau menggambarkan sesuatu dalam fikiran",
+        "en": "to imagine, to picture",
+        "zh": "想象"
+      },
+      "image": "membayangkan.webp",
+      "audio": "membayangkan.mp3",
+      "example": {
+        "bm": "Zarina membayangkan dirinya berlari di tepi pantai.",
+        "en": "Zarina imagines herself running along the beach.",
+        "zh": "扎丽娜想象自己在海边奔跑。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Sebelum tidur, Dewi ___ dirinya menjadi seorang doktor."],
+      "jumbled_sentence": ["Saya", "membayangkan", "diri", "saya", "menjadi", "angkasawan"],
+      "distractors": ["mencadangkan", "berbincang", "bersorak"]
+    },
+    {
+      "id": "berbincang",
+      "word": "berbincang",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "bercakap-cakap untuk bertukar fikiran tentang sesuatu",
+        "en": "to discuss, to talk something over",
+        "zh": "讨论；商量"
+      },
+      "image": "berbincang.webp",
+      "audio": "berbincang.mp3",
+      "example": {
+        "bm": "Ayah dan ibu berbincang tentang tempat percutian kami.",
+        "en": "Dad and Mum discuss where we will go on holiday.",
+        "zh": "爸爸和妈妈在商量我们去哪里度假。"
+      },
+      "synonym": "berunding",
+      "antonym": null,
+      "blank_sentences": ["Sebelum membuat keputusan, kami sekeluarga ___ dahulu."],
+      "jumbled_sentence": ["Kami", "semua", "sedang", "berbincang"],
+      "distractors": ["bersorak", "membayangkan", "berpuas hati"]
+    },
+    {
+      "id": "bersungguh-sungguh",
+      "word": "bersungguh-sungguh",
+      "class": "kata adverba",
+      "meaning": {
+        "bm": "dengan penuh usaha dan tidak main-main",
+        "en": "earnestly, with all one’s effort",
+        "zh": "认真地；全力以赴地"
+      },
+      "image": "bersungguh-sungguh.webp",
+      "audio": "bersungguh-sungguh.mp3",
+      "example": {
+        "bm": "Kamal berlatih bersungguh-sungguh untuk perlawanan bola sepak.",
+        "en": "Kamal trains with all his effort for the football match.",
+        "zh": "卡迈尔为足球赛认真练习。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Dia tidak bermain-main. Dia belajar ___ untuk menghadapi ujian."],
+      "jumbled_sentence": ["Kami", "bermain", "bola", "bersungguh-sungguh"],
+      "distractors": ["tiba-tiba", "sesekali", "kadang-kadang"]
+    },
+    {
+      "id": "mencabar",
+      "word": "mencabar",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "sukar dan menguji kebolehan seseorang",
+        "en": "challenging",
+        "zh": "有挑战性的"
+      },
+      "image": "mencabar.webp",
+      "audio": "mencabar.mp3",
+      "example": {
+        "bm": "Soalan kuiz itu sangat mencabar, tetapi menyeronokkan.",
+        "en": "The quiz questions were very challenging, but fun.",
+        "zh": "那些测验题很有挑战性，但很有趣。"
+      },
+      "synonym": null,
+      "antonym": "mudah",
+      "blank_sentences": ["Mendaki gunung itu sangat ___ kerana laluannya curam."],
+      "jumbled_sentence": ["Permainan", "teka-teki", "itu", "sangat", "mencabar"],
+      "distractors": ["teruja", "segar", "bermutu"]
+    },
+    {
+      "id": "bersorak",
+      "word": "bersorak",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menjerit beramai-ramai kerana gembira atau memberi semangat",
+        "en": "to cheer",
+        "zh": "欢呼；喝彩"
+      },
+      "image": "bersorak.webp",
+      "audio": "bersorak.mp3",
+      "example": {
+        "bm": "Penonton bersorak apabila pasukan sekolah kami menang.",
+        "en": "The spectators cheer when our school team wins.",
+        "zh": "我们学校的队伍获胜时，观众欢呼起来。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Apabila gol dijaringkan, semua penonton ___ dengan kuat."],
+      "jumbled_sentence": ["Semua", "murid", "sedang", "bersorak"],
+      "distractors": ["berbincang", "mencadangkan", "membayangkan"]
+    },
+    {
+      "id": "berpuas-hati",
+      "word": "berpuas hati",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "berasa senang kerana sesuatu seperti yang diharapkan",
+        "en": "to be satisfied",
+        "zh": "满意"
+      },
+      "image": "berpuas-hati.webp",
+      "audio": "berpuas-hati.mp3",
+      "example": {
+        "bm": "Ibu berpuas hati dengan keputusan peperiksaan abang.",
+        "en": "Mum is satisfied with my brother’s exam results.",
+        "zh": "妈妈对哥哥的考试成绩很满意。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Cikgu ___ dengan hasil kerja berkumpulan kami."],
+      "jumbled_sentence": ["Ayah", "pun", "berpuas", "hati"],
+      "distractors": ["bersorak", "menjamu selera", "membayangkan"]
+    },
+    {
+      "id": "menjamu-selera",
+      "word": "menjamu selera",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "makan dengan seronok",
+        "en": "to enjoy a meal, to tuck in",
+        "zh": "享用美食；大快朵颐"
+      },
+      "image": "menjamu-selera.webp",
+      "audio": "menjamu-selera.mp3",
+      "example": {
+        "bm": "Selepas majlis, para tetamu menjamu selera di bawah khemah.",
+        "en": "After the ceremony, the guests tuck in under the tent.",
+        "zh": "典礼结束后，客人们在帐篷下享用美食。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Selepas majlis tamat, para tetamu ___ sehingga kenyang."],
+      "jumbled_sentence": ["Para", "tetamu", "sedang", "menjamu", "selera"],
+      "distractors": ["bersorak", "berbincang", "berpuas hati"]
+    },
+    {
+      "id": "hidangan",
+      "word": "hidangan",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "makanan yang disediakan untuk dimakan",
+        "en": "a dish, food served",
+        "zh": "菜肴；饭菜"
+      },
+      "image": "hidangan.webp",
+      "audio": "hidangan.mp3",
+      "example": {
+        "bm": "Hidangan utama pada malam itu ialah ikan bakar.",
+        "en": "The main dish that night was grilled fish.",
+        "zh": "那天晚上的主菜是烤鱼。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ibu menyediakan pelbagai ___ untuk tetamu yang hadir."],
+      "jumbled_sentence": ["Hidangan", "itu", "sungguh", "enak"],
+      "distractors": ["halaman", "dusun", "rintangan"]
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "id": "t3-u02-misi",
+  "chapter": "t3-u02",
+  "reviewed": false,
+  "title": {
+    "bm": "Pengembaraan di Hutan",
+    "en": "Forest Adventure",
+    "zh": "森林探险"
+  },
+  "intro": {
+    "bm": "Jom ikut keluarga Aina ke hutan! Tolong mereka dengan memilih perkataan yang betul.",
+    "en": "Come along with Aina's family to the forest! Help them by choosing the right words.",
+    "zh": "跟Aina一家去森林吧！选出正确的词语来帮助他们。"
+  },
+  "characters": [
+    {
+      "id": "aina",
+      "name": "Aina",
+      "portrait": "aina.webp"
+    },
+    {
+      "id": "ayah",
+      "name": "Ayah",
+      "portrait": "ayah.webp"
+    },
+    {
+      "id": "mak-long",
+      "name": "Mak Long",
+      "portrait": "mak-long.webp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hutan",
+      "title": {
+        "bm": "Di tepi hutan",
+        "en": "At the edge of the forest",
+        "zh": "在森林边"
+      },
+      "background": "bg-campsite.webp",
+      "props": [
+        {
+          "id": "khemah",
+          "image": "khemah.webp",
+          "label": {
+            "en": "a tent",
+            "zh": "帐篷"
+          },
+          "x": 26,
+          "y": 64,
+          "size": 30
+        },
+        {
+          "id": "joran",
+          "image": "joran.webp",
+          "label": {
+            "en": "a fishing rod",
+            "zh": "钓竿"
+          },
+          "x": 80,
+          "y": 64,
+          "size": 24
+        },
+        {
+          "id": "bakul",
+          "image": "bakul.webp",
+          "label": {
+            "en": "a basket of rambutans",
+            "zh": "一篮红毛丹"
+          },
+          "x": 56,
+          "y": 84,
+          "size": 20
+        },
+        {
+          "id": "kamera",
+          "image": "kamera.webp",
+          "label": {
+            "en": "a camera",
+            "zh": "相机"
+          },
+          "x": 88,
+          "y": 88,
+          "size": 14
+        }
+      ],
+      "steps": [
+        {
+          "kind": "say",
+          "speaker": "narrator",
+          "line": {
+            "bm": "Cuti sekolah sudah tiba! Keluarga kamu pergi ke hutan.",
+            "en": "The school holidays are here! Your family goes to the forest.",
+            "zh": "学校假期到了！你的家人去森林。"
+          }
+        },
+        {
+          "kind": "choose",
+          "speaker": "aina",
+          "line": {
+            "bm": "Hai! Saya Aina, ___ kamu. Ibu saya ialah kakak kepada ayah kamu.",
+            "en": "Hi! I'm Aina, your ___. My mother is your father's older sister.",
+            "zh": "嗨！我是Aina，你的___。我妈妈是你爸爸的姐姐。"
+          },
+          "word": "sepupu",
+          "options": ["sepupu", "jiran", "guru"]
+        },
+        {
+          "kind": "choose",
+          "speaker": "mak-long",
+          "line": {
+            "bm": "Kita akan ___ di sini selama tiga hari. Seronoknya!",
+            "en": "We will ___ here for three days. What fun!",
+            "zh": "我们要在这里___三天。真开心！"
+          },
+          "word": "bercuti",
+          "options": ["bercuti", "berkebun", "menjahit"]
+        },
+        {
+          "kind": "find",
+          "speaker": "ayah",
+          "line": {
+            "bm": "Malam ini kita akan berkhemah. Tunjukkan barang untuk berkhemah!",
+            "en": "Tonight we will berkhemah. Tap the thing we need to berkhemah!",
+            "zh": "今晚我们要 berkhemah。点一点 berkhemah 要用的东西！"
+          },
+          "word": "berkhemah",
+          "answer": "khemah"
+        },
+        {
+          "kind": "choose",
+          "speaker": "ayah",
+          "line": {
+            "bm": "Khemah ini besar. Mari kita ___ untuk memasangnya.",
+            "en": "This tent is big. Let's ___ to put it up.",
+            "zh": "这个帐篷很大。我们一起___把它搭起来吧。"
+          },
+          "word": "bekerjasama",
+          "options": ["bekerjasama", "berbual-bual", "memancing"]
+        }
+      ]
+    },
+    {
+      "id": "sungai",
+      "title": {
+        "bm": "Di tepi sungai",
+        "en": "By the river",
+        "zh": "在河边"
+      },
+      "background": "bg-river.webp",
+      "props": [
+        {
+          "id": "khemah",
+          "image": "khemah.webp",
+          "label": {
+            "en": "a tent",
+            "zh": "帐篷"
+          },
+          "x": 16,
+          "y": 62,
+          "size": 22
+        },
+        {
+          "id": "joran",
+          "image": "joran.webp",
+          "label": {
+            "en": "a fishing rod",
+            "zh": "钓竿"
+          },
+          "x": 64,
+          "y": 80,
+          "size": 26
+        },
+        {
+          "id": "kamera",
+          "image": "kamera.webp",
+          "label": {
+            "en": "a camera",
+            "zh": "相机"
+          },
+          "x": 36,
+          "y": 86,
+          "size": 16
+        },
+        {
+          "id": "bakul",
+          "image": "bakul.webp",
+          "label": {
+            "en": "a basket of rambutans",
+            "zh": "一篮红毛丹"
+          },
+          "x": 86,
+          "y": 50,
+          "size": 20,
+          "hidden": true
+        }
+      ],
+      "steps": [
+        {
+          "kind": "say",
+          "speaker": "narrator",
+          "line": {
+            "bm": "Keesokan harinya, kamu pergi ke sungai.",
+            "en": "The next day, you go to the river.",
+            "zh": "第二天，你们去河边。"
+          }
+        },
+        {
+          "kind": "find",
+          "speaker": "ayah",
+          "line": {
+            "bm": "Ayah mahu memancing ikan. Cari barang untuk memancing!",
+            "en": "Ayah wants to memancing. Find the thing for memancing!",
+            "zh": "爸爸想 memancing。找一找 memancing 要用的东西！"
+          },
+          "word": "memancing",
+          "answer": "joran"
+        },
+        {
+          "kind": "choose",
+          "speaker": "mak-long",
+          "line": {
+            "bm": "Lihat pokok rambutan itu! Mari kita ___ buahnya.",
+            "en": "Look at that rambutan tree! Let's ___ its fruit.",
+            "zh": "看那棵红毛丹树！我们去___果子吧。"
+          },
+          "word": "memetik",
+          "options": ["memetik", "menanam", "mengecat"],
+          "reveal": "bakul"
+        },
+        {
+          "kind": "choose",
+          "speaker": "narrator",
+          "line": {
+            "bm": "Sambil makan rambutan, kamu dan Aina ___ tentang sekolah.",
+            "en": "While eating rambutans, you and Aina ___ about school.",
+            "zh": "你和Aina一边吃红毛丹，一边___学校的事。"
+          },
+          "word": "berbual-bual",
+          "options": ["berbual-bual", "berkhemah", "bercuti"]
+        },
+        {
+          "kind": "choose",
+          "speaker": "aina",
+          "line": {
+            "bm": "Kita sangat ___. Kita macam adik-beradik!",
+            "en": "We are very ___. We are like brothers and sisters!",
+            "zh": "我们很___。我们就像兄弟姐妹一样！"
+          },
+          "word": "mesra",
+          "options": ["mesra", "penat", "takut"]
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "title": {
+        "bm": "Di hulu sungai",
+        "en": "Upstream",
+        "zh": "在河的上游"
+      },
+      "background": "bg-waterfall.webp",
+      "props": [
+        {
+          "id": "kamera",
+          "image": "kamera.webp",
+          "label": {
+            "en": "a camera",
+            "zh": "相机"
+          },
+          "x": 50,
+          "y": 84,
+          "size": 18,
+          "hidden": true
+        }
+      ],
+      "steps": [
+        {
+          "kind": "say",
+          "speaker": "ayah",
+          "line": {
+            "bm": "Jom, kita berjalan ke hulu sungai!",
+            "en": "Come on, let's walk upstream!",
+            "zh": "来吧，我们往河的上游走！"
+          }
+        },
+        {
+          "kind": "choose",
+          "speaker": "narrator",
+          "line": {
+            "bm": "Akhirnya, kamu sampai di ___. Airnya jatuh dari tempat yang tinggi!",
+            "en": "At last, you arrive at the ___. Its water falls from a high place!",
+            "zh": "终于，你们到了___。水从高高的地方落下来！"
+          },
+          "word": "air-terjun",
+          "options": ["air terjun", "kenangan", "bagasi"]
+        },
+        {
+          "kind": "choose",
+          "speaker": "ayah",
+          "line": {
+            "bm": "Cantiknya ___ di sini! Ada air, batu dan pokok hijau.",
+            "en": "What a beautiful ___ here! There is water, rocks and green trees.",
+            "zh": "这里的___真美！有水、石头和绿树。"
+          },
+          "word": "pemandangan",
+          "options": ["pemandangan", "bekal", "sepupu"]
+        },
+        {
+          "kind": "choose",
+          "speaker": "mak-long",
+          "line": {
+            "bm": "Mari ambil gambar sebagai ___ percutian kita.",
+            "en": "Let's take a photo as a ___ of our holiday.",
+            "zh": "我们拍张照片，作为这次假期的___吧。"
+          },
+          "word": "kenangan",
+          "options": ["kenangan", "pemandangan", "bagasi"],
+          "reveal": "kamera"
+        },
+        {
+          "kind": "choose",
+          "speaker": "aina",
+          "line": {
+            "bm": "Saya mahu ___ gambar ini kepada nenek.",
+            "en": "I want to ___ this photo to Grandma.",
+            "zh": "我想把这张照片___给奶奶。"
+          },
+          "word": "menghadiahkan",
+          "options": ["menghadiahkan", "memancing", "menanam"]
+        },
+        {
+          "kind": "say",
+          "speaker": "aina",
+          "line": {
+            "bm": "Terima kasih kerana bercuti bersama kami. Jumpa lagi!",
+            "en": "Thank you for the holiday with us. See you again!",
+            "zh": "谢谢你和我们一起度假。下次见！"
+          }
+        }
+      ]
+    }
+  ],
+  "reward": {
+    "image": "kenangan.webp",
+    "title": {
+      "bm": "Gambar kenangan",
+      "en": "A holiday photo",
+      "zh": "假期合照"
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "id": "t5-u02",
+  "year": 5,
+  "tema": 1,
+  "unit": 2,
+  "reviewed": false,
+  "title": {
+    "bm": "Keluarga Bestari",
+    "en": "A Clever Family",
+    "zh": "聪慧的家庭"
+  },
+  "words": [
+    {
+      "id": "johan",
+      "word": "johan",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "orang atau pasukan yang menang dalam pertandingan",
+        "en": "champion",
+        "zh": "冠军"
+      },
+      "image": "johan.webp",
+      "audio": "johan.mp3",
+      "example": {
+        "bm": "Adik menjadi johan pertandingan mengeja peringkat sekolah.",
+        "en": "My little sister became the champion of the school spelling contest.",
+        "zh": "妹妹成了校内拼字比赛的冠军。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Pasukan kami menang semua perlawanan dan menjadi ___ tahun ini."],
+      "jumbled_sentence": ["Pasukan", "sekolah", "kami", "menjadi", "johan", "daerah"],
+      "distractors": ["anugerah", "kerjaya", "dusun"]
+    },
+    {
+      "id": "mengumumkan",
+      "word": "mengumumkan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memberitahu sesuatu kepada orang ramai",
+        "en": "to announce",
+        "zh": "宣布"
+      },
+      "image": "mengumumkan.webp",
+      "audio": "mengumumkan.mp3",
+      "example": {
+        "bm": "Pengetua mengumumkan keputusan pertandingan di dewan.",
+        "en": "The principal announces the contest results in the hall.",
+        "zh": "校长在礼堂宣布比赛结果。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Guru besar akan ___ nama pemenang pada hari Isnin."],
+      "jumbled_sentence": ["Guru", "mengumumkan", "nama", "pemenang"],
+      "distractors": ["menggalakkan", "merujuk", "menjaga"]
+    },
+    {
+      "id": "menggalakkan",
+      "word": "menggalakkan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memberi dorongan supaya seseorang melakukan sesuatu",
+        "en": "to encourage",
+        "zh": "鼓励"
+      },
+      "image": "menggalakkan.webp",
+      "audio": "menggalakkan.mp3",
+      "example": {
+        "bm": "Ibu menggalakkan kami membaca sebelum tidur.",
+        "en": "Mum encourages us to read before bed.",
+        "zh": "妈妈鼓励我们睡前阅读。"
+      },
+      "synonym": "mendorong",
+      "antonym": null,
+      "blank_sentences": ["Cikgu ___ murid menyertai kelab sains kerana ia bermanfaat."],
+      "jumbled_sentence": ["Ayah", "menggalakkan", "kami", "membaca", "buku", "cerita"],
+      "distractors": ["merujuk", "bersorak", "berpuas hati"]
+    },
+    {
+      "id": "bermutu",
+      "word": "bermutu",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "mempunyai kualiti yang baik",
+        "en": "of good quality",
+        "zh": "优质的；有质量的"
+      },
+      "image": "bermutu.webp",
+      "audio": "bermutu.mp3",
+      "example": {
+        "bm": "Perpustakaan menyediakan buku bacaan yang bermutu.",
+        "en": "The library provides good-quality reading books.",
+        "zh": "图书馆提供优质的读物。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ayah hanya membeli buku yang ___ untuk kami."],
+      "jumbled_sentence": ["Kami", "membaca", "buku", "yang", "bermutu"],
+      "distractors": ["tekun", "berbakat", "bertanggungjawab"]
+    },
+    {
+      "id": "tugasan",
+      "word": "tugasan",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "kerja yang diberikan untuk disiapkan",
+        "en": "an assignment, a task",
+        "zh": "作业；任务"
+      },
+      "image": "tugasan.webp",
+      "audio": "tugasan.mp3",
+      "example": {
+        "bm": "Tugasan sains itu mesti dihantar pada hari Jumaat.",
+        "en": "The science assignment must be handed in on Friday.",
+        "zh": "那份科学作业必须在星期五交上去。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Kami perlu menyiapkan ___ sejarah itu sebelum hujung minggu."],
+      "jumbled_sentence": ["Tugasan", "ini", "mesti", "siap"],
+      "distractors": ["johan", "anugerah", "kerjaya"]
+    },
+    {
+      "id": "merujuk",
+      "word": "merujuk",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "mencari maklumat daripada buku, kamus atau sumber lain",
+        "en": "to refer to, to look up",
+        "zh": "查阅；参考"
+      },
+      "image": "merujuk.webp",
+      "audio": "merujuk.mp3",
+      "example": {
+        "bm": "Saya merujuk kamus untuk mencari makna perkataan baharu.",
+        "en": "I look in the dictionary for the meaning of a new word.",
+        "zh": "我查字典找新词的意思。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Jika tidak faham sesuatu perkataan, kita boleh ___ kamus."],
+      "jumbled_sentence": ["Murid", "itu", "merujuk", "kamus"],
+      "distractors": ["mengumumkan", "menggalakkan", "membimbing"]
+    },
+    {
+      "id": "cemerlang",
+      "word": "cemerlang",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "sangat baik dan menonjol",
+        "en": "outstanding, excellent",
+        "zh": "杰出的；优异的"
+      },
+      "image": "cemerlang.webp",
+      "audio": "cemerlang.mp3",
+      "example": {
+        "bm": "Abang mendapat keputusan yang cemerlang dalam peperiksaan.",
+        "en": "My elder brother got outstanding results in the exam.",
+        "zh": "哥哥在考试中取得优异的成绩。"
+      },
+      "synonym": "gemilang",
+      "antonym": "lemah",
+      "blank_sentences": ["Kakak memperoleh keputusan ujian yang ___ kerana rajin belajar."],
+      "jumbled_sentence": ["Kakak", "mendapat", "keputusan", "yang", "cemerlang"],
+      "distractors": ["tekun", "segar", "teruja"]
+    },
+    {
+      "id": "tekun",
+      "word": "tekun",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "rajin dan sabar melakukan sesuatu dengan bersungguh-sungguh",
+        "en": "diligent, persevering",
+        "zh": "勤勉的；专心刻苦的"
+      },
+      "image": "tekun.webp",
+      "audio": "tekun.mp3",
+      "example": {
+        "bm": "Datuk seorang tukang kayu yang tekun.",
+        "en": "My grandfather is a diligent carpenter.",
+        "zh": "爷爷是一位勤勉的木匠。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Dia sabar dan rajin berlatih setiap hari. Dia seorang murid yang ___."],
+      "jumbled_sentence": ["Murid", "yang", "tekun", "selalu", "berjaya"],
+      "distractors": ["bermutu", "teruja", "segar"]
+    },
+    {
+      "id": "bertanggungjawab",
+      "word": "bertanggungjawab",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "sanggup melaksanakan tugas dan menerima akibatnya",
+        "en": "responsible",
+        "zh": "负责任的"
+      },
+      "image": "bertanggungjawab.webp",
+      "audio": "bertanggungjawab.mp3",
+      "example": {
+        "bm": "Kakak bertanggungjawab menjaga adik apabila ibu tiada di rumah.",
+        "en": "My elder sister is responsible for looking after our little brother when Mum is out.",
+        "zh": "妈妈不在家时，姐姐负责照顾弟弟。"
+      },
+      "synonym": null,
+      "antonym": "cuai",
+      "blank_sentences": ["Ketua kelas mesti seorang yang ___ dan boleh dipercayai."],
+      "jumbled_sentence": ["Ketua", "kelas", "itu", "sangat", "bertanggungjawab"],
+      "distractors": ["bermutu", "segar", "mencabar"]
+    },
+    {
+      "id": "kerjaya",
+      "word": "kerjaya",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "pekerjaan yang dilakukan sebagai jalan hidup",
+        "en": "a career",
+        "zh": "职业；事业"
+      },
+      "image": "kerjaya.webp",
+      "audio": "kerjaya.mp3",
+      "example": {
+        "bm": "Kakak mahu memilih kerjaya sebagai doktor haiwan.",
+        "en": "My sister wants to choose a career as a vet.",
+        "zh": "姐姐想选择兽医作为职业。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Selepas tamat belajar, abang akan memulakan ___ sebagai guru."],
+      "jumbled_sentence": ["Abang", "memilih", "kerjaya", "yang", "baik"],
+      "distractors": ["anugerah", "johan", "dusun"]
+    },
+    {
+      "id": "berbakat",
+      "word": "berbakat",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "mempunyai kebolehan semula jadi dalam sesuatu bidang",
+        "en": "talented, gifted",
+        "zh": "有天赋的"
+      },
+      "image": "berbakat.webp",
+      "audio": "berbakat.mp3",
+      "example": {
+        "bm": "Adik berbakat dalam bidang melukis.",
+        "en": "My little brother is talented in drawing.",
+        "zh": "弟弟在绘画方面很有天赋。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Walaupun jarang berlatih, Ravi sangat ___ dalam bidang lukisan."],
+      "jumbled_sentence": ["Adik", "saya", "sangat", "berbakat"],
+      "distractors": ["segar", "mencabar", "teruja"]
+    },
+    {
+      "id": "anugerah",
+      "word": "anugerah",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "pemberian sebagai tanda penghargaan",
+        "en": "an award",
+        "zh": "奖项；奖励"
+      },
+      "image": "anugerah.webp",
+      "audio": "anugerah.mp3",
+      "example": {
+        "bm": "Pasukan debat sekolah kami memenangi satu anugerah di Kuala Lumpur.",
+        "en": "Our school debate team won an award in Kuala Lumpur.",
+        "zh": "我们学校的辩论队在吉隆坡赢得了一个奖项。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Sekolah kami menerima ___ kebersihan daripada pihak majlis bandaran."],
+      "jumbled_sentence": ["Pasukan", "kami", "menerima", "anugerah", "itu"],
+      "distractors": ["johan", "dusun", "hidangan"]
+    }
+  ]
+}

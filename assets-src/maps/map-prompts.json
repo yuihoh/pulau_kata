@@ -1,0 +1,18 @@
+{
+  "note": "G-3 Home map: one illustrated landscape per Tema, used as the background behind the path of unit stops (the path and stops are drawn in code, so the picture has NO road). Source PNGs here; converted to content/<track>/tema-<nn>.webp by scripts/png-to-webp.py.",
+  "style": "Flat cartoon landscape illustration in a bright, cheerful, child-friendly picture-book style for Malaysian primary school children aged 9, matching simple flat vector art: soft rounded shapes, clean outlines, flat colours with very light shading. Portrait format 2:3 (1024 wide x 1536 tall), seen from slightly above like a board-game map. The scenery hugs the left and right edges and the corners; the CENTRE of the picture, from top to bottom, is calm open ground (soft light grass or sand with very little detail) so labels and round buttons can be drawn on top of it later and stay easy to read. Keep colours soft and light overall (no dark areas). Absolutely no roads, paths, people, animals, text, letters, numbers, words or signs anywhere in the image.",
+  "maps": [
+    {
+      "id": "tahun-3-tema-01",
+      "file": "assets-src/maps/tahun-3-tema-01.png",
+      "out": "content/tahun-3/tema-01.webp",
+      "scene": "Theme: a happy family (Keluarga Bahagia). A sunny Malaysian kampung: along the left and right edges, wooden kampung houses on stilts with red roofs, coconut and banana trees, a vegetable garden, flowering hibiscus bushes, a small fish pond and a little wooden bridge over a stream near the bottom; soft clouds in a light blue sky at the very top."
+    },
+    {
+      "id": "tahun-5-tema-01",
+      "file": "assets-src/maps/tahun-5-tema-01.png",
+      "out": "content/tahun-5/tema-01.webp",
+      "scene": "Theme: a beloved family (Keluarga Tercinta). A friendly Malaysian town neighbourhood: along the left and right edges, colourful two-storey terrace houses with small front gardens, a playground corner, a durian and rambutan orchard, rain trees, a small community hall with a green roof, and a lake with lotus leaves near the bottom; soft clouds in a light blue sky at the very top."
+    }
+  ]
+}

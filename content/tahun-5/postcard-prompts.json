@@ -1,0 +1,26 @@
+{
+  "style": "Simple flat cartoon illustration in a bright, cheerful, child-friendly picture-book style for Malaysian primary school children aged 9. Soft rounded shapes, clean outlines. Malaysian setting. Square 1:1. Absolutely no text, letters, numbers, words, stamps with writing or signs anywhere in the image.",
+  "kinds": {
+    "postcard": "Drawn as a picture postcard: a full scene inside a thick white border with slightly rounded corners, on a plain white background. Members of the family clearly look like one family with the same ethnic background, wearing modest clothing."
+  },
+  "images": [
+    {
+      "id": "postcard-u01",
+      "kind": "postcard",
+      "file": "content/tahun-5/unit-01/postcard.png",
+      "scene": "A happy Indian Malaysian family of five stands in front of their new terrace house on a sunny day, waving, with flowers in the garden and a swing for the little ones."
+    },
+    {
+      "id": "postcard-u02",
+      "kind": "postcard",
+      "file": "content/tahun-5/unit-02/postcard.png",
+      "scene": "A Malay family reads together in a cosy home library with a globe, a telescope, paintings and a small shelf of trophies (no writing), the children and grandparents sharing books."
+    },
+    {
+      "id": "postcard-u03",
+      "kind": "postcard",
+      "file": "content/tahun-5/unit-03/postcard.png",
+      "scene": "A Chinese Malaysian family of three generations stands shoulder to shoulder in a village orchard, planting young fruit trees together and carrying baskets, with smiling neighbours helping nearby."
+    }
+  ]
+}

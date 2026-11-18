@@ -1,0 +1,30 @@
+{
+  "note": "Sampan Kata game art (Yang, 18 Nov 2026, from his ChatGPT mockup). Same pipeline as assets-src/home: Codex on plain white, then `py -I scripts/home-art-to-webp.py assets-src/sampan/sampan-prompts.json` makes transparent WebPs. Every picture is text-free; all words in the game are drawn in code.",
+  "style": "Flat cartoon game-UI illustration in a bright, cheerful, child-friendly style for a mobile game for Malaysian primary school children aged 9: soft rounded shapes, clean dark-brown outlines, glossy flat colours with light shading. A single object centred on a plain solid pure white background (#FFFFFF), no shadow, no ground, no scenery. Absolutely no text, letters, numbers, words or signs anywhere in the image.",
+  "items": [
+    {
+      "id": "boat",
+      "file": "assets-src/sampan/boat.png",
+      "out": "apps/web/src/assets/sampan/boat.webp",
+      "width": 320,
+      "size": "1024x1024",
+      "scene": "A cute traditional Malay wooden sampan (small rowing boat) seen from the front and slightly from above, with a gently curved wooden hull in warm brown and tan, a red-orange painted inside, and a wooden oar resting diagonally across it. The boat has a happy cartoon face on its front: two small black eyes, pink cheeks and a big smile. It floats on nothing (no water), filling about 85% of the picture width."
+    },
+    {
+      "id": "foliage",
+      "file": "assets-src/sampan/foliage.png",
+      "out": "apps/web/src/assets/sampan/foliage.webp",
+      "width": 320,
+      "size": "1024x1024",
+      "scene": "A corner decoration: a lush bunch of big glossy green tropical leaves (banana and palm leaves) with one large pink hibiscus flower with a yellow stamen and a couple of small pink flowers, the bunch fanning out from the bottom-left corner of the picture so it can be placed in the bottom corner of a screen. Fills the lower-left two thirds of the picture; the rest is white."
+    },
+    {
+      "id": "cloud",
+      "file": "assets-src/sampan/cloud.png",
+      "out": "apps/web/src/assets/sampan/cloud.webp",
+      "width": 240,
+      "size": "1024x1024",
+      "scene": "A single soft, fluffy white cartoon cloud with very light blue shading underneath and a thin light-blue outline, wide and rounded. Fills about 85% of the picture width."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# Cloudflare Worker for /api/* (deploy workflows come in task 10).
+# Secrets are never stored here: `wrangler secret put ANTHROPIC_API_KEY --env staging`.
+name = "jelajah-kata-api"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+[vars]
+# "mock" needs no key. Switch to "anthropic" once the ANTHROPIC_API_KEY secret is set.
+AI_MODE = "mock"
+DEVICE_DAILY_LIMIT = "20"
+IP_DAILY_LIMIT = "300"
+
+# Daily limits: one Durable Object per (day, device) and (day, IP) counter. Atomic, so
+# pupils sharing a school IP are counted correctly (Workers KV can't do this).
+[[durable_objects.bindings]]
+name = "RATE_LIMITER"
+class_name = "RateLimitCounter"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RateLimitCounter"]
+
+[env.staging.vars]
+AI_MODE = "anthropic"
+DEVICE_DAILY_LIMIT = "20"
+IP_DAILY_LIMIT = "300"
+
+[[env.staging.durable_objects.bindings]]
+name = "RATE_LIMITER"
+class_name = "RateLimitCounter"
+
+[env.production.vars]
+AI_MODE = "anthropic"
+DEVICE_DAILY_LIMIT = "20"
+IP_DAILY_LIMIT = "300"
+
+[[env.production.durable_objects.bindings]]
+name = "RATE_LIMITER"
+class_name = "RateLimitCounter"

@@ -1,0 +1,5 @@
+# Copy to .dev.vars (git-ignored) to try the real AI check locally with `npm run dev`.
+# Leave AI_MODE=mock (or delete this file) to use the mock checker without a key.
+AI_MODE=anthropic
+ANTHROPIC_API_KEY=
+# AI_MODEL=claude-haiku-5-5

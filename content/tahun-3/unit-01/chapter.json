@@ -1,0 +1,274 @@
+{
+  "id": "t3-u01",
+  "year": 3,
+  "tema": 1,
+  "unit": 1,
+  "reviewed": true,
+  "title": { "bm": "Keluarga Tersayang", "en": "My Beloved Family", "zh": "亲爱的家人" },
+  "words": [
+    {
+      "id": "anak-sulung",
+      "word": "anak sulung",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "anak yang paling tua dalam keluarga",
+        "en": "the eldest child",
+        "zh": "家中最大的孩子"
+      },
+      "image": "anak-sulung.webp",
+      "audio": "anak-sulung.mp3",
+      "example": {
+        "bm": "Kakak ialah anak sulung dalam keluarga kami.",
+        "en": "My elder sister is the eldest child in our family.",
+        "zh": "姐姐是我们家最大的孩子。"
+      },
+      "synonym": null,
+      "antonym": "anak bongsu",
+      "blank_sentences": ["Abang lahir paling awal. Dia ialah ___ dalam keluarga kami."],
+      "jumbled_sentence": ["Kakak", "ialah", "anak", "sulung", "keluarga", "kami"],
+      "distractors": ["anak bongsu", "bapa saudara", "sepupu"]
+    },
+    {
+      "id": "anak-bongsu",
+      "word": "anak bongsu",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "anak yang paling muda dalam keluarga",
+        "en": "the youngest child",
+        "zh": "家中最小的孩子"
+      },
+      "image": "anak-bongsu.webp",
+      "audio": "anak-bongsu.mp3",
+      "example": {
+        "bm": "Mei Ling ialah anak bongsu dalam keluarganya.",
+        "en": "Mei Ling is the youngest child in her family.",
+        "zh": "美玲是家里最小的孩子。"
+      },
+      "synonym": null,
+      "antonym": "anak sulung",
+      "blank_sentences": ["Adik lahir paling akhir. Dia ialah ___ dalam keluarga kami."],
+      "jumbled_sentence": ["Ali", "anak", "bongsu", "dalam", "keluarganya"],
+      "distractors": ["anak sulung", "bapa saudara", "sepupu"]
+    },
+    {
+      "id": "menjaga",
+      "word": "menjaga",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memelihara dan melindungi seseorang atau sesuatu",
+        "en": "to look after, to take care of",
+        "zh": "照顾"
+      },
+      "image": "menjaga.webp",
+      "audio": "menjaga.mp3",
+      "example": {
+        "bm": "Kakak menjaga adik semasa ibu memasak.",
+        "en": "My elder sister looks after our little brother while Mum cooks.",
+        "zh": "妈妈煮饭时，姐姐照顾弟弟。"
+      },
+      "synonym": "memelihara",
+      "antonym": null,
+      "blank_sentences": ["Nenek sakit, jadi ibu ___ nenek di hospital."],
+      "jumbled_sentence": ["Abang", "menjaga", "adik", "di", "taman"],
+      "distractors": ["memilih", "menanam", "berkebun"]
+    },
+    {
+      "id": "memilih",
+      "word": "memilih",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "mengambil yang disukai daripada beberapa benda",
+        "en": "to choose",
+        "zh": "挑选；选择"
+      },
+      "image": "memilih.webp",
+      "audio": "memilih.mp3",
+      "example": {
+        "bm": "Saya memilih buku cerita tentang haiwan.",
+        "en": "I choose a storybook about animals.",
+        "zh": "我挑选了一本关于动物的故事书。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Di kedai pakaian, Amin ___ baju berwarna biru."],
+      "jumbled_sentence": ["Kami", "memilih", "buah", "epal", "yang", "merah"],
+      "distractors": ["menanam", "membela", "menghiburkan"]
+    },
+    {
+      "id": "berkebun",
+      "word": "berkebun",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "bekerja menanam dan menjaga pokok di kebun",
+        "en": "to do gardening",
+        "zh": "种花种菜；做园艺"
+      },
+      "image": "berkebun.webp",
+      "audio": "berkebun.mp3",
+      "example": {
+        "bm": "Datuk suka berkebun pada waktu pagi.",
+        "en": "Grandpa likes gardening in the morning.",
+        "zh": "爷爷喜欢在早上种花种菜。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Setiap petang, ibu ___ di belakang rumah."],
+      "jumbled_sentence": ["Ayah", "berkebun", "di", "halaman", "rumah"],
+      "distractors": ["memilih", "membela", "menjaga"]
+    },
+    {
+      "id": "membela",
+      "word": "membela",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memelihara haiwan",
+        "en": "to keep or raise (animals)",
+        "zh": "饲养（动物）"
+      },
+      "image": "membela.webp",
+      "audio": "membela.mp3",
+      "example": {
+        "bm": "Pak cik membela ayam dan itik di kampung.",
+        "en": "Uncle keeps chickens and ducks in the village.",
+        "zh": "叔叔在乡下养鸡和鸭。"
+      },
+      "synonym": "memelihara",
+      "antonym": null,
+      "blank_sentences": ["Kami ___ seekor kucing dan memberinya makan setiap hari."],
+      "jumbled_sentence": ["Abang", "membela", "ikan", "di", "dalam", "kolam"],
+      "distractors": ["menanam", "menjahit", "berkebun"]
+    },
+    {
+      "id": "menanam",
+      "word": "menanam",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "meletakkan benih atau anak pokok ke dalam tanah",
+        "en": "to plant",
+        "zh": "种植"
+      },
+      "image": "menanam.webp",
+      "audio": "menanam.mp3",
+      "example": {
+        "bm": "Kami menanam pokok bunga di dalam pasu.",
+        "en": "We plant flowers in a pot.",
+        "zh": "我们把花种在花盆里。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Adik ___ biji benih di dalam tanah."],
+      "jumbled_sentence": ["Ibu", "menanam", "sayur", "di", "kebun"],
+      "distractors": ["membela", "menjaga", "menghiburkan"]
+    },
+    {
+      "id": "bangga",
+      "word": "bangga",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "berasa sangat gembira kerana kejayaan seseorang",
+        "en": "proud",
+        "zh": "自豪；骄傲"
+      },
+      "image": "bangga.webp",
+      "audio": "bangga.mp3",
+      "example": {
+        "bm": "Ayah bangga kerana saya mendapat hadiah.",
+        "en": "Dad is proud because I won a prize.",
+        "zh": "爸爸很自豪，因为我得了奖。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ibu berasa ___ apabila kakak menang pertandingan."],
+      "jumbled_sentence": ["Kami", "bangga", "dengan", "adik"],
+      "distractors": ["sedih", "takut", "malas"]
+    },
+    {
+      "id": "menghiburkan",
+      "word": "menghiburkan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "membuat orang lain berasa gembira",
+        "en": "to entertain, to cheer up",
+        "zh": "逗……开心；娱乐"
+      },
+      "image": "menghiburkan.webp",
+      "audio": "menghiburkan.mp3",
+      "example": {
+        "bm": "Adik menyanyi untuk menghiburkan nenek.",
+        "en": "My little sister sings to cheer up Grandma.",
+        "zh": "妹妹唱歌逗奶奶开心。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Badut itu ___ kanak-kanak di majlis hari jadi."],
+      "jumbled_sentence": ["Kakak", "menghiburkan", "adik", "yang", "sedih"],
+      "distractors": ["menanam", "membela", "berkebun"]
+    },
+    {
+      "id": "anak-emas",
+      "word": "anak emas",
+      "class": "lain-lain",
+      "meaning": {
+        "bm": "simpulan bahasa: anak yang paling disayangi",
+        "en": "idiom: the favourite child (literally \"golden child\")",
+        "zh": "惯用语：最受宠爱的孩子（字面意思是“金孩子”）"
+      },
+      "image": "anak-emas.webp",
+      "audio": "anak-emas.mp3",
+      "example": {
+        "bm": "Adik ialah anak emas datuk kerana dia selalu menemani datuk.",
+        "en": "My little brother is Grandpa's favourite because he always keeps Grandpa company.",
+        "zh": "弟弟是爷爷的心肝宝贝，因为他常常陪伴爷爷。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Semua orang paling sayang akan Mira. Dia ialah ___ dalam keluarganya."],
+      "jumbled_sentence": ["Dia", "anak", "emas", "dalam", "keluarga", "itu"],
+      "distractors": ["buah tangan", "ambil berat", "ringan tulang"]
+    },
+    {
+      "id": "ambil-berat",
+      "word": "ambil berat",
+      "class": "lain-lain",
+      "meaning": {
+        "bm": "simpulan bahasa: memberi perhatian dan peduli",
+        "en": "idiom: to care about, to be concerned about",
+        "zh": "惯用语：关心"
+      },
+      "image": "ambil-berat.webp",
+      "audio": "ambil-berat.mp3",
+      "example": {
+        "bm": "Guru kami ambil berat tentang keselamatan murid.",
+        "en": "Our teacher cares about the pupils' safety.",
+        "zh": "我们的老师很关心学生的安全。"
+      },
+      "synonym": "prihatin",
+      "antonym": null,
+      "blank_sentences": ["Ibu sentiasa ___ tentang kesihatan kami."],
+      "jumbled_sentence": ["Abang", "ambil", "berat", "tentang", "pelajaran", "adik"],
+      "distractors": ["ambil hati", "anak emas", "buah tangan"]
+    },
+    {
+      "id": "ambil-hati",
+      "word": "ambil hati",
+      "class": "lain-lain",
+      "meaning": {
+        "bm": "simpulan bahasa: berusaha supaya orang lain suka",
+        "en": "idiom: to win someone over, to please someone",
+        "zh": "惯用语：讨人欢心"
+      },
+      "image": "ambil-hati.webp",
+      "audio": "ambil-hati.mp3",
+      "example": {
+        "bm": "Adik membuat kad untuk ambil hati ibu.",
+        "en": "My little brother makes a card to win Mum over.",
+        "zh": "弟弟做了一张卡片来讨妈妈欢心。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ali menolong kakak mengemas bilik untuk ___ kakak."],
+      "jumbled_sentence": ["Kucing", "itu", "pandai", "ambil", "hati", "tuannya"],
+      "distractors": ["ambil berat", "anak emas", "buah tangan"]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "app": {
+    "title": "Jelajah Kata",
+    "tagline": "Explore Malay words, one chapter at a time"
+  },
+  "common": {
+    "start": "Start",
+    "back": "Back",
+    "close": "Close",
+    "language": "Language",
+    "switchTo": "中文",
+    "listen": "Listen",
+    "loading": "Loading…",
+    "continue": "Continue",
+    "playAgain": "Play again",
+    "soundOn": "Music and sounds on (tap to turn off)",
+    "soundOff": "Music and sounds off (tap to turn on)"
+  },
+  "home": {
+    "chooseChapter": "Choose a chapter",
+    "tema": "Theme {{n}}",
+    "unit": "Unit {{n}}",
+    "notFound": "We couldn't find that chapter.",
+    "lab": "Try the new boat game (prototype)",
+    "labMisi": "Try the story adventure (prototype)",
+    "labAudio": "Review the voices (listen to every clip)",
+    "unitDone": "Finished",
+    "labTitle": "Prototypes for testing"
+  },
+  "stage": {
+    "kenali": "Get to know the words",
+    "uji": "Test yourself",
+    "bina": "Build sentences",
+    "cabaran": "Final challenge",
+    "locked": "Finish the stage before this one first",
+    "comingSoon": "Coming soon",
+    "play": "Play",
+    "replay": "Play again"
+  },
+  "kenali": {
+    "intro": "Tap each card to learn the word.",
+    "opened": "{{count}} of {{total}} cards opened",
+    "cardOpened": "opened",
+    "allOpened": "Great! You opened every card. Now play Padankan!",
+    "playPadankan": "Play Padankan",
+    "meaning": "Meaning",
+    "example": "Example",
+    "listenExample": "Listen to the example",
+    "wordClass": "Word type",
+    "synonym": "Same meaning",
+    "antonym": "Opposite"
+  },
+  "padankan": {
+    "intro": "Match each picture with its word.",
+    "wrongTries": "Wrong tries: {{count}}",
+    "hiddenCard": "Hidden card",
+    "pictureOf": "Picture: {{word}}"
+  },
+  "result": {
+    "stars_one": "You got {{count}} star!",
+    "stars_other": "You got {{count}} stars!",
+    "great": "Bagus!",
+    "backToChapter": "Back to chapter",
+    "nextStage": "Next: {{stage}}",
+    "unitComplete": "Unit complete!",
+    "postcardEarned": "You earned a postcard for your Koleksi:"
+  },
+  "wordClass": {
+    "kata nama": "noun",
+    "kata kerja": "verb",
+    "kata adjektif": "adjective",
+    "kata adverba": "adverb",
+    "kata sendi": "preposition",
+    "lain-lain": "phrase / idiom"
+  },
+  "uji": {
+    "ask": {
+      "pictureWord": "Which word matches the picture?",
+      "listenWord": "Listen. Which word did you hear?",
+      "word-meaning": "What does this word mean?",
+      "synonym": "Which word has the same meaning?",
+      "antonym": "Which word means the opposite?",
+      "fillBlank": "Choose the word that fits the sentence.",
+      "unscramble": "Put the letters in the right order."
+    },
+    "correct": "Betul!",
+    "tryAgain": "Cuba lagi!",
+    "answerIs": "The answer is:",
+    "comesBack": "This word will come back soon. You can do it!",
+    "hint": "Hint"
+  },
+  "bina": {
+    "susun": {
+      "ask": "Put the words in order to make a sentence.",
+      "word": "Word:",
+      "remove": "Remove {{word}}"
+    },
+    "pick": {
+      "title": "Now write your own sentence!",
+      "ask": "Choose a word to write about.",
+      "progress": "Sentence {{n}} of {{total}}"
+    },
+    "write": {
+      "ask": "Write a sentence with this word.",
+      "frame": "Idea for a sentence:",
+      "who": "Who?",
+      "doesWhat": "Does what?",
+      "whereWhen": "Where? / When?",
+      "starters": "Start with:",
+      "label": "Your sentence",
+      "placeholder": "Type your sentence here…",
+      "check": "Check my sentence",
+      "checking": "Checking…",
+      "triesLeft_one": "{{count}} try left",
+      "triesLeft_other": "{{count}} tries left",
+      "almost": "Hampir betul!",
+      "example": "Example sentence:",
+      "offline": "You're offline, so we can't check your sentence. Compare yours with this example:",
+      "unavailable": "We can't check sentences right now. Compare yours with this example:",
+      "rateLimited": "You've checked lots of sentences today. Great work! Compare yours with this example:",
+      "personal": "Please don't write phone numbers, emails or links. Change your sentence and check again.",
+      "next": "Next",
+      "finish": "Finish"
+    }
+  },
+  "cabaran": {
+    "title": "Cabaran Akhir"
+  },
+  "audioReview": {
+    "title": "Review the voices",
+    "intro": "Tap ▶ to listen. Tick “Needs fixing” on any clip that sounds wrong, then copy the list and send it to Claude.",
+    "words": "Words and example sentences",
+    "lines": "Misi lines",
+    "play": "Play",
+    "playAll": "Play all",
+    "stop": "Stop",
+    "flag": "Needs fixing",
+    "flagged": "Needs fixing ({{n}})",
+    "none": "Nothing flagged yet.",
+    "copy": "Copy the list",
+    "copied": "Copied!",
+    "missing": "Audio file missing",
+    "all": "All units",
+    "jump": "Jump to a unit"
+  },
+  "koleksi": {
+    "title": "Koleksi",
+    "open": "See my Koleksi",
+    "home": "My Koleksi · {{earned}} of {{total}}",
+    "count": "You have collected {{earned}} of {{total}}.",
+    "postcardOf": "Postcard: {{title}}",
+    "howPostcard": "Finish all 4 stages of Unit {{n}}",
+    "howMisi": "Finish the Misi of Unit {{n}}"
+  },
+  "misi": {
+    "label": "Misi",
+    "prototype": "Prototype for testing",
+    "optional": "Bonus story adventure",
+    "locked": "Finish Uji to unlock this bonus adventure",
+    "start": "Start the adventure",
+    "translate": "Translate",
+    "hideTranslation": "Hide translation",
+    "next": "Next",
+    "tapPicture": "Tap the right thing in the picture.",
+    "notThat": "Hmm, bukan itu.",
+    "hintLabel": "Petunjuk:",
+    "hintTranslation": "Hint: {{meaning}}",
+    "part": "Part {{n}} of {{total}}",
+    "story": "Story",
+    "reward": "You got:",
+    "result": "{{correct}} of {{total}} right the first time",
+    "allRight": "You chose every word right the first time!",
+    "practise": "Words to practise",
+    "none": "There is no story adventure for this unit yet.",
+    "back": "Back"
+  },
+  "sampan": {
+    "title": "Sampan Kata",
+    "prototype": "Prototype for testing",
+    "intro": "Steer your boat into the buoy with the right word!",
+    "howTo": "Tap a lane, swipe left or right, or use the arrow buttons.",
+    "chooseUnit": "Choose a unit",
+    "relaxed": "Relaxed mode: the river stays slow",
+    "ask": {
+      "picture": "Which word matches the picture?",
+      "meaning": "Which word means:",
+      "listen": "Listen. Which word did you hear?"
+    },
+    "left": "Steer left",
+    "right": "Steer right",
+    "pause": "Pause",
+    "resume": "Resume",
+    "paused": "Paused",
+    "timeLeft": "Time left",
+    "score": "Score",
+    "combo": "Combo ×{{count}}",
+    "question": "Question {{n}}.",
+    "buoys": "Buoys, left to right: {{list}}",
+    "boatIn": "Your boat is in lane {{lane}}",
+    "result": "{{correct}} of {{total}} right the first time",
+    "bestCombo": "Best combo: ×{{count}}",
+    "allRight": "You got every word right the first time!",
+    "practise": "Words to practise",
+    "changeUnit": "Choose another unit",
+    "home": "Back to home"
+  }
+}

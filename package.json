@@ -1,0 +1,35 @@
+{
+  "name": "jelajah-kata",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "workers/*"
+  ],
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "scripts": {
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/web",
+    "typecheck": "npm run typecheck -w apps/web && npm run typecheck -w workers/api && tsc -p tsconfig.scripts.json",
+    "test": "npm run test -w apps/web && npm run test -w workers/api",
+    "e2e": "npm run e2e -w apps/web",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate-content": "tsx scripts/validate-content.ts",
+    "gen-audio": "tsx scripts/gen-audio.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.15.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.14.0",
+    "prettier": "^3.10.1",
+    "tsx": "^4.23.15",
+    "typescript-eslint": "^8.72.2"
+  }
+}

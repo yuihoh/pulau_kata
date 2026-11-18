@@ -1,0 +1,15 @@
+{
+  "year": 3,
+  "title": { "bm": "Bahasa Melayu Tahun 3", "en": "Malay Language Year 3", "zh": "三年级马来文" },
+  "tema": [
+    {
+      "tema": 1,
+      "title": { "bm": "Keluarga Bahagia", "en": "Happy Family", "zh": "幸福家庭" },
+      "units": [
+        { "unit": 1, "id": "t3-u01", "dir": "unit-01" },
+        { "unit": 2, "id": "t3-u02", "dir": "unit-02" },
+        { "unit": 3, "id": "t3-u03", "dir": "unit-03" }
+      ]
+    }
+  ]
+}

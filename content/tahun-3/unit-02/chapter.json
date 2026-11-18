@@ -1,0 +1,266 @@
+{
+  "id": "t3-u02",
+  "year": 3,
+  "tema": 1,
+  "unit": 2,
+  "reviewed": true,
+  "title": { "bm": "Hubungan Erat", "en": "Close Ties", "zh": "紧密的关系" },
+  "words": [
+    {
+      "id": "sepupu",
+      "word": "sepupu",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "anak kepada bapa saudara atau ibu saudara",
+        "en": "cousin",
+        "zh": "堂兄弟姐妹或表兄弟姐妹"
+      },
+      "image": "sepupu.webp",
+      "audio": "sepupu.mp3",
+      "example": {
+        "bm": "Saya bermain bola sepak dengan sepupu saya.",
+        "en": "I play football with my cousin.",
+        "zh": "我和堂哥一起踢足球。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Anak kepada pak cik saya ialah ___ saya."],
+      "jumbled_sentence": ["Sepupu", "saya", "tinggal", "di", "Ipoh"],
+      "distractors": ["datuk", "nenek", "jiran"]
+    },
+    {
+      "id": "bercuti",
+      "word": "bercuti",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "tidak bekerja atau bersekolah dan pergi berehat",
+        "en": "to go on holiday",
+        "zh": "度假"
+      },
+      "image": "bercuti.webp",
+      "audio": "bercuti.mp3",
+      "example": {
+        "bm": "Keluarga kami bercuti di Pulau Pangkor.",
+        "en": "Our family went on holiday to Pangkor Island.",
+        "zh": "我们一家去邦咯岛度假。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Semasa cuti sekolah, kami ___ di Melaka selama tiga hari."],
+      "jumbled_sentence": ["Kami", "bercuti", "di", "Cameron", "Highlands"],
+      "distractors": ["memetik", "menghadiahkan", "menjaga"]
+    },
+    {
+      "id": "memancing",
+      "word": "memancing",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menangkap ikan dengan joran dan mata kail",
+        "en": "to fish (with a rod)",
+        "zh": "钓鱼"
+      },
+      "image": "memancing.webp",
+      "audio": "memancing.mp3",
+      "example": {
+        "bm": "Ayah memancing ikan di sungai pada hari Ahad.",
+        "en": "Dad fishes in the river on Sunday.",
+        "zh": "爸爸星期天在河边钓鱼。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Datuk membawa joran untuk ___ di tasik."],
+      "jumbled_sentence": ["Abang", "memancing", "di", "jeti", "kampung"],
+      "distractors": ["memetik", "berkhemah", "bercuti"]
+    },
+    {
+      "id": "berbual-bual",
+      "word": "berbual-bual",
+      "class": "kata kerja",
+      "meaning": { "bm": "bercakap-cakap dengan santai", "en": "to chat", "zh": "聊天" },
+      "image": "berbual-bual.webp",
+      "audio": "berbual-bual.mp3",
+      "example": {
+        "bm": "Ibu dan mak cik berbual-bual di beranda.",
+        "en": "Mum and Auntie chat on the veranda.",
+        "zh": "妈妈和阿姨在走廊上聊天。"
+      },
+      "synonym": "bersembang",
+      "antonym": null,
+      "blank_sentences": ["Selepas makan, kami duduk dan ___ tentang sekolah."],
+      "jumbled_sentence": ["Nenek", "suka", "berbual-bual", "dengan", "jiran"],
+      "distractors": ["memancing", "memetik", "menghadiahkan"]
+    },
+    {
+      "id": "memetik",
+      "word": "memetik",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "mengambil buah, bunga atau daun dari pokok",
+        "en": "to pick (fruit, flowers or leaves)",
+        "zh": "摘"
+      },
+      "image": "memetik.webp",
+      "audio": "memetik.mp3",
+      "example": {
+        "bm": "Kami memetik buah rambutan di dusun.",
+        "en": "We pick rambutans at the orchard.",
+        "zh": "我们在果园里摘红毛丹。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Nenek ___ cili dari pokok di belakang rumah."],
+      "jumbled_sentence": ["Kakak", "memetik", "daun", "pandan", "di", "kebun"],
+      "distractors": ["memancing", "menghadiahkan", "berkhemah"]
+    },
+    {
+      "id": "berkhemah",
+      "word": "berkhemah",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "tinggal di dalam khemah untuk sementara waktu",
+        "en": "to camp",
+        "zh": "露营"
+      },
+      "image": "berkhemah.webp",
+      "audio": "berkhemah.mp3",
+      "example": {
+        "bm": "Pengakap berkhemah di tepi sungai.",
+        "en": "The scouts camp by the river.",
+        "zh": "童子军在河边露营。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Kami membawa khemah dan lampu suluh untuk ___ di hutan."],
+      "jumbled_sentence": ["Kami", "berkhemah", "di", "tepi", "pantai"],
+      "distractors": ["memetik", "memancing", "menghadiahkan"]
+    },
+    {
+      "id": "bekerjasama",
+      "word": "bekerjasama",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "melakukan sesuatu bersama-sama untuk mencapai tujuan",
+        "en": "to work together, to cooperate",
+        "zh": "合作"
+      },
+      "image": "bekerjasama.webp",
+      "audio": "bekerjasama.mp3",
+      "example": {
+        "bm": "Murid-murid bekerjasama membersihkan kelas.",
+        "en": "The pupils work together to clean the classroom.",
+        "zh": "学生们一起合作打扫课室。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Kami ___ untuk mengangkat meja yang berat itu."],
+      "jumbled_sentence": ["Kami", "bekerjasama", "menyiapkan", "projek", "sains"],
+      "distractors": ["berbual-bual", "bercuti", "berkhemah"]
+    },
+    {
+      "id": "air-terjun",
+      "word": "air terjun",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "air sungai yang jatuh dari tempat yang tinggi",
+        "en": "waterfall",
+        "zh": "瀑布"
+      },
+      "image": "air-terjun.webp",
+      "audio": "air-terjun.mp3",
+      "example": {
+        "bm": "Air terjun itu sangat tinggi dan cantik.",
+        "en": "That waterfall is very tall and beautiful.",
+        "zh": "那座瀑布又高又美。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Kami mandi di bawah ___ yang sejuk."],
+      "jumbled_sentence": ["Kami", "mandi", "di", "air", "terjun"],
+      "distractors": ["pemandangan", "kenangan", "sepupu"]
+    },
+    {
+      "id": "pemandangan",
+      "word": "pemandangan",
+      "class": "kata nama",
+      "meaning": { "bm": "keadaan alam yang dilihat", "en": "view, scenery", "zh": "风景" },
+      "image": "pemandangan.webp",
+      "audio": "pemandangan.mp3",
+      "example": {
+        "bm": "Pemandangan dari atas bukit sungguh indah.",
+        "en": "The view from the top of the hill is really beautiful.",
+        "zh": "从山顶看出去的风景真美。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Wah, cantiknya ___ matahari terbenam di tepi pantai ini!"],
+      "jumbled_sentence": ["Pemandangan", "di", "pantai", "itu", "sangat", "cantik"],
+      "distractors": ["kenangan", "sepupu", "hubungan"]
+    },
+    {
+      "id": "kenangan",
+      "word": "kenangan",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "sesuatu yang diingat daripada masa lalu",
+        "en": "memory (something you remember)",
+        "zh": "回忆"
+      },
+      "image": "kenangan.webp",
+      "audio": "kenangan.mp3",
+      "example": {
+        "bm": "Bercuti di kampung menjadi kenangan yang indah.",
+        "en": "Our holiday in the village became a lovely memory.",
+        "zh": "在乡下度假成了美好的回忆。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Gambar ini mengingatkan saya pada ___ manis bersama datuk."],
+      "jumbled_sentence": ["Hari", "itu", "menjadi", "kenangan", "manis"],
+      "distractors": ["pemandangan", "air terjun", "sepupu"]
+    },
+    {
+      "id": "mesra",
+      "word": "mesra",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "sangat rapat dan baik hubungannya",
+        "en": "close, warm, friendly",
+        "zh": "亲密；亲切"
+      },
+      "image": "mesra.webp",
+      "audio": "mesra.mp3",
+      "example": {
+        "bm": "Hubungan saya dengan sepupu sangat mesra.",
+        "en": "I have a very close relationship with my cousins.",
+        "zh": "我和堂兄弟姐妹的关系很亲密。"
+      },
+      "synonym": "rapat",
+      "antonym": "renggang",
+      "blank_sentences": ["Jiran kami sangat ___ dan selalu tersenyum kepada kami."],
+      "jumbled_sentence": ["Keluarga", "kami", "sangat", "mesra"],
+      "distractors": ["sedih", "malas", "marah"]
+    },
+    {
+      "id": "menghadiahkan",
+      "word": "menghadiahkan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memberikan sesuatu sebagai hadiah",
+        "en": "to give as a present",
+        "zh": "赠送；送礼物"
+      },
+      "image": "menghadiahkan.webp",
+      "audio": "menghadiahkan.mp3",
+      "example": {
+        "bm": "Saya menghadiahkan sebuah buku kepada kawan saya.",
+        "en": "I give my friend a book as a present.",
+        "zh": "我送了一本书给朋友。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Pada hari jadi ibu, ayah ___ sejambak bunga kepadanya."],
+      "jumbled_sentence": ["Kakak", "menghadiahkan", "kek", "kepada", "nenek"],
+      "distractors": ["memetik", "memancing", "berbual-bual"]
+    }
+  ]
+}

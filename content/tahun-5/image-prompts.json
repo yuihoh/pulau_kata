@@ -1,0 +1,189 @@
+{
+  "style": "Simple flat cartoon spot illustration (vignette) on a plain white background. Bright, cheerful colours, soft rounded shapes, clean outlines, child-friendly picture-book style for Malaysian primary school children aged 9. Malaysian setting with Malaysian people (modest clothing). Members of the same family must clearly look like one family with the same ethnic background; across different images, families may be Malay, Chinese or Indian Malaysian. Square 1:1. Absolutely no text, letters, numbers, words or signs anywhere in the image.",
+  "output": {
+    "size": "1024x1024",
+    "format": "png"
+  },
+  "images": [
+    {
+      "id": "idaman",
+      "file": "content/tahun-5/unit-01/images/idaman.png",
+      "scene": "An Indian Malaysian couple and their two children stand on the lawn gazing happily at a beautiful modern two-storey terrace house with flowers and a green garden, hands clasped in delight, little sparkles around the house to show it is their dream home."
+    },
+    {
+      "id": "mencadangkan",
+      "file": "content/tahun-5/unit-01/images/mencadangkan.png",
+      "scene": "A Malay girl at a family dining table raises one finger as she suggests an idea to her parents and little brother, who lean in and listen; a small glowing lightbulb floats above her head."
+    },
+    {
+      "id": "keistimewaan",
+      "file": "content/tahun-5/unit-01/images/keistimewaan.png",
+      "scene": "A Chinese Malaysian father proudly shows his wife and children around their new house, pointing at a big bright kitchen with a large window; soft sparkles highlight the kitchen to show it is the special feature."
+    },
+    {
+      "id": "teruja",
+      "file": "content/tahun-5/unit-01/images/teruja.png",
+      "scene": "A Malay boy jumps for joy with both arms up, wide sparkling eyes and a huge smile, a small suitcase beside him, with an aeroplane visible through the airport window behind him."
+    },
+    {
+      "id": "membayangkan",
+      "file": "content/tahun-5/unit-01/images/membayangkan.png",
+      "scene": "A Chinese Malaysian girl lies on a sofa gazing upward dreamily; a large thought bubble above her shows herself running along a sunny beach with waves and palm trees."
+    },
+    {
+      "id": "berbincang",
+      "file": "content/tahun-5/unit-01/images/berbincang.png",
+      "scene": "An Indian Malaysian family of four sit around a living-room table with a map and a laptop, talking and pointing, taking turns to speak in a calm, friendly mood."
+    },
+    {
+      "id": "bersungguh-sungguh",
+      "file": "content/tahun-5/unit-01/images/bersungguh-sungguh.png",
+      "scene": "A Malay boy in football kit kicks a ball with all his effort, determined face and sweat drops, mid-run on a school field while his coach watches from the side."
+    },
+    {
+      "id": "mencabar",
+      "file": "content/tahun-5/unit-01/images/mencabar.png",
+      "scene": "A girl in a helmet and harness climbs a steep climbing wall at an indoor climbing centre, determined but a little nervous, while her friend cheers from below."
+    },
+    {
+      "id": "bersorak",
+      "file": "content/tahun-5/unit-01/images/bersorak.png",
+      "scene": "A crowd of Malaysian schoolchildren in the stands cheer loudly with arms raised and mouths open, waving small plain-coloured flags as their team scores a goal on the field."
+    },
+    {
+      "id": "berpuas-hati",
+      "file": "content/tahun-5/unit-01/images/berpuas-hati.png",
+      "scene": "A Malay mother looks at her son’s neatly finished school craft project on a table with a warm, satisfied smile and a thumbs-up, while the boy beams proudly."
+    },
+    {
+      "id": "menjamu-selera",
+      "file": "content/tahun-5/unit-01/images/menjamu-selera.png",
+      "scene": "A Chinese Malaysian family happily eats at a round table full of dishes (steamed fish, rice, vegetables, soup), everyone enjoying the meal with bowls and chopsticks."
+    },
+    {
+      "id": "hidangan",
+      "file": "content/tahun-5/unit-01/images/hidangan.png",
+      "scene": "A close-up of a wooden table laid with a Malaysian meal: grilled fish on a banana leaf, a bowl of curry, rice, vegetables and sliced fruit, steam rising. Food only, no people."
+    },
+    {
+      "id": "johan",
+      "file": "content/tahun-5/unit-02/images/johan.png",
+      "scene": "A Malay boy stands on the top step of a winners’ podium holding a golden trophy above his head, while his parents and little sister clap and confetti falls."
+    },
+    {
+      "id": "mengumumkan",
+      "file": "content/tahun-5/unit-02/images/mengumumkan.png",
+      "scene": "A Chinese Malaysian school principal stands at a microphone on a stage in a school hall, announcing something to rows of pupils who look up at him with interest."
+    },
+    {
+      "id": "menggalakkan",
+      "file": "content/tahun-5/unit-02/images/menggalakkan.png",
+      "scene": "An Indian Malaysian mother gently pats her son’s shoulder with an encouraging smile and a thumbs-up as he stands at a bookshelf, handing him a book to try."
+    },
+    {
+      "id": "bermutu",
+      "file": "content/tahun-5/unit-02/images/bermutu.png",
+      "scene": "A tidy shelf of beautifully made, sturdy, colourful picture books with a golden star badge glowing above them; a girl carefully holds one and admires it."
+    },
+    {
+      "id": "tugasan",
+      "file": "content/tahun-5/unit-02/images/tugasan.png",
+      "scene": "A Chinese Malaysian girl sits at a desk at home writing in an exercise book, with a laptop, a pencil case and a small checklist with tick marks beside her, focused on finishing her school task."
+    },
+    {
+      "id": "merujuk",
+      "file": "content/tahun-5/unit-02/images/merujuk.png",
+      "scene": "A Malay boy at a library table looks up a word in a thick dictionary, one finger on the page, a pencil and notebook beside him."
+    },
+    {
+      "id": "cemerlang",
+      "file": "content/tahun-5/unit-02/images/cemerlang.png",
+      "scene": "An Indian Malaysian girl holds up a sheet of paper with a big gold star and a shining glow around her while her proud parents cheer beside her."
+    },
+    {
+      "id": "tekun",
+      "file": "content/tahun-5/unit-02/images/tekun.png",
+      "scene": "An Indian Malaysian boy practises the violin patiently in his tidy room, sheet music with only musical notes on a stand, a calm, determined face and a small pile of finished practice pages."
+    },
+    {
+      "id": "bertanggungjawab",
+      "file": "content/tahun-5/unit-02/images/bertanggungjawab.png",
+      "scene": "An older sister about 11 carefully holds her little brother’s hand at a pedestrian crossing, looking both ways before they cross, school bags on their backs."
+    },
+    {
+      "id": "kerjaya",
+      "file": "content/tahun-5/unit-02/images/kerjaya.png",
+      "scene": "A Malay girl sits at a window dreaming; a thought bubble shows her as a grown-up veterinarian in a white coat examining a cat, while her parents smile beside her."
+    },
+    {
+      "id": "berbakat",
+      "file": "content/tahun-5/unit-02/images/berbakat.png",
+      "scene": "A boy paints a large, stunning colourful picture on an easel in a warm golden spotlight glow, while his amazed Chinese Malaysian family watches him."
+    },
+    {
+      "id": "anugerah",
+      "file": "content/tahun-5/unit-02/images/anugerah.png",
+      "scene": "On a school stage, a teacher hangs a gold medal on a ribbon around a Chinese Malaysian girl’s neck; she holds a blank framed certificate and her family claps in the front row."
+    },
+    {
+      "id": "mengeratkan",
+      "file": "content/tahun-5/unit-03/images/mengeratkan.png",
+      "scene": "A three-generation Malay family laughs and hugs together on a picnic mat in a park, grandmother in the middle; a soft glowing heart shape links them all together."
+    },
+    {
+      "id": "bersyukur",
+      "file": "content/tahun-5/unit-03/images/bersyukur.png",
+      "scene": "An Indian Malaysian family sits at a dinner table with a simple meal, heads gently bowed and eyes closed with calm, thankful smiles, warm lamp light."
+    },
+    {
+      "id": "sepakat",
+      "file": "content/tahun-5/unit-03/images/sepakat.png",
+      "scene": "Five members of a Chinese Malaysian family all raise their hands in agreement around a table spread with paper decorations, everyone smiling and nodding together."
+    },
+    {
+      "id": "berkorban",
+      "file": "content/tahun-5/unit-03/images/berkorban.png",
+      "scene": "A Malay father holds his umbrella over his small child in heavy rain while he himself gets soaked, the child dry and smiling up at him."
+    },
+    {
+      "id": "berbakti",
+      "file": "content/tahun-5/unit-03/images/berbakti.png",
+      "scene": "A kind older man volunteers to teach village children reading under a big tree, books spread on a mat, the children listening happily."
+    },
+    {
+      "id": "berganding-bahu",
+      "file": "content/tahun-5/unit-03/images/berganding-bahu.png",
+      "scene": "A group of villagers of different ages stand shoulder to shoulder lifting a long wooden plank together to build a small bridge over a stream."
+    },
+    {
+      "id": "membanting-tulang",
+      "file": "content/tahun-5/unit-03/images/membanting-tulang.png",
+      "scene": "A Chinese Malaysian farmer with a towel around his neck bends over a hoe in a vegetable field under the hot sun, sweat drops flying, working very hard."
+    },
+    {
+      "id": "rintangan",
+      "file": "content/tahun-5/unit-03/images/rintangan.png",
+      "scene": "A family of hikers stands on a forest path blocked by a huge fallen tree trunk; the little brother points at the obstacle while the others think of a way past."
+    },
+    {
+      "id": "dusun",
+      "file": "content/tahun-5/unit-03/images/dusun.png",
+      "scene": "A sunny kampung orchard with durian and rambutan trees full of fruit, a wooden gate and a Malay grandfather with a basket at the entrance."
+    },
+    {
+      "id": "mempertahankan",
+      "file": "content/tahun-5/unit-03/images/mempertahankan.png",
+      "scene": "A schoolgirl goalkeeper stretches out to block a flying ball in front of the goal, determined, her teammates behind her cheering."
+    },
+    {
+      "id": "menikmati",
+      "file": "content/tahun-5/unit-03/images/menikmati.png",
+      "scene": "An Indian Malaysian family sits on a hilltop bench looking out over a beautiful valley at sunset, relaxed and content, smiling quietly."
+    },
+    {
+      "id": "berswafoto",
+      "file": "content/tahun-5/unit-03/images/berswafoto.png",
+      "scene": "A Malay father holds his phone out at arm’s length to take a selfie as his wife and two children squeeze close and smile in front of a house with a garden."
+    }
+  ]
+}

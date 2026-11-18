@@ -1,0 +1,9 @@
+- **Medium — [AudioReview.tsx:113](/C:/Users/yuiho/projects/pulau_kata/apps/web/src/games/AudioReview.tsx:113): Play all fails under Safari’s autoplay restrictions.** Each clip creates a new audio element; subsequent clips start outside the original tap. Safari’s [per-element policy](https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/) can reject these requests. Rejections produce no event for this waiter, causing silent 20-second delays. Reuse one unlocked element and handle playback rejection explicitly.
+
+- **Medium — [AudioReview.tsx:119](/C:/Users/yuiho/projects/pulau_kata/apps/web/src/games/AudioReview.tsx:119): Timeout leaves audio running.** If the final clip stalls or exceeds 20 seconds, the promise resolves and the Stop button disappears, but the element remains active and can continue or resume playing. Stop the timed-out element before completing the run; clear its timer and listeners.
+
+- **Medium — [App.tsx:85](/C:/Users/yuiho/projects/pulau_kata/apps/web/src/App.tsx:85): Changing review units leaves the previous playlist running.** Navigating between supported audio-review hashes reuses `AudioReview`, so its unmount cleanup never runs. The previous unit keeps playing without a visible Stop control. Key the component by `chapterId`, or cancel playback when that prop changes.
+
+- **Low — [AudioReview.tsx:230](/C:/Users/yuiho/projects/pulau_kata/apps/web/src/games/AudioReview.tsx:230): Flagged-list textarea has no accessible name.** After flagging a clip, screen-reader users encounter an unidentified read-only textbox. Give the heading an ID and reference it with `aria-labelledby`.
+
+Browser layout verification was blocked by the read-only sandbox; playback cancellation and timeout cases were checked in memory.

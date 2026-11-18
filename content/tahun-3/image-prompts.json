@@ -1,0 +1,189 @@
+{
+  "style": "Simple flat cartoon spot illustration (vignette) on a plain white background. Bright, cheerful colours, soft rounded shapes, clean outlines, child-friendly picture-book style for Malaysian primary school children aged 9. Malaysian setting with Malaysian people (modest clothing). Members of the same family must clearly look like one family with the same ethnic background; across different images, families may be Malay, Chinese or Indian Malaysian. Square 1:1. Absolutely no text, letters, numbers, words or signs anywhere in the image.",
+  "output": {
+    "size": "1024x1024",
+    "format": "png"
+  },
+  "images": [
+    {
+      "id": "anak-sulung",
+      "file": "content/tahun-3/unit-01/images/anak-sulung.png",
+      "scene": "Three siblings standing in a row from tallest to smallest. The eldest, a girl about 12, stands in front with a proud smile, holding the hand of the smallest sibling. A soft glow outlines the eldest to show she is the one being described."
+    },
+    {
+      "id": "anak-bongsu",
+      "file": "content/tahun-3/unit-01/images/anak-bongsu.png",
+      "scene": "A Chinese Malaysian family at home. The youngest child of the family, a cheerful toddler boy, sits on his mother's lap while two older siblings smile and wave at him. A soft glow outlines the toddler to show he is the one being described."
+    },
+    {
+      "id": "menjaga",
+      "file": "content/tahun-3/unit-01/images/menjaga.png",
+      "scene": "An older sister sits on the floor watching over her little brother as he plays with building blocks, keeping him safe. Their mother cooks at a stove in the background."
+    },
+    {
+      "id": "memilih",
+      "file": "content/tahun-3/unit-01/images/memilih.png",
+      "scene": "A boy in a bookshop reaching for one storybook from a shelf of colourful books, thinking carefully as he chooses. The book covers show only simple pictures, no titles."
+    },
+    {
+      "id": "berkebun",
+      "file": "content/tahun-3/unit-01/images/berkebun.png",
+      "scene": "A Chinese Malaysian grandfather in a straw hat gardening in a small backyard vegetable patch with a hoe and a watering can, morning sunshine."
+    },
+    {
+      "id": "membela",
+      "file": "content/tahun-3/unit-01/images/membela.png",
+      "scene": "A boy scattering grain to feed chickens and ducks in the yard of a wooden kampung house."
+    },
+    {
+      "id": "menanam",
+      "file": "content/tahun-3/unit-01/images/menanam.png",
+      "scene": "A girl kneeling in a garden, gently placing a small green seedling into a hole in the soil, a small trowel beside her."
+    },
+    {
+      "id": "bangga",
+      "file": "content/tahun-3/unit-01/images/bangga.png",
+      "scene": "An Indian Malaysian father beaming with pride, hand on his chest, as his daughter holds up a shiny trophy on a school stage."
+    },
+    {
+      "id": "menghiburkan",
+      "file": "content/tahun-3/unit-01/images/menghiburkan.png",
+      "scene": "A girl singing and doing a funny little dance to cheer up her grandmother, who sits on a sofa and starts to laugh."
+    },
+    {
+      "id": "anak-emas",
+      "file": "content/tahun-3/unit-01/images/anak-emas.png",
+      "scene": "A grandmother lovingly hugging one grandchild who is clearly her favourite, the child surrounded by a soft golden sparkle. Other family members smile warmly nearby."
+    },
+    {
+      "id": "ambil-berat",
+      "file": "content/tahun-3/unit-01/images/ambil-berat.png",
+      "scene": "A teacher kneeling beside a pupil who has fallen and scraped his knee on the school field, putting on a plaster with a caring, concerned face."
+    },
+    {
+      "id": "ambil-hati",
+      "file": "content/tahun-3/unit-01/images/ambil-hati.png",
+      "scene": "A boy shyly giving his mother a handmade card decorated with a big heart and a flower, trying to make her happy. The mother smiles warmly."
+    },
+    {
+      "id": "sepupu",
+      "file": "content/tahun-3/unit-02/images/sepupu.png",
+      "scene": "Two cousins of the same age playing football together at a family gathering in a kampung yard, aunts and uncles chatting in the background."
+    },
+    {
+      "id": "bercuti",
+      "file": "content/tahun-3/unit-02/images/bercuti.png",
+      "scene": "A happy family arriving at a sunny beach on holiday, carrying a suitcase, beach ball and bucket, palm trees and blue sea behind them."
+    },
+    {
+      "id": "memancing",
+      "file": "content/tahun-3/unit-02/images/memancing.png",
+      "scene": "A Chinese Malaysian father and son sitting on a wooden jetty by a river, fishing with rods. A small fish is on the son's line and he is delighted."
+    },
+    {
+      "id": "berbual-bual",
+      "file": "content/tahun-3/unit-02/images/berbual-bual.png",
+      "scene": "Two Indian Malaysian women, one wearing a saree and one a Punjabi suit, relaxing on a house veranda and chatting happily over cups of tea and a plate of snacks."
+    },
+    {
+      "id": "memetik",
+      "file": "content/tahun-3/unit-02/images/memetik.png",
+      "scene": "Children in an orchard picking red hairy rambutans from a tree and putting them into a woven basket."
+    },
+    {
+      "id": "berkhemah",
+      "file": "content/tahun-3/unit-02/images/berkhemah.png",
+      "scene": "A family camping in a forest clearing: a dome tent, a small campfire, a lantern, children sitting on mats at dusk."
+    },
+    {
+      "id": "bekerjasama",
+      "file": "content/tahun-3/unit-02/images/bekerjasama.png",
+      "scene": "Three pupils working together to carry a heavy wooden table across a classroom, each holding a corner and smiling."
+    },
+    {
+      "id": "air-terjun",
+      "file": "content/tahun-3/unit-02/images/air-terjun.png",
+      "scene": "A beautiful waterfall in a green Malaysian rainforest, falling from high rocks into a clear pool."
+    },
+    {
+      "id": "pemandangan",
+      "file": "content/tahun-3/unit-02/images/pemandangan.png",
+      "scene": "A family standing on a hilltop, seen from behind, admiring a wide view of green rolling hills, tea plantations and a blue sky."
+    },
+    {
+      "id": "kenangan",
+      "file": "content/tahun-3/unit-02/images/kenangan.png",
+      "scene": "A girl and her grandfather looking at a photo album together, smiling. A dreamy thought cloud above them shows the two of them fishing together in the past."
+    },
+    {
+      "id": "mesra",
+      "file": "content/tahun-3/unit-02/images/mesra.png",
+      "scene": "A warm, close Indian Malaysian family moment: grandparents, parents and children laughing and hugging together on a sofa."
+    },
+    {
+      "id": "menghadiahkan",
+      "file": "content/tahun-3/unit-02/images/menghadiahkan.png",
+      "scene": "A Chinese Malaysian girl handing a wrapped present with a big ribbon to her grandmother, who is surprised and happy."
+    },
+    {
+      "id": "prihatin",
+      "file": "content/tahun-3/unit-03/images/prihatin.png",
+      "scene": "A pupil kneeling in a school corridor to help a classmate pick up the books she has dropped, with a kind, caring expression."
+    },
+    {
+      "id": "bekal",
+      "file": "content/tahun-3/unit-03/images/bekal.png",
+      "scene": "An open lunch box with fried rice and a fried egg, next to a water bottle, on a school desk, ready to eat at recess."
+    },
+    {
+      "id": "bagasi",
+      "file": "content/tahun-3/unit-03/images/bagasi.png",
+      "scene": "A father lifting a suitcase into the open boot of a car, with a duffel bag and a backpack waiting beside it, ready for a trip."
+    },
+    {
+      "id": "membimbing",
+      "file": "content/tahun-3/unit-03/images/membimbing.png",
+      "scene": "A Chinese Malaysian older brother sitting beside his younger sister at a desk, patiently guiding her with her homework and pointing at her exercise book. The book shows only simple shapes, no writing."
+    },
+    {
+      "id": "bahasa-isyarat",
+      "file": "content/tahun-3/unit-03/images/bahasa-isyarat.png",
+      "scene": "Two children facing each other and smiling, talking using sign language with clear hand shapes. One child wears a small hearing aid."
+    },
+    {
+      "id": "menjahit",
+      "file": "content/tahun-3/unit-03/images/menjahit.png",
+      "scene": "An Indian Malaysian grandmother wearing a saree, sewing colourful fabric on a sewing machine at home, a spool of thread and scissors on the table."
+    },
+    {
+      "id": "bertepuk-tangan",
+      "file": "content/tahun-3/unit-03/images/bertepuk-tangan.png",
+      "scene": "An audience of children and parents in a school hall clapping their hands enthusiastically, big smiles."
+    },
+    {
+      "id": "menghidangkan",
+      "file": "content/tahun-3/unit-03/images/menghidangkan.png",
+      "scene": "A girl carefully serving cups of hot tea and a plate of kuih on a tray to guests sitting in a living room."
+    },
+    {
+      "id": "mengecat",
+      "file": "content/tahun-3/unit-03/images/mengecat.png",
+      "scene": "A father painting a bedroom wall light blue with a paint roller while his son helps with a small brush, a paint tray on the floor."
+    },
+    {
+      "id": "memimpin",
+      "file": "content/tahun-3/unit-03/images/memimpin.png",
+      "scene": "An older sister holding her little brother's hand and leading him safely across a zebra crossing, both looking carefully."
+    },
+    {
+      "id": "meraikan",
+      "file": "content/tahun-3/unit-03/images/meraikan.png",
+      "scene": "A family celebrating together around a table with a cake, balloons and decorations, everyone cheering with raised arms."
+    },
+    {
+      "id": "saudara-mara",
+      "file": "content/tahun-3/unit-03/images/saudara-mara.png",
+      "scene": "A big Indian Malaysian family gathering during Deepavali: relatives of all ages — grandparents, aunts, uncles and cousins — in festive clothes greeting each other happily at the door of a family home decorated with oil lamps (kolam on the floor, no writing)."
+    }
+  ]
+}

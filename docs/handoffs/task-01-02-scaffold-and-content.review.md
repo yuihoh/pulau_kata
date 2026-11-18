@@ -1,0 +1,13 @@
+- **Medium — [content/tahun-3/unit-01/chapter.json:241](C:/Users/yuiho/projects/pulau_kata/content/tahun-3/unit-01/chapter.json:241):** The examples and sentence tiles use colloquial “ambil berat” and “ambil hati” in active sentences. Formal school BM requires “mengambil berat” and “mengambil hati”; see [DBP guidance](https://prpm.dbp.gov.my/Cari1?d=175768&keyword=ambil+berat). Use the inflected forms throughout the exercises and explicitly allow them in validation.
+
+- **Medium — [content/tahun-3/unit-01/chapter.json:137](C:/Users/yuiho/projects/pulau_kata/content/tahun-3/unit-01/chapter.json:137), [content/tahun-3/unit-03/chapter.json:71](C:/Users/yuiho/projects/pulau_kata/content/tahun-3/unit-03/chapter.json:71):** Some distractors plausibly complete their blanks: “Kami **memilih** seekor kucing dan memberinya makan setiap hari” is coherent, and travellers can weigh **bekal**, **kamus**, or **payung** before flying. These items could penalize valid answers. Strengthen the context or use question-specific distractors with only one defensible answer.
+
+- **Medium — [scripts/validate-content.ts:46](C:/Users/yuiho/projects/pulau_kata/scripts/validate-content.ts:46):** A missing or empty `content/` directory produces zero tracks and exits successfully, including with `--strict`. Accidental deletion can therefore pass the content gate. Fail when no tracks are discovered, and require the pilot track explicitly.
+
+- **Low — [package.json:11](C:/Users/yuiho/projects/pulau_kata/package.json:11):** The declared Node range `>=22` includes versions unsupported by installed dependencies. For example, jsdom requires `^22.22.2 || ^24.15.0 || >=26.0.0`. Declare a compatible range so developers following the package requirements can run the toolchain.
+
+- **Low — [apps/web/src/content/validate.test.ts:93](C:/Users/yuiho/projects/pulau_kata/apps/web/src/content/validate.test.ts:93):** The missing-translation test supplies one word, while `ChapterSchema` requires at least four. It passes even if translation validation is removed. Start from a schema-valid fixture, assert that it parses, then remove the translation and check the resulting issue path.
+
+- **Low — [apps/web/src/i18n/index.ts:21](C:/Users/yuiho/projects/pulau_kata/apps/web/src/i18n/index.ts:21):** Switching to Chinese leaves the document’s `lang` attribute as `en`, including when restoring a saved preference. Assistive technology receives the wrong language metadata. Synchronize `document.documentElement.lang` during initialization and subsequent language changes.
+
+Overall verdict: Request changes for the BM exercises and validation gap before approval.

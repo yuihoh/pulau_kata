@@ -1,0 +1,11 @@
+- **Medium — Validated content can become impossible to answer.** [apps/web/src/engine/quest.ts:82](C:/Users/yuiho/projects/pulau_kata/apps/web/src/engine/quest.ts:82): `" sepupu "` passes validation, but runtime comparison rejects it. Trying every option leaves Next unavailable. **Fix:** use the validator’s whitespace normalization when comparing answers, or reject noncanonical options.
+
+- **Medium — Uji completion is not enforced at entry.** [apps/web/src/App.tsx:35](C:/Users/yuiho/projects/pulau_kata/apps/web/src/App.tsx:35): a direct Misi URL bypasses the locked chapter card, including once a quest becomes production-visible. **Fix:** check Uji completion in the route handler; keep any prototype bypass restricted to development/staging.
+
+- **Medium — Offline “find” challenges lose their pictures.** [apps/web/vite.config.ts:72](C:/Users/yuiho/projects/pulau_kata/apps/web/vite.config.ts:72): all quest art currently uses PNG, which the service worker excludes. Opening Misi offline after installation produces unidentified picture choices. **Fix:** cache appropriately sized quest assets, including temporary PNGs, and verify an offline run.
+
+- **Low — Focus skips the “find” answers.** [apps/web/src/games/Misi.tsx:246](C:/Users/yuiho/projects/pulau_kata/apps/web/src/games/Misi.tsx:246): each step focuses dialogue positioned *after* the prop buttons. Forward keyboard/screen-reader navigation therefore skips every answer on find steps. **Fix:** put the focused instruction before the choices in DOM order, using CSS for visual placement.
+
+- **Low — Missing quests silently show another unit’s content.** [apps/web/src/games/Misi.tsx:29](C:/Users/yuiho/projects/pulau_kata/apps/web/src/games/Misi.tsx:29): `#/lab/misi/t3-u01` opens Unit 2’s adventure while Back points to Unit 1. **Fix:** default to the first quest only when no chapter ID was supplied; otherwise show the existing unavailable message.
+
+Reviewed the BM dialogue, distractors, and EN/中文 translations; no concrete text errors found. Content validation and perfect/all-wrong-first engine runs passed; the whitespace failure was reproduced.

@@ -1,0 +1,13 @@
+1. **Medium — Ambiguous fill-in-the-blank answers.** [unit-02/chapter.json:207](C:/Users/yuiho/projects/pulau_kata/content/tahun-5/unit-02/chapter.json:207): *tekun*, *cemerlang* and *berbakat* also fit “Ketua kelas mesti seorang yang ___ dan boleh dipercayai.” Likewise, *cemerlang* fits Ravi’s sentence at line 251, and *senyap-senyap* fits the study sentence in [unit-01:163](C:/Users/yuiho/projects/pulau_kata/content/tahun-5/unit-01/chapter.json:163). Valid choices receive “wrong” feedback. **Fix:** replace these distractors or rewrite the contexts to leave exactly one defensible answer.
+
+2. **Medium — Valid sentence arrangements are rejected.** [unit-02/chapter.json:54](C:/Users/yuiho/projects/pulau_kata/content/tahun-5/unit-02/chapter.json:54): “Guru di dewan mengumumkan nama pemenang” uses every tile and is grammatical, but `checkSusun` rejects it. [unit-03:208](C:/Users/yuiho/projects/pulau_kata/content/tahun-5/unit-03/chapter.json:208) similarly permits “Datuk itu menanam durian di dusun.” **Fix:** support approved alternative orders or choose sentences with one valid arrangement.
+
+3. **Medium — Ungrammatical target sentence.** [unit-01/chapter.json:76](C:/Users/yuiho/projects/pulau_kata/content/tahun-5/unit-01/chapter.json:76): the required answer becomes “Keistimewaan rumah itu ialah halamannya luas.” Children must reproduce the missing relative marker to earn credit. **Fix:** insert the tile *yang*: “Keistimewaan rumah itu ialah halamannya **yang** luas.”
+
+4. **Medium — Invalid duration phrase.** [unit-03/chapter.json:120](C:/Users/yuiho/projects/pulau_kata/content/tahun-5/unit-03/chapter.json:120): Bina teaches and requires “Guru itu berbakti kepada sekolahnya **selama lama**.” **Fix:** replace the final tile with *bertahun-tahun*, producing “selama bertahun-tahun.”
+
+5. **Medium — Incorrect word class for *idaman*.** [unit-01/chapter.json:16](C:/Users/yuiho/projects/pulau_kata/content/tahun-5/unit-01/chapter.json:16): Kenali teaches it as `kata adjektif`; it is a noun meaning something desired, consistent with [DBP’s definition](https://prpm.dbp.gov.my/Cari1?d=371752&keyword=idaman). **Fix:** use `kata nama`, align the meanings with that sense, and update affected distractors.
+
+6. **Low — Image-loading assertion can race.** [smoke.spec.ts:296](C:/Users/yuiho/projects/pulau_kata/apps/web/tests/e2e/smoke.spec.ts:296): visibility does not guarantee that the lazy image has loaded; the immediate `naturalWidth` assertion can fail on a slow connection. **Fix:** poll until `complete && naturalWidth > 0`.
+
+Originality: the PDF was readable; comparison against printed pages 2–20 found no sentence copying to flag.

@@ -1,0 +1,280 @@
+{
+  "id": "t5-u03",
+  "year": 5,
+  "tema": 1,
+  "unit": 3,
+  "reviewed": false,
+  "title": {
+    "bm": "Hadapi Bersama-sama",
+    "en": "Facing It Together",
+    "zh": "携手面对"
+  },
+  "words": [
+    {
+      "id": "mengeratkan",
+      "word": "mengeratkan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menjadikan hubungan lebih rapat dan kukuh",
+        "en": "to strengthen ties, to bring closer",
+        "zh": "增进；使更亲密"
+      },
+      "image": "mengeratkan.webp",
+      "audio": "mengeratkan.mp3",
+      "example": {
+        "bm": "Aktiviti berkelah dapat mengeratkan hubungan adik-beradik.",
+        "en": "Picnics can strengthen the bond between brothers and sisters.",
+        "zh": "野餐活动可以增进兄弟姐妹之间的感情。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Majlis rumah terbuka itu ___ hubungan antara jiran."],
+      "jumbled_sentence": ["Gotong-royong", "mengeratkan", "hubungan", "antara", "jiran"],
+      "distractors": ["berkorban", "berbakti", "menikmati"]
+    },
+    {
+      "id": "bersyukur",
+      "word": "bersyukur",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "berterima kasih kepada Tuhan atas nikmat yang diterima",
+        "en": "to be grateful, to give thanks",
+        "zh": "感恩；感谢"
+      },
+      "image": "bersyukur.webp",
+      "audio": "bersyukur.mp3",
+      "example": {
+        "bm": "Kami bersyukur kerana nenek sudah sembuh daripada demam.",
+        "en": "We are grateful that Grandma has recovered from her fever.",
+        "zh": "奶奶退烧康复了，我们很感恩。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Kita harus ___ atas rezeki yang kita ada."],
+      "jumbled_sentence": ["Kami", "sekeluarga", "sangat", "bersyukur"],
+      "distractors": ["berkorban", "berbakti", "menikmati"]
+    },
+    {
+      "id": "sepakat",
+      "word": "sepakat",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "sependapat dan bersetuju",
+        "en": "in agreement, united",
+        "zh": "一致的；同心的"
+      },
+      "image": "sepakat.webp",
+      "audio": "sepakat.mp3",
+      "example": {
+        "bm": "Seisi keluarga sepakat untuk menyambut hari jadi nenek di rumah.",
+        "en": "The whole family agrees to celebrate Grandma’s birthday at home.",
+        "zh": "全家一致同意在家里庆祝奶奶的生日。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Semua ahli keluarga ___ untuk membersihkan rumah pada hujung minggu."],
+      "jumbled_sentence": ["Kami", "sepakat", "menghias", "rumah", "nenek"],
+      "distractors": ["penat", "cemas", "kenyang"]
+    },
+    {
+      "id": "berkorban",
+      "word": "berkorban",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "sanggup melepaskan sesuatu demi kebaikan orang lain",
+        "en": "to sacrifice",
+        "zh": "牺牲；付出"
+      },
+      "image": "berkorban.webp",
+      "audio": "berkorban.mp3",
+      "example": {
+        "bm": "Ibu berkorban masa dan tenaga untuk membesarkan kami.",
+        "en": "Mum gives up her time and energy to bring us up.",
+        "zh": "妈妈牺牲时间和精力把我们养大。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ayah sanggup ___ masa rehatnya untuk menghantar kami ke sekolah."],
+      "jumbled_sentence": ["Ibu", "sanggup", "berkorban"],
+      "distractors": ["berbakti", "mengeratkan", "bersyukur"]
+    },
+    {
+      "id": "berbakti",
+      "word": "berbakti",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memberikan khidmat atau sumbangan dengan ikhlas",
+        "en": "to serve, to contribute",
+        "zh": "效劳；奉献"
+      },
+      "image": "berbakti.webp",
+      "audio": "berbakti.mp3",
+      "example": {
+        "bm": "Datuk berbakti kepada masyarakat sebagai ketua kampung.",
+        "en": "Grandfather serves the community as the village head.",
+        "zh": "爷爷以村长的身份为社区奉献。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Selepas bersara, Pak Cik Rahman terus ___ kepada kampungnya."],
+      "jumbled_sentence": ["Guru", "itu", "rela", "berbakti"],
+      "distractors": ["berkorban", "mengeratkan", "mempertahankan"]
+    },
+    {
+      "id": "berganding-bahu",
+      "word": "berganding bahu",
+      "class": "lain-lain",
+      "meaning": {
+        "bm": "bekerjasama dengan bersungguh-sungguh",
+        "en": "to join forces, to work shoulder to shoulder",
+        "zh": "携手合作；并肩努力"
+      },
+      "image": "berganding-bahu.webp",
+      "audio": "berganding-bahu.mp3",
+      "example": {
+        "bm": "Penduduk kampung berganding bahu membersihkan surau.",
+        "en": "The villagers join forces to clean the surau.",
+        "zh": "村民们齐心协力打扫祈祷室。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Seluruh keluarga ___ menyiapkan hidangan untuk majlis kenduri."],
+      "jumbled_sentence": ["Kami", "berganding", "bahu", "membersihkan", "halaman", "rumah"],
+      "distractors": ["bertepuk tangan", "bersorak", "menjamu selera"]
+    },
+    {
+      "id": "membanting-tulang",
+      "word": "membanting tulang",
+      "class": "lain-lain",
+      "meaning": {
+        "bm": "bekerja dengan sangat gigih",
+        "en": "to work very hard, to toil",
+        "zh": "辛勤劳动；拼命工作"
+      },
+      "image": "membanting-tulang.webp",
+      "audio": "membanting-tulang.mp3",
+      "example": {
+        "bm": "Ayah membanting tulang di ladang untuk menyara keluarga.",
+        "en": "Dad toils on the farm to support the family.",
+        "zh": "爸爸在农场辛勤劳动来养家。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ibu ___ menjual kuih setiap hari demi menyara keluarga."],
+      "jumbled_sentence": ["Petani", "itu", "membanting", "tulang"],
+      "distractors": ["bertepuk tangan", "menjamu selera", "bersorak"]
+    },
+    {
+      "id": "rintangan",
+      "word": "rintangan",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "sesuatu yang menghalang atau menyukarkan usaha",
+        "en": "an obstacle, a hurdle",
+        "zh": "障碍；阻碍"
+      },
+      "image": "rintangan.webp",
+      "audio": "rintangan.mp3",
+      "example": {
+        "bm": "Banjir besar menjadi rintangan kepada penduduk kampung.",
+        "en": "The big flood was an obstacle for the villagers.",
+        "zh": "大水灾给村民带来了阻碍。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Pokok tumbang itu menjadi ___ kepada kenderaan yang lalu."],
+      "jumbled_sentence": ["Mereka", "menghadapi", "banyak", "rintangan"],
+      "distractors": ["dusun", "bekalan", "keistimewaan"]
+    },
+    {
+      "id": "dusun",
+      "word": "dusun",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "kebun buah-buahan di kampung",
+        "en": "an orchard, a fruit grove",
+        "zh": "果园"
+      },
+      "image": "dusun.webp",
+      "audio": "dusun.mp3",
+      "example": {
+        "bm": "Datuk menanam durian dan rambutan di dusun miliknya.",
+        "en": "Grandfather grows durians and rambutans in his orchard.",
+        "zh": "爷爷在他的果园里种榴莲和红毛丹。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Pada musim buah, kami memetik rambutan di ___ datuk."],
+      "jumbled_sentence": ["Dusun", "datuk", "sangat", "luas"],
+      "distractors": ["hidangan", "rintangan", "tugasan"]
+    },
+    {
+      "id": "mempertahankan",
+      "word": "mempertahankan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menjaga supaya sesuatu tidak hilang atau dikuasai orang lain",
+        "en": "to defend, to uphold",
+        "zh": "捍卫；保住"
+      },
+      "image": "mempertahankan.webp",
+      "audio": "mempertahankan.mp3",
+      "example": {
+        "bm": "Pasukan kami berjaya mempertahankan kejuaraan tahun lalu.",
+        "en": "Our team managed to defend last year’s championship.",
+        "zh": "我们的队伍成功保住了去年的冠军。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Pasukan bola jaring kami berjaya ___ kejuaraan tahun ini."],
+      "jumbled_sentence": ["Kami", "mempertahankan", "tradisi", "keluarga"],
+      "distractors": ["berkorban", "berbakti", "mengeratkan"]
+    },
+    {
+      "id": "menikmati",
+      "word": "menikmati",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "merasai atau mengalami sesuatu dengan senang hati",
+        "en": "to enjoy",
+        "zh": "享受；欣赏"
+      },
+      "image": "menikmati.webp",
+      "audio": "menikmati.mp3",
+      "example": {
+        "bm": "Kami menikmati keindahan matahari terbenam di tepi pantai.",
+        "en": "We enjoy the beauty of the sunset by the beach.",
+        "zh": "我们在海边欣赏美丽的日落。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": [
+        "Selepas penat berjalan, kami duduk untuk ___ pemandangan di puncak bukit."
+      ],
+      "jumbled_sentence": ["Kami", "menikmati", "pemandangan", "yang", "indah"],
+      "distractors": ["berkorban", "berbakti", "bersyukur"]
+    },
+    {
+      "id": "berswafoto",
+      "word": "berswafoto",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "mengambil gambar diri sendiri dengan kamera telefon",
+        "en": "to take a selfie",
+        "zh": "自拍"
+      },
+      "image": "berswafoto.webp",
+      "audio": "berswafoto.mp3",
+      "example": {
+        "bm": "Kami berswafoto di hadapan rumah baharu nenek.",
+        "en": "We take a selfie in front of Grandma’s new house.",
+        "zh": "我们在奶奶的新家前自拍。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ibu menggunakan telefon untuk ___ bersama seisi keluarga di taman."],
+      "jumbled_sentence": ["Mereka", "suka", "berswafoto"],
+      "distractors": ["bersyukur", "berkorban", "mempertahankan"]
+    }
+  ]
+}

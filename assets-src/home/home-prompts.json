@@ -1,0 +1,70 @@
+{
+  "note": "Home screen art (Yang, 18 Nov 2026, from his ChatGPT mockups). Codex-generated on plain white, converted to transparent WebP by scripts/home-art-to-webp.py. 'out' is where the WebP goes. All text on the Home screen is drawn in code (translatable), so every picture here is blank/text-free.",
+  "style": "Flat cartoon game-UI illustration in a bright, cheerful, child-friendly style for a mobile game for Malaysian primary school children aged 9: soft rounded shapes, clean dark-brown outlines, glossy flat colours with light shading. A single object centred on a plain solid pure white background (#FFFFFF), no shadow, no ground, no scenery. Absolutely no text, letters, numbers, words or signs anywhere in the image.",
+  "items": [
+    {
+      "id": "sign",
+      "file": "assets-src/home/sign.png",
+      "out": "apps/web/src/assets/home/sign.webp",
+      "width": 640,
+      "size": "1536x1024",
+      "scene": "A hanging wooden signboard seen from the front: two short ropes at the top tied to a wide, rounded rectangular plank of warm brown wood with visible grain and darker edges; a small pink hibiscus flower with two green leaves is tucked at the top-left corner. The front face of the plank is completely blank, plain wood with no marks. Landscape format, the sign fills about 90% of the picture width."
+    },
+    {
+      "id": "marker",
+      "file": "assets-src/home/marker.png",
+      "out": "apps/web/src/assets/home/marker.webp",
+      "width": 240,
+      "size": "1024x1024",
+      "scene": "A game level button: a big round glossy orange badge with a thin golden rim and a soft golden glow, sitting on top of a round pedestal made of a thick slice of tree log (brown wood with rings visible on its side), with two small green leaves at the lower left and lower right of the pedestal. The face of the orange badge is completely blank: plain orange with a soft highlight, no number, no symbol. The whole object fills about 85% of the picture."
+    },
+    {
+      "id": "t3-u01",
+      "file": "assets-src/home/t3-u01.png",
+      "out": "content/tahun-3/unit-01/icon.webp",
+      "width": 240,
+      "size": "1024x1024",
+      "scene": "A sticker-style icon: a Malay father, mother and small child in a warm family hug, smiling, with a small pink heart floating above them. Head-and-shoulders group, filling about 85% of the picture."
+    },
+    {
+      "id": "t3-u02",
+      "file": "assets-src/home/t3-u02.png",
+      "out": "content/tahun-3/unit-02/icon.webp",
+      "width": 240,
+      "size": "1024x1024",
+      "scene": "A sticker-style icon: two friendly hands (one in a yellow sleeve, one in a blue sleeve) clasped in a firm handshake, with a red heart and three small sparkle lines above them."
+    },
+    {
+      "id": "t3-u03",
+      "file": "assets-src/home/t3-u03.png",
+      "out": "content/tahun-3/unit-03/icon.webp",
+      "width": 240,
+      "size": "1024x1024",
+      "scene": "A sticker-style icon: two open hands with blue cuffs cupped together from below, gently holding a big glossy red-pink heart with small sparkle lines around it."
+    },
+    {
+      "id": "t5-u01",
+      "file": "assets-src/home/t5-u01.png",
+      "out": "content/tahun-5/unit-01/icon.webp",
+      "width": 240,
+      "size": "1024x1024",
+      "scene": "A sticker-style icon: a happy Indian Malaysian father, mother and child close together, laughing, with two small pink hearts floating above them. Head-and-shoulders group, filling about 85% of the picture."
+    },
+    {
+      "id": "t5-u02",
+      "file": "assets-src/home/t5-u02.png",
+      "out": "content/tahun-5/unit-02/icon.webp",
+      "width": 240,
+      "size": "1024x1024",
+      "scene": "A sticker-style icon: a cosy house with a red roof and a little front door, and three simple colourful smiling people figures (one yellow, one blue, one pink) standing together in front of it, with small sparkle lines above the roof."
+    },
+    {
+      "id": "t5-u03",
+      "file": "assets-src/home/t5-u03.png",
+      "out": "content/tahun-5/unit-03/icon.webp",
+      "width": 240,
+      "size": "1024x1024",
+      "scene": "A sticker-style icon: three hands (yellow, blue and pink sleeves) stacked on top of each other in a team-spirit pile, seen from the side, with small sparkle lines above them."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+node_modules
+dist
+dev-dist
+coverage
+playwright-report
+test-results
+*.local
+.dev.vars
+.env
+.env.*
+!.env.example
+.wrangler
+*.log
+.DS_Store
+# Raw ChatGPT PNGs are converted to WebP at build time; keep sources out of the repo bundle if large
+
+# Textbook material (DBP / Ministry of Education copyright): reference only, never published or shipped
+tahun3/
+*.pdf

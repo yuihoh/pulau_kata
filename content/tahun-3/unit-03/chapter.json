@@ -1,0 +1,274 @@
+{
+  "id": "t3-u03",
+  "year": 3,
+  "tema": 1,
+  "unit": 3,
+  "reviewed": true,
+  "title": { "bm": "Keluarga Prihatin", "en": "A Caring Family", "zh": "互相关心的家庭" },
+  "words": [
+    {
+      "id": "prihatin",
+      "word": "prihatin",
+      "class": "kata adjektif",
+      "meaning": {
+        "bm": "mengambil berat tentang orang lain",
+        "en": "caring, concerned about others",
+        "zh": "关心别人的"
+      },
+      "image": "prihatin.webp",
+      "audio": "prihatin.mp3",
+      "example": {
+        "bm": "Ali murid yang prihatin. Dia selalu menolong kawan.",
+        "en": "Ali is a caring pupil. He always helps his friends.",
+        "zh": "阿里是个关心别人的学生，他常常帮助朋友。"
+      },
+      "synonym": "ambil berat",
+      "antonym": null,
+      "blank_sentences": ["Kakak sangat ___ dan selalu bertanya tentang keadaan nenek."],
+      "jumbled_sentence": ["Ibu", "saya", "sangat", "prihatin"],
+      "distractors": ["malas", "nakal", "sombong"]
+    },
+    {
+      "id": "bekal",
+      "word": "bekal",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "makanan yang dibawa untuk dimakan kemudian",
+        "en": "packed food to take along",
+        "zh": "随身带的食物；便当"
+      },
+      "image": "bekal.webp",
+      "audio": "bekal.mp3",
+      "example": {
+        "bm": "Ibu menyediakan bekal nasi goreng untuk saya.",
+        "en": "Mum packs fried rice for me to take along.",
+        "zh": "妈妈为我准备了炒饭便当。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Saya membawa ___ ke sekolah kerana kantin tutup hari ini."],
+      "jumbled_sentence": ["Adik", "membawa", "bekal", "ke", "sekolah"],
+      "distractors": ["bagasi", "payung", "kamus"]
+    },
+    {
+      "id": "bagasi",
+      "word": "bagasi",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "beg dan barang yang dibawa semasa berjalan jauh",
+        "en": "luggage",
+        "zh": "行李"
+      },
+      "image": "bagasi.webp",
+      "audio": "bagasi.mp3",
+      "example": {
+        "bm": "Ayah memasukkan bagasi ke dalam bonet kereta.",
+        "en": "Dad puts the luggage into the car boot.",
+        "zh": "爸爸把行李放进车尾箱。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Sebelum menaiki kapal terbang, kami menimbang ___ kami."],
+      "jumbled_sentence": ["Bagasi", "nenek", "sangat", "berat"],
+      "distractors": ["bahasa isyarat", "saudara-mara", "pemandangan"]
+    },
+    {
+      "id": "membimbing",
+      "word": "membimbing",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menunjukkan cara dan membantu seseorang belajar",
+        "en": "to guide, to coach",
+        "zh": "指导；辅导"
+      },
+      "image": "membimbing.webp",
+      "audio": "membimbing.mp3",
+      "example": {
+        "bm": "Cikgu membimbing kami membaca dengan betul.",
+        "en": "The teacher guides us to read correctly.",
+        "zh": "老师指导我们正确地朗读。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Abang ___ adik membuat kerja rumah matematik."],
+      "jumbled_sentence": ["Kakak", "membimbing", "adik", "mewarna", "gambar"],
+      "distractors": ["menjahit", "mengecat", "menghidangkan"]
+    },
+    {
+      "id": "bahasa-isyarat",
+      "word": "bahasa isyarat",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "cara berkomunikasi menggunakan gerakan tangan",
+        "en": "sign language",
+        "zh": "手语"
+      },
+      "image": "bahasa-isyarat.webp",
+      "audio": "bahasa-isyarat.mp3",
+      "example": {
+        "bm": "Kami belajar bahasa isyarat untuk berbual dengan kawan yang tidak dapat mendengar.",
+        "en": "We learn sign language to talk with a friend who cannot hear.",
+        "zh": "我们学手语，好和听不见的朋友交谈。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Rina tidak dapat mendengar, jadi dia berkomunikasi menggunakan ___."],
+      "jumbled_sentence": ["Saya", "belajar", "bahasa", "isyarat", "daripada", "guru"],
+      "distractors": ["kamus", "saudara-mara", "bekal"]
+    },
+    {
+      "id": "menjahit",
+      "word": "menjahit",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menyambung kain dengan jarum dan benang",
+        "en": "to sew",
+        "zh": "缝；缝纫"
+      },
+      "image": "menjahit.webp",
+      "audio": "menjahit.mp3",
+      "example": {
+        "bm": "Nenek menjahit baju kurung untuk saya.",
+        "en": "Grandma sews a baju kurung for me.",
+        "zh": "奶奶为我缝了一件马来传统服装。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ibu menggunakan mesin untuk ___ langsir baharu."],
+      "jumbled_sentence": ["Mak", "cik", "menjahit", "kostum", "itu"],
+      "distractors": ["mengecat", "memimpin", "meraikan"]
+    },
+    {
+      "id": "bertepuk-tangan",
+      "word": "bertepuk tangan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menepuk kedua-dua tapak tangan untuk memberi sokongan",
+        "en": "to clap (your hands)",
+        "zh": "拍手；鼓掌"
+      },
+      "image": "bertepuk-tangan.webp",
+      "audio": "bertepuk-tangan.mp3",
+      "example": {
+        "bm": "Penonton bertepuk tangan selepas persembahan itu.",
+        "en": "The audience clapped after the performance.",
+        "zh": "表演结束后，观众鼓掌。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Kami ___ apabila pasukan kami menang."],
+      "jumbled_sentence": ["Semua", "murid", "bertepuk", "tangan", "dengan", "gembira"],
+      "distractors": ["menjahit", "mengecat", "membimbing"]
+    },
+    {
+      "id": "menghidangkan",
+      "word": "menghidangkan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "meletakkan makanan atau minuman di atas meja untuk dimakan",
+        "en": "to serve (food or drinks)",
+        "zh": "端上（食物）；上菜"
+      },
+      "image": "menghidangkan.webp",
+      "audio": "menghidangkan.mp3",
+      "example": {
+        "bm": "Kakak menghidangkan teh panas kepada tetamu.",
+        "en": "My elder sister serves hot tea to the guests.",
+        "zh": "姐姐给客人端上热茶。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Ibu ___ nasi lemak untuk sarapan pagi."],
+      "jumbled_sentence": ["Ayah", "menghidangkan", "bubur", "kepada", "nenek"],
+      "distractors": ["menjahit", "mengecat", "memimpin"]
+    },
+    {
+      "id": "mengecat",
+      "word": "mengecat",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menyapu cat pada sesuatu supaya berwarna",
+        "en": "to paint (a wall, door, etc.)",
+        "zh": "油漆；粉刷"
+      },
+      "image": "mengecat.webp",
+      "audio": "mengecat.mp3",
+      "example": {
+        "bm": "Ayah mengecat dinding bilik saya dengan warna biru.",
+        "en": "Dad paints my bedroom wall blue.",
+        "zh": "爸爸把我房间的墙漆成蓝色。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Pak cik memakai berus untuk ___ pintu rumah."],
+      "jumbled_sentence": ["Abang", "mengecat", "basikal", "lamanya"],
+      "distractors": ["menjahit", "menghidangkan", "memimpin"]
+    },
+    {
+      "id": "memimpin",
+      "word": "memimpin",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "memegang tangan seseorang untuk membawanya berjalan",
+        "en": "to lead (someone) by the hand",
+        "zh": "牵着（某人的手）走"
+      },
+      "image": "memimpin.webp",
+      "audio": "memimpin.mp3",
+      "example": {
+        "bm": "Kakak memimpin adik melintas jalan.",
+        "en": "My elder sister leads our little brother by the hand across the road.",
+        "zh": "姐姐牵着弟弟过马路。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Saya ___ tangan datuk semasa kami berjalan di taman."],
+      "jumbled_sentence": ["Ibu", "memimpin", "adik", "ke", "kelas"],
+      "distractors": ["menjahit", "mengecat", "menghidangkan"]
+    },
+    {
+      "id": "meraikan",
+      "word": "meraikan",
+      "class": "kata kerja",
+      "meaning": {
+        "bm": "menyambut sesuatu hari atau kejayaan dengan gembira",
+        "en": "to celebrate",
+        "zh": "庆祝"
+      },
+      "image": "meraikan.webp",
+      "audio": "meraikan.mp3",
+      "example": {
+        "bm": "Penduduk kampung meraikan Hari Raya bersama-sama.",
+        "en": "The villagers celebrate Hari Raya together.",
+        "zh": "村民们一起庆祝开斋节。"
+      },
+      "synonym": "menyambut",
+      "antonym": null,
+      "blank_sentences": ["Kami makan kek untuk ___ kejayaan abang."],
+      "jumbled_sentence": ["Keluarga", "kami", "meraikan", "Tahun", "Baru", "Cina"],
+      "distractors": ["menjahit", "mengecat", "memimpin"]
+    },
+    {
+      "id": "saudara-mara",
+      "word": "saudara-mara",
+      "class": "kata nama",
+      "meaning": {
+        "bm": "orang yang mempunyai hubungan keluarga dengan kita",
+        "en": "relatives",
+        "zh": "亲戚"
+      },
+      "image": "saudara-mara.webp",
+      "audio": "saudara-mara.mp3",
+      "example": {
+        "bm": "Saudara-mara datang ke rumah kami semasa Deepavali.",
+        "en": "Our relatives come to our house during Deepavali.",
+        "zh": "屠妖节时，亲戚们来我们家。"
+      },
+      "synonym": null,
+      "antonym": null,
+      "blank_sentences": ["Semasa majlis perkahwinan, kami bertemu dengan ramai ___."],
+      "jumbled_sentence": ["Saya", "melawat", "saudara-mara", "di", "kampung"],
+      "distractors": ["kamus", "bagasi", "bekal"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+- **Medium — [apps/web/src/games/Padankan.tsx:105](C:/Users/yuiho/projects/pulau_kata/apps/web/src/games/Padankan.tsx:105): Missing images make matching arbitrary.** Unit 3 has no images, so all six picture cards display the same placeholder. Children must guess matches and lose stars without useful feedback. Supply the images or use distinct translated meanings as fallback faces.
+
+- **Medium — [apps/web/src/storage/IdbProgressStore.ts:48](C:/Users/yuiho/projects/pulau_kata/apps/web/src/storage/IdbProgressStore.ts:48): Stale tabs overwrite earned progress.** If two tabs load a chapter, completing Kenali in one and opening a card in the other replaces the completed record with the stale snapshot, losing stars and relocking Uji after reload. Merge progress atomically when saving—union opened cards and retain maximum stars—and synchronize tab caches.
+
+- **Medium — [apps/web/src/components/ui.tsx:150](C:/Users/yuiho/projects/pulau_kata/apps/web/src/components/ui.tsx:150): Dialog focus can escape and is never restored.** A keyboard user can Tab beyond Close into the covered page; dismissing the dialog also loses their position in the card grid. Use a native modal dialog or implement focus trapping, inert background content, and restoration to the opening card.
+
+- **Low — [apps/web/src/app/router.ts:16](C:/Users/yuiho/projects/pulau_kata/apps/web/src/app/router.ts:16): Malformed hash encoding crashes rendering.** Opening `#/c/%` throws an uncaught `URIError` from `decodeURIComponent`, preventing the fallback screen from appearing. Catch decoding failures and return a safe route.
+
+Overall verdict: Changes requested for progress preservation, playable fallback cards, and modal accessibility.

@@ -1,0 +1,60 @@
+{
+  "note": "G-2 hornbill mascot (Yang, 18 Nov 2026). First version by Codex image generation; an illustrator may redraw it later. Generate 'wave' first, then every other pose with the 'wave' PNG attached as the character reference. Source PNGs stay here; `scripts`-free conversion to transparent WebP goes to apps/web/src/assets/mascot/. A pose's optional \"clear\" lists [x,y] points (in the 1024 px PNG) inside white gaps enclosed by the outline (e.g. between a raised wing and the head) that must also become transparent; eye whites and the belly stay.",
+  "style": "Flat cartoon character illustration in a bright, cheerful, child-friendly picture-book style for Malaysian primary school children aged 9, matching simple flat vector art: soft rounded shapes, clean dark outlines, flat colours with very light shading. The character is a cute chibi rhinoceros hornbill (burung enggang) from Malaysia: a round, chubby black body with a white belly patch, a large friendly face with big round shiny dark eyes and small eyebrows, a very large, long, down-curved banana-shaped yellow beak (about as long as its head is wide) with a bright orange-red casque sitting directly ON TOP OF THE BEAK and curving upward at the front tip like a rhinoceros horn (the casque is part of the beak, not on the head; there is no crest or tuft of feathers on top of the head), a short white tail with a black band, short orange feet, and two small black wings it uses like hands. It always looks warm, kind and encouraging. Full body, centred, filling about 80% of the square, on a plain solid pure white background (#FFFFFF) with no shadow, no ground, no scenery and no other objects unless the pose names one. Square 1:1. Absolutely no text, letters, numbers, words or signs anywhere in the image.",
+  "consistency": "Keep EXACTLY the same character as in the attached reference picture: same body shape and proportions, same colours, same beak and casque, same eyes, same line style. Only the pose and facial expression change.",
+  "poses": [
+    {
+      "id": "wave",
+      "file": "assets-src/mascot/wave.png",
+      "use": "Home, greeting",
+      "pose": "Standing, smiling widely, waving hello with its right wing raised high, the left wing relaxed."
+    },
+    {
+      "id": "cheer",
+      "file": "assets-src/mascot/cheer.png",
+      "use": "Right answer",
+      "pose": "Jumping up with joy, both wings raised high above its head, eyes happily closed in big curved smiles, beak open in a happy cheer.",
+      "clear": [
+        [682, 384],
+        [302, 412]
+      ]
+    },
+    {
+      "id": "think",
+      "file": "assets-src/mascot/think.png",
+      "use": "Hint",
+      "pose": "Standing, head tilted, one wing tip touching its beak thoughtfully, eyes looking up, a gentle curious smile.",
+      "clear": [[594, 464]]
+    },
+    {
+      "id": "encourage",
+      "file": "assets-src/mascot/encourage.png",
+      "use": "Wrong answer (Cuba lagi!)",
+      "pose": "Standing, giving a kind encouraging thumbs-up with one wing, a warm gentle smile, slightly leaning forward, eyebrows friendly."
+    },
+    {
+      "id": "clap",
+      "file": "assets-src/mascot/clap.png",
+      "use": "Stage complete",
+      "pose": "Standing, clapping its two wings together in front of its chest, big happy open-beak smile, eyes sparkling."
+    },
+    {
+      "id": "point",
+      "file": "assets-src/mascot/point.png",
+      "use": "Showing the next step",
+      "pose": "Standing, turned slightly to the side, pointing to the right of the picture with one wing, smiling and looking toward where it points."
+    },
+    {
+      "id": "star",
+      "file": "assets-src/mascot/star.png",
+      "use": "Unit complete, rewards",
+      "pose": "Standing proudly, holding a big shiny golden five-pointed star up with both wings, beaming smile."
+    },
+    {
+      "id": "sleep",
+      "file": "assets-src/mascot/sleep.png",
+      "use": "Come back tomorrow / empty states",
+      "pose": "Sitting down, sleeping peacefully with eyes closed and a small smile, wings folded on its belly, a tiny crescent moon and two small stars floating above its head."
+    }
+  ]
+}

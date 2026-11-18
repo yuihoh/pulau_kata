@@ -1,0 +1,77 @@
+{
+  "style": "Simple flat cartoon illustration in a bright, cheerful, child-friendly picture-book style for Malaysian primary school children aged 9. Soft rounded shapes, clean outlines. Malaysian setting. Square 1:1. Absolutely no text, letters, numbers, words or signs anywhere in the image.",
+  "kinds": {
+    "background": "A full-bleed scene background that fills the whole square (no white border). No people or animals. Keep the bottom third of the picture simple and open (flat ground) so objects can be placed on it later.",
+    "portrait": "A friendly head-and-shoulders character portrait, facing the viewer and smiling, on a plain white background. The character belongs to one Malay Malaysian family: modest clothing.",
+    "prop": "A single object drawn as a sticker, centred, on a plain white background, with nothing else in the picture.",
+    "reward": "A warm, happy picture on a plain white background, framed like a photograph."
+  },
+  "images": [
+    {
+      "id": "bg-campsite",
+      "kind": "background",
+      "file": "content/tahun-3/unit-02/quest/bg-campsite.png",
+      "scene": "A grassy campsite clearing at the edge of a green Malaysian rainforest in the late afternoon, tall trees and ferns at the sides, a small campfire circle of stones, soft blue sky with clouds."
+    },
+    {
+      "id": "bg-river",
+      "kind": "background",
+      "file": "content/tahun-3/unit-02/quest/bg-river.png",
+      "scene": "A calm, clear river flowing through the rainforest with smooth rocks, a grassy bank in the foreground, and a rambutan tree full of red hairy fruits growing on the bank."
+    },
+    {
+      "id": "bg-waterfall",
+      "kind": "background",
+      "file": "content/tahun-3/unit-02/quest/bg-waterfall.png",
+      "scene": "A beautiful tall waterfall in the Malaysian rainforest falling into a clear blue pool, mossy rocks, lush green trees, a gentle rainbow in the mist, a flat rocky area in the foreground."
+    },
+    {
+      "id": "aina",
+      "kind": "portrait",
+      "file": "content/tahun-3/unit-02/quest/aina.png",
+      "scene": "Aina, a cheerful 9-year-old Malay girl wearing a pink tudung and a light green T-shirt, with a small backpack strap on her shoulder."
+    },
+    {
+      "id": "ayah",
+      "kind": "portrait",
+      "file": "content/tahun-3/unit-02/quest/ayah.png",
+      "scene": "A kind Malay father in his late thirties with short black hair and a neat moustache, wearing a blue outdoor shirt and a bucket hat."
+    },
+    {
+      "id": "mak-long",
+      "kind": "portrait",
+      "file": "content/tahun-3/unit-02/quest/mak-long.png",
+      "scene": "A warm Malay aunt in her early forties wearing a purple tudung and a simple long-sleeved floral blouse, smiling kindly."
+    },
+    {
+      "id": "khemah",
+      "kind": "prop",
+      "file": "content/tahun-3/unit-02/quest/khemah.png",
+      "scene": "An orange dome camping tent with its door flap open."
+    },
+    {
+      "id": "joran",
+      "kind": "prop",
+      "file": "content/tahun-3/unit-02/quest/joran.png",
+      "scene": "A fishing rod with a reel and a line ending in a small hook, lying diagonally."
+    },
+    {
+      "id": "bakul",
+      "kind": "prop",
+      "file": "content/tahun-3/unit-02/quest/bakul.png",
+      "scene": "A woven rattan basket full of fresh red hairy rambutan fruits."
+    },
+    {
+      "id": "kamera",
+      "kind": "prop",
+      "file": "content/tahun-3/unit-02/quest/kamera.png",
+      "scene": "A small bright yellow digital camera."
+    },
+    {
+      "id": "kenangan",
+      "kind": "reward",
+      "file": "content/tahun-3/unit-02/quest/kenangan.png",
+      "scene": "A happy Malay family holiday photo in front of a waterfall in the rainforest: a father in a bucket hat, an aunt in a purple tudung, a 9-year-old girl in a pink tudung and a 9-year-old boy, all smiling and waving together."
+    }
+  ]
+}
