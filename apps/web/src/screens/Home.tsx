@@ -141,6 +141,20 @@ export function Home() {
               <Icon name="lab" /> {t('home.lab')}
             </a>
             <a
+              href={hrefFor({ name: 'lab', game: 'tangkap' })}
+              className="inline-flex min-h-11 items-center gap-1 rounded-full border-2 border-dashed border-lime-500 bg-lime-50 px-3 text-sm font-semibold text-lime-800"
+              data-testid="lab-tangkap"
+            >
+              <Icon name="lab" /> {t('home.labTangkap')}
+            </a>
+            <a
+              href={hrefFor({ name: 'lab', game: 'belon' })}
+              className="inline-flex min-h-11 items-center gap-1 rounded-full border-2 border-dashed border-rose-400 bg-rose-50 px-3 text-sm font-semibold text-rose-800"
+              data-testid="lab-belon"
+            >
+              <Icon name="lab" /> {t('home.labBelon')}
+            </a>
+            <a
               href={hrefFor({ name: 'lab', game: 'misi', chapterId: 't3-u02' })}
               className="inline-flex min-h-11 items-center gap-1 rounded-full border-2 border-dashed border-emerald-400 bg-emerald-50 px-3 text-sm font-semibold text-emerald-800"
               data-testid="lab-misi"

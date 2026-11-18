@@ -25,7 +25,9 @@
     "labMisi": "Try the story adventure (prototype)",
     "labAudio": "Review the voices (listen to every clip)",
     "unitDone": "Finished",
-    "labTitle": "Prototypes for testing"
+    "labTitle": "Prototypes for testing",
+    "labTangkap": "Try the fruit-catching game (prototype)",
+    "labBelon": "Try the balloon-popping game (prototype)"
   },
   "stage": {
     "kenali": "Get to know the words",
@@ -203,5 +205,34 @@
     "practise": "Words to practise",
     "changeUnit": "Choose another unit",
     "home": "Back to home"
+  },
+  "tangkap": {
+    "title": "Tangkap Buah",
+    "intro": "Catch the fruit with the right word!",
+    "howTo": "Drag to move the basket, or use the arrow buttons. Caught the wrong one? Just try again.",
+    "relaxed": "Relaxed mode: the fruit falls slowly and there is more time",
+    "moveLeft": "Move the basket left",
+    "moveRight": "Move the basket right",
+    "words": "Fruit words: {{list}}",
+    "notThat": "Not that one!",
+    "hint": "Look for the glowing fruit",
+    "result": "{{correct}} of {{total}} right the first time",
+    "basket": "Your basket",
+    "chooseWord": "Choose a word without moving the basket"
+  },
+  "belon": {
+    "title": "Pecah Belon",
+    "intro": "Pop the balloons with the right type of word!",
+    "howTo": "Tap a balloon to pop it. Popped the wrong one? No problem.",
+    "relaxed": "Relaxed mode: the balloons float slowly",
+    "round": "Round {{n}} of {{total}}",
+    "popEvery": "Pop every {{type}}!",
+    "toGo": "{{count}} to go",
+    "allPopped": "All popped!",
+    "wrongPop": "That one is not a {{type}}",
+    "result": "{{points}} of {{total}} balloons popped right",
+    "none": "This unit does not have enough different word types for this game yet.",
+    "balloons": "Balloons",
+    "balloonOf": "{{word}} balloon"
   }
 }

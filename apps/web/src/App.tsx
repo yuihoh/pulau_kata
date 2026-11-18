@@ -20,6 +20,8 @@ import { useProgress } from './storage/ProgressProvider';
 const SampanKata = lazy(() => import('./games/SampanKata'));
 const CabaranAkhir = lazy(() => import('./stages/CabaranAkhir'));
 const Misi = lazy(() => import('./games/Misi'));
+const TangkapBuah = lazy(() => import('./games/TangkapBuah'));
+const PecahBelon = lazy(() => import('./games/PecahBelon'));
 const AudioReview = lazy(() => import('./games/AudioReview'));
 
 /**
@@ -113,6 +115,10 @@ function Routes() {
       <Suspense fallback={loading}>
         {route.game === 'misi' ? (
           <Misi key={route.chapterId ?? ''} chapterId={route.chapterId} />
+        ) : route.game === 'tangkap' ? (
+          <TangkapBuah chapterId={route.chapterId} />
+        ) : route.game === 'belon' ? (
+          <PecahBelon chapterId={route.chapterId} />
         ) : (
           <SampanKata chapterId={route.chapterId} />
         )}

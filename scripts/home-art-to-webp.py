@@ -26,7 +26,7 @@ def is_bg(px: tuple[int, int, int, int]) -> bool:
     return r >= 255 - TOLERANCE and g >= 255 - TOLERANCE and b >= 255 - TOLERANCE
 
 
-def remove_background(img: Image.Image) -> Image.Image:
+def remove_background(img: Image.Image, seeds: list[list[int]] | None = None) -> Image.Image:
     img = img.convert("RGBA")
     w, h = img.size
     px = img.load()
@@ -36,6 +36,8 @@ def remove_background(img: Image.Image) -> Image.Image:
         queue.extend([(x, 0), (x, h - 1)])
     for y in range(h):
         queue.extend([(0, y), (w - 1, y)])
+    # Holes enclosed by the outline (an item's "clear" points): the border fill cannot reach them.
+    queue.extend((x, y) for x, y in seeds or [])
     while queue:
         x, y = queue.popleft()
         i = y * w + x
@@ -93,7 +95,7 @@ def main(prompts: str = "assets-src/home/home-prompts.json") -> None:
         if not src.exists():
             print(f"missing {src}")
             continue
-        img = remove_background(Image.open(src))
+        img = remove_background(Image.open(src), item.get("clear"))
         box = img.getbbox()
         if box:
             img = img.crop(box)

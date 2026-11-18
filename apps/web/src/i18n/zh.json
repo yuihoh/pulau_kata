@@ -25,7 +25,9 @@
     "labMisi": "试玩故事冒险（原型）",
     "labAudio": "审听语音（逐条听）",
     "unitDone": "已完成",
-    "labTitle": "测试用原型"
+    "labTitle": "测试用原型",
+    "labTangkap": "试玩接水果游戏（原型）",
+    "labBelon": "试玩戳气球游戏（原型）"
   },
   "stage": {
     "kenali": "认识单词",
@@ -203,5 +205,34 @@
     "practise": "要多练习的单词",
     "changeUnit": "换一个单元",
     "home": "返回首页"
+  },
+  "tangkap": {
+    "title": "Tangkap Buah",
+    "intro": "接住写着正确单词的水果！",
+    "howTo": "拖动来移动篮子，或用左右箭头按钮。接错了？再试一次就好。",
+    "relaxed": "轻松模式：水果掉得慢，时间也更多",
+    "moveLeft": "篮子向左移",
+    "moveRight": "篮子向右移",
+    "words": "水果上的单词：{{list}}",
+    "notThat": "不是这个哦！",
+    "hint": "找一找发光的水果",
+    "result": "第一次就接对 {{correct}} / {{total}} 个",
+    "basket": "你的篮子",
+    "chooseWord": "不移动篮子，直接选一个单词"
+  },
+  "belon": {
+    "title": "Pecah Belon",
+    "intro": "戳破词类正确的气球！",
+    "howTo": "点一下气球就能戳破它。戳错了？没关系。",
+    "relaxed": "轻松模式：气球飘得慢",
+    "round": "第 {{n}} / {{total}} 轮",
+    "popEvery": "戳破所有{{type}}！",
+    "toGo": "还剩 {{count}} 个",
+    "allPopped": "全部戳破了！",
+    "wrongPop": "这个不是{{type}}",
+    "result": "戳对了 {{points}} / {{total}} 个气球",
+    "none": "这个单元的词类还不够多，暂时玩不了这个游戏。",
+    "balloons": "气球",
+    "balloonOf": "{{word}} 气球"
   }
 }

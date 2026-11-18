@@ -6,6 +6,8 @@
 import type { IconProps, IconWeight } from '@phosphor-icons/react/dist/lib/types';
 import { ArrowLeftIcon } from '@phosphor-icons/react/dist/csr/ArrowLeft';
 import { BackpackIcon } from '@phosphor-icons/react/dist/csr/Backpack';
+import { BalloonIcon } from '@phosphor-icons/react/dist/csr/Balloon';
+import { BasketIcon } from '@phosphor-icons/react/dist/csr/Basket';
 import { BoatIcon } from '@phosphor-icons/react/dist/csr/Boat';
 import { BookOpenIcon } from '@phosphor-icons/react/dist/csr/BookOpen';
 import { CaretLeftIcon } from '@phosphor-icons/react/dist/csr/CaretLeft';
@@ -37,6 +39,8 @@ import { TrophyIcon } from '@phosphor-icons/react/dist/csr/Trophy';
 const ICONS = {
   back: ArrowLeftIcon,
   bag: BackpackIcon,
+  balloon: BalloonIcon,
+  basket: BasketIcon,
   blocks: CubeIcon,
   boat: BoatIcon,
   book: BookOpenIcon,

@@ -1,0 +1,26 @@
+{
+  "note": "Mini-game art for Tangkap Buah (catch the fruit) and Pecah Belon (Yang, 18 Nov 2026). Same pipeline as assets-src/home: Codex on plain white, then `py -I scripts/home-art-to-webp.py assets-src/minigames/minigames-prompts.json`. Balloons are drawn in code. Words are drawn in code on top of the fruit. An item's optional \"clear\" lists [x,y] points (in the 1024 px PNG) inside white holes enclosed by the outline (e.g. a basket handle) that must also become transparent.",
+  "style": "Flat cartoon game illustration in a bright, cheerful, child-friendly style for a mobile game for Malaysian primary school children aged 9: soft rounded shapes, clean dark-brown outlines, glossy flat colours with light shading. A single object centred on a plain solid pure white background (#FFFFFF), no shadow, no ground, no scenery. Absolutely no text, letters, numbers, words or signs anywhere in the image.",
+  "items": [
+    {
+      "id": "rambutan",
+      "file": "assets-src/minigames/rambutan.png",
+      "out": "apps/web/src/assets/minigames/rambutan.webp",
+      "width": 200,
+      "size": "1024x1024",
+      "scene": "One ripe rambutan fruit: a round, bright red fruit covered in soft curly green-tipped hairs, with a short green stem and one small green leaf on top. Plain and blank (no face). Fills about 80% of the picture."
+    },
+    {
+      "id": "basket",
+      "file": "assets-src/minigames/basket.png",
+      "out": "apps/web/src/assets/minigames/basket.webp",
+      "width": 320,
+      "size": "1024x1024",
+      "scene": "A woven rattan fruit basket seen from the front, wide and shallow with a curved handle on each side and a simple pattern of woven stripes in warm tan and brown, with a little green leaf tucked at the rim. Empty. Fills about 85% of the picture width.",
+      "clear": [
+        [86, 328],
+        [930, 328]
+      ]
+    }
+  ]
+}

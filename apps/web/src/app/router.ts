@@ -5,12 +5,14 @@
  *   #/c/<chapterId>/<stage>  a stage
  *   #/lab/sampan[/<chapterId>]  prototype games (not linked in production)
  *   #/lab/misi[/<chapterId>]
+ *   #/lab/tangkap[/<chapterId>]  Tangkap Buah (catch the fruit)
+ *   #/lab/belon[/<chapterId>]    Pecah Belon (pop the balloons)
  *   #/koleksi                collectibles (postcards, Misi pictures)
  */
 import { useSyncExternalStore } from 'react';
 import { STAGES, type StageId } from '../engine';
 
-export const LAB_GAMES = ['sampan', 'misi', 'audio'] as const;
+export const LAB_GAMES = ['sampan', 'misi', 'audio', 'tangkap', 'belon'] as const;
 export type LabGame = (typeof LAB_GAMES)[number];
 
 export type Route =

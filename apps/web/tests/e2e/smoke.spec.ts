@@ -460,3 +460,185 @@ test('Sampan Kata fits a 320x568 phone; buoys stop at the boat; pause covers fee
   });
   expect(top).toContain('Paused');
 });
+
+// G-4: the two mini-games (lab prototypes). Each is played for real, and any console error
+// fails the test (a duplicate React key in Pecah Belon was caught this way).
+function watchErrors(page: Page) {
+  const errors: string[] = [];
+  page.on('pageerror', (e) => errors.push(String(e)));
+  page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
+  return errors;
+}
+
+test('Tangkap Buah: move the basket under the right fruit; pause; the result', async ({ page }) => {
+  const errors = watchErrors(page);
+  await page.goto('/#/lab/tangkap/t3-u01');
+  await expect(page.getByText('Catch the fruit with the right word!')).toBeVisible();
+  await page.getByRole('button', { name: /Start/ }).click();
+  await expect(page.getByTestId('orchard')).toBeVisible();
+  await expect(page.getByTestId('wood-sign')).toBeVisible();
+
+  // Follow the right fruit with the basket (a tap on the orchard moves it) until it is caught.
+  const orchard = page.getByTestId('orchard');
+  const caught = page.getByText('Betul!');
+  for (let i = 0; i < 120 && !(await caught.count()); i++) {
+    const right = page.locator('[data-testid=fruit][data-right=true]').first();
+    const box = (await right.count()) ? await right.boundingBox() : null;
+    const o = await orchard.boundingBox();
+    if (box && o) await page.mouse.click(box.x + box.width / 2, o.y + o.height - 20);
+    await page.waitForTimeout(150);
+  }
+  await expect(caught).toBeVisible();
+  // The hornbill cheers any right catch (points only count for a clean first catch).
+  await expect(page.locator('[data-testid=orchard] [data-pose=cheer]')).toBeVisible();
+
+  await page.getByRole('button', { name: 'Pause' }).click();
+  await expect(page.getByText('Paused')).toBeVisible();
+  await page.getByRole('button', { name: 'Resume' }).click();
+  expect(errors).toEqual([]);
+});
+
+test('Pecah Belon: pop every balloon of the named type (keyboard once, then real taps)', async ({
+  page,
+}) => {
+  test.setTimeout(150_000);
+  const errors = watchErrors(page);
+  await page.goto('/#/lab/belon/t3-u02');
+  await page.getByRole('button', { name: /Start/ }).click();
+  await expect(page.getByTestId('belon-banner')).toBeVisible();
+  await expect(page.getByTestId('belon-prompt')).toHaveAttribute('data-target', /^kata /);
+
+  const sky = page.getByTestId('sky');
+  const targets = page.locator('[data-testid=balloon][data-target=true]');
+  const result = page.getByTestId('belon-result');
+
+  // Keyboard: a balloon is a real button, so Tab/Enter pops it (focus it, press Enter).
+  await expect(targets.first()).toBeVisible({ timeout: 15000 });
+  const before = await page.getByTestId('belon-togo').textContent();
+  await targets.first().focus();
+  await page.keyboard.press('Enter');
+  await expect(page.getByTestId('belon-togo')).not.toHaveText(before!);
+
+  // Real taps at each balloon's centre (balloons move, so read the position just before).
+  let worstEdge = 99999;
+  for (let i = 0; i < 600 && !(await result.count()); i++) {
+    const field = await sky.boundingBox();
+    // A balloon is removed only once it is completely above the field: none that is still in
+    // the page may already be wholly above it.
+    for (const bb of await page
+      .getByTestId('balloon')
+      .evaluateAll((els) => els.map((el) => el.getBoundingClientRect().bottom)))
+      if (field) worstEdge = Math.min(worstEdge, bb - field.y);
+    const n = await targets.count();
+    for (let k = 0; k < n; k++) {
+      const box = await targets.nth(k).boundingBox();
+      if (!box || !field) continue;
+      const x = box.x + box.width / 2;
+      const y = box.y + 50;
+      if (y > field.y + 8 && y < field.y + field.height - 8) await page.mouse.click(x, y);
+    }
+    await page.waitForTimeout(120);
+  }
+  await expect(result).toBeVisible();
+  expect(worstEdge).toBeGreaterThan(0); // never a balloon that has already left the screen
+  // Real taps can land on a neighbouring balloon, so allow one slip (2 or 3 stars).
+  await expect(result.locator('[data-stars]')).toHaveAttribute('data-stars', /^[23]$/);
+  await expect(page.getByText(/balloons popped right/)).toBeVisible();
+  expect(errors).toEqual([]);
+});
+
+test('Tangkap Buah: a whole game by keyboard, choosing words as buttons', async ({ page }) => {
+  test.setTimeout(120_000);
+  const errors = watchErrors(page);
+  await page.goto('/#/lab/tangkap/t3-u03');
+  await page.getByRole('button', { name: /Start/ }).click();
+  const result = page.getByTestId('tangkap-result');
+  for (let i = 0; i < 40 && !(await result.count()); i++) {
+    const wordId = await page.getByTestId('sampan-prompt').getAttribute('data-word-id');
+    const group = page.getByTestId('tangkap-choices');
+    // The right word is the one whose option id is the prompt's word id.
+    const right = group.locator(`[data-option-id="${wordId}"]`);
+    await right.focus(); // the row appears when it has focus
+    await expect(group).toBeVisible();
+    await page.keyboard.press('Enter');
+    await expect(page.getByText('Betul!')).toBeVisible();
+    await page.waitForTimeout(900); // the answer card, then the next question
+  }
+  await expect(result).toBeVisible();
+  await expect(result.locator('[data-stars]')).toHaveAttribute('data-stars', '3');
+  expect(errors).toEqual([]);
+});
+
+test('both mini-games fit a 320x568 phone', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 568 });
+  for (const [game, area, button] of [
+    ['tangkap', 'orchard', /Move the basket right/],
+    ['belon', 'sky', /Pause/],
+  ] as const) {
+    await page.goto(`/#/lab/${game}/t3-u01`);
+    await page.getByRole('button', { name: /Start/ }).click();
+    await expect(page.getByTestId(area)).toBeVisible();
+    const fit = await page.evaluate(
+      (label) => {
+        const b = [...document.querySelectorAll('button')].find((x) =>
+          new RegExp(label).test(x.getAttribute('aria-label') ?? ''),
+        )!;
+        const lang = document.querySelector('header button:last-of-type')!.getBoundingClientRect();
+        return {
+          bottom: b.getBoundingClientRect().bottom,
+          langRight: lang.right,
+          sideways: document.scrollingElement!.scrollWidth - window.innerWidth,
+          inner: window.innerHeight,
+        };
+      },
+      (button as RegExp).source,
+    );
+    expect(fit.bottom, game).toBeLessThanOrEqual(fit.inner);
+    expect(fit.langRight, game).toBeLessThanOrEqual(320);
+    expect(fit.sideways, game).toBeLessThanOrEqual(0);
+    if (game === 'tangkap') {
+      const o = (await page.getByTestId('orchard').boundingBox())!;
+      for (const x of [o.x + 2, o.x + o.width - 2]) {
+        await page.mouse.click(x, o.y + o.height / 2);
+        const b = (await page.getByTestId('basket').boundingBox())!;
+        expect(b.x, 'basket left edge').toBeGreaterThanOrEqual(o.x - 1);
+        expect(b.x + b.width, 'basket right edge').toBeLessThanOrEqual(o.x + o.width + 1);
+      }
+    }
+  }
+});
+
+// G-4 review #3: an unpopped balloon must only be removed once it is completely above the
+// field (it used to vanish while a large part was still visible and tappable).
+test('Pecah Belon: balloons leave only when out of sight', async ({ page }) => {
+  test.setTimeout(60_000);
+  await page.goto('/#/lab/belon/t3-u01');
+  await page.getByRole('button', { name: /Start/ }).click();
+  const worst = await page.evaluate(
+    () =>
+      new Promise<{ leftSeen: number; worstVisible: number }>((resolve) => {
+        const last = new Map<string, number>();
+        let leftSeen = 0;
+        let worstVisible = -9999;
+        const t0 = performance.now();
+        const tick = () => {
+          const top = document.querySelector('[data-testid=sky]')!.getBoundingClientRect().top;
+          const now = new Map<string, number>();
+          for (const b of document.querySelectorAll('[data-testid=balloon]'))
+            now.set((b as HTMLElement).dataset.balloonId!, b.getBoundingClientRect().bottom - top);
+          for (const [id, bottom] of last)
+            if (!now.has(id)) {
+              leftSeen++;
+              worstVisible = Math.max(worstVisible, bottom); // how much was still below the field's top edge
+            }
+          last.clear();
+          for (const [id, v] of now) last.set(id, v);
+          if (performance.now() - t0 < 14000) requestAnimationFrame(tick);
+          else resolve({ leftSeen, worstVisible });
+        };
+        tick();
+      }),
+  );
+  expect(worst.leftSeen).toBeGreaterThan(0); // balloons did float away
+  expect(worst.worstVisible).toBeLessThanOrEqual(25); // none was still visible when removed
+});

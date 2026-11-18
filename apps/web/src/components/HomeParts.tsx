@@ -41,7 +41,7 @@ export function WoodSign({
   const Heading = level === 1 ? 'h1' : 'h2';
   return (
     <div
-      className={`relative w-fit max-w-full drop-shadow-md ${compact ? 'min-w-24' : 'min-w-48'}`}
+      className={`relative w-fit max-w-full drop-shadow-md ${compact ? 'min-w-[min(10rem,100%)]' : 'min-w-48'}`}
       data-testid="wood-sign"
     >
       {signUrl ? (

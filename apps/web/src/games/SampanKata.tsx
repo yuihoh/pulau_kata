@@ -15,19 +15,25 @@ import {
 import { playSfx } from '../audio/sfx';
 import { useTranslation } from 'react-i18next';
 import { hrefFor } from '../app/router';
-import {
-  AudioButton,
-  Header,
-  Page,
-  PrimaryButton,
-  Stars,
-  WordImage,
-  useUiLang,
-} from '../components/ui';
+import { Header, Page, PrimaryButton, Stars, useUiLang } from '../components/ui';
 import { Confetti } from '../components/celebrate';
 import { Icon } from '../components/Icon';
 import { Mascot } from '../components/Mascot';
-import { audioUrl, imageUrl, tracks, type ChapterEntry } from '../content/loader';
+import { tracks, type ChapterEntry } from '../content/loader';
+import {
+  GameHud,
+  PractiseList,
+  PromptCard,
+  SceneDecor,
+  TimeBar,
+  prefersReducedMotion,
+  promptKinds,
+  sceneArt,
+  useAnimationFrame,
+} from './miniGameParts';
+
+// Re-exported for the Cabaran Akhir stage, which imports them from here.
+export { PractiseList, prefersReducedMotion, promptKinds };
 import {
   LANES,
   SAMPAN_DEFAULTS,
@@ -37,7 +43,6 @@ import {
   steer,
   summarise,
   timeLeftMs,
-  type PromptKind,
   type SampanState,
 } from '../engine';
 
@@ -47,8 +52,6 @@ const art = import.meta.glob<string>('../assets/sampan/*.webp', {
   import: 'default',
 });
 const boatUrl = art['../assets/sampan/boat.webp'];
-const cloudUrl = art['../assets/sampan/cloud.webp'];
-const foliageUrl = art['../assets/sampan/foliage.webp'];
 
 /** The three lanes' buoy colours, as in the mockup: pink, yellow, green. */
 const BUOY_TONES = [
@@ -80,41 +83,7 @@ function Waves() {
   );
 }
 
-/** Clouds at the top and leaves in the bottom corners of the game page (decoration only). */
-function SceneDecor() {
-  return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      {cloudUrl && (
-        <>
-          <img src={cloudUrl} alt="" className="absolute top-2 -left-4 w-24 opacity-90" />
-          <img src={cloudUrl} alt="" className="absolute top-14 -right-5 w-20 opacity-80" />
-        </>
-      )}
-      {foliageUrl && (
-        <>
-          <img src={foliageUrl} alt="" className="absolute -bottom-3 -left-4 w-32" />
-          <img src={foliageUrl} alt="" className="absolute -right-4 -bottom-3 w-32 -scale-x-100" />
-        </>
-      )}
-    </div>
-  );
-}
-
 const allChapters = () => tracks.flatMap((t) => t.chapters);
-
-/** Prompt kinds the chapter supports: pictures/audio only when every word has them. */
-export function promptKinds(entry: ChapterEntry): PromptKind[] {
-  const words = entry.chapter.words;
-  const kinds: PromptKind[] = ['meaning'];
-  if (words.every((w) => imageUrl(entry, w.image))) kinds.push('picture');
-  if (words.every((w) => audioUrl(entry, w.audio))) kinds.push('listen');
-  return kinds;
-}
-
-export const prefersReducedMotion = () =>
-  typeof window !== 'undefined' &&
-  typeof window.matchMedia === 'function' &&
-  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 type Screen =
   { name: 'intro' } | { name: 'play'; entry: ChapterEntry; relaxed: boolean; seed: number };
@@ -244,26 +213,6 @@ function Intro({
   );
 }
 
-/** Calls `onFrame(ms since last frame)` every animation frame while `active`. */
-function useAnimationFrame(active: boolean, onFrame: (dtMs: number) => void) {
-  const cb = useRef(onFrame);
-  useEffect(() => {
-    cb.current = onFrame;
-  });
-  useEffect(() => {
-    if (!active) return;
-    let id = 0;
-    let last: number | null = null;
-    const loop = (now: number) => {
-      if (last !== null) cb.current(now - last);
-      last = now;
-      id = requestAnimationFrame(loop);
-    };
-    id = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(id);
-  }, [active]);
-}
-
 /**
  * One round on the river. Used by the lab prototype and by the Cabaran Akhir stage, which
  * passes `onFinish` (to save stars) and `renderDone` (its own result screen).
@@ -338,8 +287,15 @@ export function SampanGame({
       <SceneDecor />
       <Header title={title} backHref={backHref} sign />
       <main className="relative mx-auto flex w-full max-w-md flex-1 flex-col gap-2 px-3 pb-4">
-        <Hud s={s} paused={paused} onPause={() => setPaused((p) => !p)} />
-        <PromptPanel entry={entry} s={s} />
+        <GameHud
+          score={s.score}
+          combo={s.combo}
+          paused={paused}
+          onPause={() => setPaused((p) => !p)}
+        >
+          <TimeBar leftMs={timeLeftMs(s)} totalMs={SAMPAN_DEFAULTS.roundMs} />
+        </GameHud>
+        <SampanPrompt entry={entry} s={s} />
         <River
           entry={entry}
           s={s}
@@ -385,96 +341,6 @@ function SteerButton({
       <span className="absolute inset-x-6 top-1 h-3 rounded-full bg-white/35" aria-hidden />
       <span className="relative">{children}</span>
     </button>
-  );
-}
-
-function Hud({ s, paused, onPause }: { s: SampanState; paused: boolean; onPause: () => void }) {
-  const { t } = useTranslation();
-  const left = timeLeftMs(s);
-  return (
-    <div className="flex items-center gap-2">
-      <span
-        className="inline-flex h-12 items-center gap-1 rounded-full bg-white px-3 text-2xl font-extrabold text-amber-600 shadow-md ring-2 ring-amber-200"
-        aria-label={t('sampan.score')}
-      >
-        <Icon name="star" weight="fill" size={30} className="text-amber-400" />{' '}
-        <span data-testid="score">{s.score}</span>
-      </span>
-      {s.combo >= 2 && (
-        <span className="inline-flex items-center gap-1 rounded-full bg-orange-100 px-2 text-sm font-bold text-orange-600">
-          <Icon name="fire" weight="fill" /> {t('sampan.combo', { count: s.combo })}
-        </span>
-      )}
-      <div
-        className="h-5 flex-1 overflow-hidden rounded-full border-2 border-white bg-sky-100 shadow-inner ring-1 ring-sky-300"
-        role="progressbar"
-        aria-label={t('sampan.timeLeft')}
-        aria-valuemin={0}
-        aria-valuemax={SAMPAN_DEFAULTS.roundMs / 1000}
-        aria-valuenow={Math.ceil(left / 1000)}
-      >
-        <div
-          className="bar-stripes h-full rounded-full"
-          style={{ width: `${(left / SAMPAN_DEFAULTS.roundMs) * 100}%` }}
-        />
-      </div>
-      <button
-        type="button"
-        onClick={onPause}
-        aria-label={paused ? t('sampan.resume') : t('sampan.pause')}
-        className="inline-flex h-12 w-12 items-center justify-center rounded-full border-b-4 border-blue-800 bg-gradient-to-b from-sky-400 to-blue-600 text-white shadow-md ring-2 ring-white"
-      >
-        <Icon name={paused ? 'play' : 'pause'} weight="fill" size={24} />
-      </button>
-    </div>
-  );
-}
-
-function PromptPanel({ entry, s }: { entry: ChapterEntry; s: SampanState }) {
-  const { t } = useTranslation();
-  const lang = useUiLang();
-  const wave = s.wave;
-  if (!wave) return <div className="h-28" />;
-  const word = entry.chapter.words.find((w) => w.id === wave.question.wordId)!;
-  const ask = t(`sampan.ask.${wave.promptKind}`);
-  return (
-    <div
-      className="flex h-28 items-center justify-center gap-3 rounded-3xl border-2 border-white bg-white/95 px-3 shadow-md ring-1 ring-sky-200"
-      data-testid="sampan-prompt"
-      data-word-id={word.id}
-      data-kind={wave.promptKind}
-    >
-      {wave.promptKind === 'picture' && (
-        <>
-          <WordImage
-            src={imageUrl(entry, word.image)}
-            alt={word.meaning[lang]}
-            className="h-24 w-24"
-          />
-          <p className="text-slate-600">{ask}</p>
-        </>
-      )}
-      {wave.promptKind === 'meaning' && (
-        <p className="text-center">
-          <span className="block text-sm text-slate-500">{ask}</span>
-          <span className="text-2xl font-extrabold text-sky-800" lang={lang}>
-            {word.meaning[lang]}
-          </span>
-        </p>
-      )}
-      {wave.promptKind === 'listen' && (
-        <>
-          <AudioButton
-            key={`${word.id}:${s.answered}`}
-            src={audioUrl(entry, word.audio)}
-            label={t('common.listen')}
-            size="lg"
-          />
-          <span className="h-14 w-px bg-sky-200" aria-hidden />
-          <p className="flex-1 text-lg leading-tight font-bold text-sky-900">{ask}</p>
-        </>
-      )}
-    </div>
   );
 }
 
@@ -561,9 +427,9 @@ function River({
       ))}
 
       {/* A cloud and sparkles on the water, and waves along the bottom (decoration only). */}
-      {cloudUrl && (
+      {sceneArt.cloud && (
         <img
-          src={cloudUrl}
+          src={sceneArt.cloud}
           alt=""
           aria-hidden
           draggable={false}
@@ -706,36 +572,6 @@ function River({
   );
 }
 
-/** "Words to practise" (with meanings), or praise when there are none. */
-export function PractiseList({ entry, wordIds }: { entry: ChapterEntry; wordIds: string[] }) {
-  const { t } = useTranslation();
-  const lang = useUiLang();
-  const practise = wordIds
-    .map((id) => entry.chapter.words.find((w) => w.id === id))
-    .filter((w) => w !== undefined);
-  return (
-    <section className="mt-6 rounded-2xl bg-white p-4 shadow-sm">
-      {practise.length === 0 ? (
-        <p className="text-center font-semibold text-emerald-700">{t('sampan.allRight')}</p>
-      ) : (
-        <>
-          <h2 className="mb-2 font-bold">{t('sampan.practise')}</h2>
-          <ul className="grid gap-1" data-testid="practise">
-            {practise.map((w) => (
-              <li key={w.id} className="flex justify-between gap-3">
-                <strong lang="ms">{w.word}</strong>
-                <span className="text-right text-slate-600" lang={lang}>
-                  {w.meaning[lang]}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-    </section>
-  );
-}
-
 function Done({
   entry,
   s,
@@ -786,4 +622,12 @@ function Done({
       </Page>
     </>
   );
+}
+
+/** The question card for the wave on the river. */
+function SampanPrompt({ entry, s }: { entry: ChapterEntry; s: SampanState }) {
+  const wave = s.wave;
+  if (!wave) return <div className="h-28" />;
+  const word = entry.chapter.words.find((w) => w.id === wave.question.wordId)!;
+  return <PromptCard entry={entry} word={word} kind={wave.promptKind} audioKey={s.answered} />;
 }

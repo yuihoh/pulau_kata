@@ -9,3 +9,5 @@ export * from './sampan';
 export * from './bina';
 export * from './quest';
 export * from './collection';
+export * as tangkap from './tangkap';
+export * as belon from './belon';
