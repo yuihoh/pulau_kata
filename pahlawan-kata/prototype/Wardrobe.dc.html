@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>衣柜 · 换装</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#FFF6E5;font-family:'Noto Sans SC',sans-serif;color:#1E2033;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:#232A5C;color:#FFFFFF;padding:40px 16px 0;display:flex;flex-direction:column">
+<div style="display:flex;align-items:center;gap:10px">
+<a href="Map.dc.html" style="color:#FFFFFF;text-decoration:none;font-size:14px;font-weight:700;height:40px;display:flex;align-items:center">‹ 地图</a>
+<h1 style="margin:0 auto 0 6px;font-family:'ZCOOL KuaiLe',sans-serif;font-size:26px;font-weight:400">衣柜</h1>
+<a href="Inventory.dc.html" style="color:#FFE3A3;font-size:13px;font-weight:700;height:40px;display:flex;align-items:center">装备能力 ›</a>
+</div>
+<div style="height:236px;display:flex;align-items:flex-end;justify-content:center;position:relative">
+<div style="position:absolute;left:50%;bottom:14px;width:220px;height:30px;margin-left:-110px;border-radius:50%;background:#3D4580"></div>
+<svg width="170" height="226" viewBox="0 0 120 160" role="img" aria-label="角色预览" style="position:relative">
+<sc-if value="{{hasCape}}" hint-placeholder-val="{{ false }}"><path d="M34 80 L18 146 L102 146 L86 80 Z" fill="{{capeColor}}"/><path d="M26 118 L94 118" stroke="{{capeStripe}}" stroke-width="5"/></sc-if>
+<rect x="45" y="116" width="12" height="30" rx="5" fill="#3A3F66"/><rect x="63" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="40" y="136" width="20" height="12" rx="4" fill="#7A4A26"/><rect x="60" y="136" width="20" height="12" rx="4" fill="#7A4A26"/>
+<rect x="24" y="84" width="14" height="30" rx="7" fill="#FFD9B8"/>
+<rect x="34" y="76" width="52" height="48" rx="16" fill="{{robeColor}}"/>
+<rect x="34" y="106" width="52" height="7" fill="{{robeTrim}}"/>
+<circle cx="60" cy="92" r="6" fill="{{robeTrim}}"/>
+<circle cx="60" cy="50" r="28" fill="#FFD9B8"/>
+<path d="M32 46 C30 26 46 20 60 20 C76 20 90 28 88 46 C84 38 76 34 70 36 L66 30 L60 36 L52 30 L46 38 C40 38 34 42 32 46 Z" fill="#2B2B3A"/>
+<sc-if value="{{hatHelm}}" hint-placeholder-val="{{ false }}"><path d="M30 46 C30 18 46 12 60 12 C74 12 90 18 90 46 L84 40 C78 30 42 30 36 40 Z" fill="#2F7DE1"/><rect x="56" y="6" width="8" height="12" rx="3" fill="#FFC94D"/></sc-if>
+<sc-if value="{{hatBand}}" hint-placeholder-val="{{ false }}"><rect x="32" y="30" width="56" height="8" rx="4" fill="#E5533D"/><path d="M86 34 L98 28 L96 40 Z" fill="#E5533D"/></sc-if>
+<circle cx="50" cy="54" r="3.5" fill="#1E2033"/><circle cx="70" cy="54" r="3.5" fill="#1E2033"/>
+<path d="M53 64 Q60 69 67 64" fill="none" stroke="#1E2033" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="44" cy="62" r="4" fill="#F7A8A0" opacity="0.7"/><circle cx="76" cy="62" r="4" fill="#F7A8A0" opacity="0.7"/>
+<rect x="82" y="84" width="14" height="30" rx="7" fill="#FFD9B8"/>
+<sc-if value="{{wSword}}" hint-placeholder-val="{{ true }}"><rect x="96" y="40" width="7" height="66" rx="2" fill="{{bladeColor}}" stroke="{{trimColor}}" stroke-width="2"/><rect x="88" y="100" width="23" height="7" rx="2" fill="{{trimColor}}"/></sc-if>
+<sc-if value="{{wStaff}}" hint-placeholder-val="{{ false }}"><rect x="98" y="44" width="5" height="96" rx="2" fill="#7A4A26"/><path d="M100.5 30l3.2 6.6 7.3 1-5.3 5.1 1.3 7.2-6.5-3.4-6.5 3.4 1.3-7.2-5.3-5.1 7.3-1z" fill="#FFC94D"/></sc-if>
+<sc-if value="{{wBow}}" hint-placeholder-val="{{ false }}"><path d="M98 36 Q122 80 98 124" fill="none" stroke="#B7790A" stroke-width="5" stroke-linecap="round"/><path d="M98 36 L98 124" stroke="#E6EBF2" stroke-width="1.5"/></sc-if>
+<sc-if value="{{wHammer}}" hint-placeholder-val="{{ false }}"><rect x="99" y="58" width="6" height="56" rx="2" fill="#7A4A26"/><rect x="88" y="44" width="28" height="18" rx="4" fill="#8A93A6" stroke="#E6EBF2" stroke-width="2"/></sc-if>
+</svg>
+</div>
+</div>
+<div style="background:#232A5C;padding:0 12px 10px">
+<div style="display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:6px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="4">
+<button onClick="{{t.pick}}" style="height:44px;border-radius:12px;border:none;background:{{t.bg}};color:{{t.ink}};font-family:'Noto Sans SC',sans-serif;font-size:14px;font-weight:700">{{t.name}}</button>
+</sc-for>
+</div>
+</div>
+<div style="padding:12px 14px 0;display:flex;align-items:center;gap:10px">
+<div style="flex-grow:1;display:flex;flex-direction:column;gap:1px">
+<span style="font-size:14px;font-weight:900">只换样子（外观覆盖）</span>
+<span style="font-size:12px;color:#4A4F6A">{{lookHint}}</span>
+</div>
+<button onClick="{{toggleLook}}" aria-label="开关外观覆盖" style="width:56px;height:34px;border-radius:17px;border:none;background:{{tgBg}};display:flex;align-items:center;padding:3px;justify-content:{{tgJust}}"><span style="width:28px;height:28px;border-radius:50%;background:#FFFFFF;display:block"></span></button>
+</div>
+<div style="padding:10px 14px 0;display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:8px">
+<sc-for list="{{items}}" as="it" hint-placeholder-count="6">
+<button onClick="{{it.pick}}" style="height:104px;border-radius:16px;border:3px solid {{it.border}};background:{{it.bg}};box-shadow:0 0 0 3px {{it.ring}};padding:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:'Noto Sans SC',sans-serif;color:#1E2033;opacity:{{it.op}}">
+<span style="width:36px;height:36px;border-radius:10px;background:{{it.swatch}};border:2px solid {{it.edge}};display:block"></span>
+<span style="font-size:12px;font-weight:900;line-height:1.2">{{it.name}}</span>
+<span style="font-size:11px;font-weight:700;color:{{it.tagInk}}">{{it.tag}}</span>
+</button>
+</sc-for>
+</div>
+<div style="flex-grow:1"></div>
+<div style="margin:0 14px 24px;background:#FFFFFF;border-radius:16px;border:2px solid #F0E3C8;padding:10px 12px;display:flex;flex-direction:column;gap:4px">
+<div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:#4A4F6A">能力来自</span><span style="font-weight:900">{{abilityName}}</span></div>
+<div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:#4A4F6A">看起来是</span><span style="font-weight:900">{{lookName}}</span></div>
+<sc-if value="{{msgOn}}" hint-placeholder-val="{{ false }}"><span style="font-size:12px;font-weight:700;color:#B4321F">{{msg}}</span></sc-if>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { tab: 1, robe: 0, wLook: 1, wAbility: 0, cape: 2, hat: 0, lookOnly: true, msg: '' }; }
+renderVals() {
+const s = this.state;
+const R = { '普通': '#8A8F98', '稀有': '#2F7DE1', '史诗': '#8B4FD8', '传说': '#E0A200' };
+const robes = [
+{ name: '蓝色战袍', tag: '已拥有', c: '#2F7DE1', trim: '#3A3F66' },
+{ name: '森林绿袍', tag: '已拥有', c: '#1FA39A', trim: '#0F5F58' },
+{ name: '白衣卫士', tag: 'Tema 2 套装', c: '#F1F2F8', trim: '#E5533D' },
+{ name: '消防英雄', tag: 'Tema 3 Boss', c: '#E0A200', trim: '#3A3F66', lock: true },
+{ name: '文化谷服饰', tag: 'Tema 4 套装', c: '#C2410C', trim: '#FFC94D', lock: true },
+{ name: '科学实验袍', tag: 'Tema 7 套装', c: '#FFFFFF', trim: '#2F7DE1', lock: true }
+];
+const weapons = [
+{ name: '词语之剑', tag: '剑 · 史诗', kind: 'sword', blade: '#E6EBF2', trim: '#8B4FD8', rar: '史诗', real: true },
+{ name: '木剑', tag: '只是样子', kind: 'sword', blade: '#C68A4E', trim: '#7A4A26', rar: '普通', real: false },
+{ name: '星光法杖', tag: '法杖 · 稀有', kind: 'staff', rar: '稀有', real: true },
+{ name: '晨风之弓', tag: '弓 · 稀有', kind: 'bow', rar: '稀有', real: true },
+{ name: '守护之锤', tag: '锤 · 稀有', kind: 'hammer', rar: '稀有', real: true },
+{ name: '金币剑', tag: 'Tema 8 套装', kind: 'sword', blade: '#FFC94D', trim: '#B7790A', rar: '传说', real: false, lock: true }
+];
+const capes = [
+{ name: '不穿披风', tag: '—', c: '#FFFFFF', stripe: '#FFFFFF', none: true },
+{ name: '红色披风', tag: '商店 120', c: '#E5533D', stripe: '#B4321F' },
+{ name: '反光安全披风', tag: '秘境奖励', c: '#F08A1C', stripe: '#E6F86B' },
+{ name: '国旗披风', tag: 'Tema 6 套装', c: '#1F3A93', stripe: '#E5533D', lock: true },
+{ name: '星空披风', tag: '成就', c: '#3B2470', stripe: '#FFC94D', lock: true },
+{ name: '叶子披风', tag: 'Tema 5 套装', c: '#4E9A3E', stripe: '#A8E39C', lock: true }
+];
+const hats = [
+{ name: '不戴', tag: '—', c: '#FFFFFF', none: true },
+{ name: '智慧头盔', tag: '装备外观', c: '#2F7DE1', helm: true },
+{ name: '红头巾', tag: '已拥有', c: '#E5533D', band: true },
+{ name: '消防帽', tag: 'Tema 3 套装', c: '#E0A200', lock: true },
+{ name: '护目镜', tag: 'Tema 7 套装', c: '#9CC3FF', lock: true },
+{ name: '花冠', tag: 'Tema 4 秘境', c: '#F7A8A0', lock: true }
+];
+const lists = [robes, weapons, capes, hats];
+const keys = ['robe', 'wLook', 'cape', 'hat'];
+const tabNames = ['战袍', '武器', '披风', '头饰'];
+const tab = s.tab;
+const cur = tab === 1 ? s.wLook : s[keys[tab]];
+const items = lists[tab].map((it, i) => {
+const sel = i === cur;
+const rar = it.rar ? R[it.rar] : '#E2D3B5';
+return {
+name: it.name, tag: it.lock ? '未解锁 · ' + it.tag : it.tag,
+swatch: it.kind ? (it.blade || (it.kind === 'staff' ? '#FFC94D' : (it.kind === 'bow' ? '#B7790A' : '#8A93A6'))) : it.c,
+edge: it.none ? '#C9CCD8' : 'rgba(0,0,0,0.15)',
+border: tab === 1 ? rar : (sel ? '#FFB020' : '#F0E3C8'),
+ring: sel ? '#FFC94D' : 'transparent',
+bg: it.lock ? '#F1EEE6' : '#FFFFFF',
+tagInk: it.lock ? '#6B7088' : '#6A35B0',
+op: it.lock ? '0.6' : '1',
+pick: () => {
+if (it.lock) { this.setState({ msg: it.name + '：' + it.tag + ' 才能拿到' }); return; }
+if (tab === 1) {
+if (this.state.lookOnly || !it.real) {
+this.setState({ wLook: i, msg: (!this.state.lookOnly && !it.real) ? it.name + ' 只有样子，没有能力；能力保持不变' : '' });
+} else {
+this.setState({ wLook: i, wAbility: i, msg: '' });
+}
+} else {
+const o = {}; o[keys[tab]] = i; o.msg = ''; this.setState(o);
+}
+}
+};
+});
+const robe = robes[s.robe], cape = capes[s.cape], hat = hats[s.hat];
+const wl = weapons[s.wLook], wa = weapons[s.wAbility];
+const perks = { sword: '连击加成', staff: '+1 提示', bow: '每题 +3 秒', hammer: '开局护盾' };
+return {
+tabs: tabNames.map((n, i) => ({ name: n, bg: i === tab ? '#FFFFFF' : '#3D4580', ink: i === tab ? '#1E2033' : '#FFFFFF', pick: () => this.setState({ tab: i, msg: '' }) })),
+items,
+robeColor: robe.c, robeTrim: robe.trim,
+hasCape: !cape.none, capeColor: cape.c, capeStripe: cape.stripe,
+hatHelm: !!hat.helm, hatBand: !!hat.band,
+wSword: wl.kind === 'sword', wStaff: wl.kind === 'staff', wBow: wl.kind === 'bow', wHammer: wl.kind === 'hammer',
+bladeColor: wl.blade || '#E6EBF2', trimColor: wl.trim || '#8B4FD8',
+abilityName: wa.name + '（' + perks[wa.kind] + '）',
+lookName: wl.name + ' · ' + robe.name + (cape.none ? '' : ' · ' + cape.name),
+lookHint: s.lookOnly ? '开：换武器只换样子，能力不变' : '关：换武器连能力一起换',
+tgBg: s.lookOnly ? '#1FA39A' : '#C9CCD8', tgJust: s.lookOnly ? 'flex-end' : 'flex-start',
+toggleLook: () => this.setState({ lookOnly: !s.lookOnly, msg: '' }),
+msgOn: !!s.msg, msg: s.msg
+};
+}
+}
+</script>
+</body>
+</html>

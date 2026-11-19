@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>升级 · 分配属性点</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#FFF6E5;font-family:'Noto Sans SC',sans-serif;color:#1E2033;display:flex;flex-direction:column;padding:56px 20px 28px;gap:18px;overflow:hidden">
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+<div style="width:110px;height:110px;border-radius:50%;background:#FFB020;border:6px solid #FFFFFF;box-shadow:0 0 0 4px #B7790A;display:flex;flex-direction:column;align-items:center;justify-content:center">
+<span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;line-height:1">LV</span>
+<span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:48px;line-height:1">6</span>
+</div>
+<h1 style="margin:6px 0 0;font-family:'ZCOOL KuaiLe',sans-serif;font-size:34px;font-weight:400">升级啦！</h1>
+<span style="font-size:14px;color:#4A4F6A">可分配属性点：<b style="font-family:'Baloo 2',sans-serif;font-size:20px;color:#B4321F">{{points}}</b></span>
+</div>
+<sc-for list="{{traits}}" as="t" hint-placeholder-count="3">
+<div style="background:#FFFFFF;border-radius:20px;padding:14px;display:flex;flex-direction:column;gap:10px;border:2px solid #F0E3C8">
+<div style="display:flex;align-items:center;gap:12px">
+<div style="width:44px;height:44px;border-radius:12px;background:{{t.soft}};display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:{{t.ink}}">{{t.glyph}}</div>
+<div style="flex-grow:1;display:flex;flex-direction:column;gap:2px">
+<span style="font-size:16px;font-weight:700">{{t.name}} · {{t.val}}</span>
+<span style="font-size:12px;color:#4A4F6A">{{t.rule}}</span>
+</div>
+<button onClick="{{t.add}}" aria-label="加一点" style="width:48px;height:48px;border-radius:14px;border:none;background:{{t.btn}};color:#FFFFFF;font-size:26px;font-weight:900;line-height:1">+</button>
+</div>
+<div style="display:flex;align-items:center;gap:10px">
+<div style="flex-grow:1;height:10px;border-radius:5px;background:#F1F2F8;overflow:hidden"><div style="width:{{t.pct}};height:10px;background:{{t.bar}}"></div></div>
+<span style="font-size:13px;font-weight:700;color:{{t.ink}}">{{t.effect}}</span>
+</div>
+</div>
+</sc-for>
+<div style="flex-grow:1"></div>
+<span style="font-size:12px;color:#4A4F6A;text-align:center">Lv 10 解锁第二套外观 · Lv 15 解锁挑战模式</span>
+<a href="Inventory.dc.html" style="height:56px;border-radius:28px;background:#232A5C;color:#FFFFFF;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:900">确认</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { hp: 4, focus: 3, wis: 2, points: 1 }; }
+renderVals() {
+const s = this.state;
+const add = (k) => () => { if (this.state.points > 0) this.setState({ [k]: this.state[k] + 1, points: this.state.points - 1 }); };
+const on = s.points > 0;
+const traits = [
+{ glyph: '体', name: '体力', val: s.hp, rule: '每 5 点 +1 生命（上限 +3）', effect: '+' + Math.floor(s.hp / 5) + ' 生命', pct: ((s.hp % 5) / 5 * 100) + '%', soft: '#FDE7E3', ink: '#9F2A17', bar: '#E5533D', btn: on ? '#E5533D' : '#C9CCD8', add: add('hp') },
+{ glyph: '专', name: '专注', val: s.focus, rule: '每点每题 +1 秒（上限 +10 秒）', effect: '+' + s.focus + ' 秒/题', pct: (s.focus / 10 * 100) + '%', soft: '#EEF4FF', ink: '#1F5FB0', bar: '#2F7DE1', btn: on ? '#2F7DE1' : '#C9CCD8', add: add('focus') },
+{ glyph: '智', name: '智慧', val: s.wis, rule: '每 4 点每场 +1 次提示（上限 +3）', effect: '+' + Math.floor(s.wis / 4) + ' 次提示', pct: ((s.wis % 4) / 4 * 100) + '%', soft: '#F3ECFC', ink: '#6A35B0', bar: '#8B4FD8', btn: on ? '#8B4FD8' : '#C9CCD8', add: add('wis') }
+];
+return { traits, points: s.points };
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>创建角色</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#FFF6E5;font-family:'Noto Sans SC',sans-serif;color:#1E2033;display:flex;flex-direction:column;padding:48px 24px 28px;gap:18px;overflow:hidden">
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-size:13px;font-weight:700;color:#8A5A00">第 1 步 / 共 1 步</span>
+<h1 style="margin:0;font-family:'ZCOOL KuaiLe',sans-serif;font-size:32px;font-weight:400">选择你的勇士</h1>
+</div>
+<div style="height:230px;border-radius:24px;background:#232A5C;display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px">
+<svg width="150" height="200" viewBox="0 0 120 160" role="img" aria-label="勇士角色预览">
+<ellipse cx="60" cy="152" rx="34" ry="6" fill="#000000" opacity="0.25"/>
+<rect x="45" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="63" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="41" y="138" width="18" height="10" rx="4" fill="#7A4A26"/>
+<rect x="61" y="138" width="18" height="10" rx="4" fill="#7A4A26"/>
+<rect x="24" y="84" width="14" height="30" rx="7" fill="#FFD9B8"/>
+<rect x="82" y="84" width="14" height="30" rx="7" fill="#FFD9B8"/>
+<rect x="34" y="76" width="52" height="48" rx="16" fill="{{armor}}"/>
+<rect x="34" y="106" width="52" height="7" fill="#3A3F66"/>
+<sc-if value="{{isGirl}}" hint-placeholder-val="{{ false }}">
+<path d="M30 52 C28 80 36 92 40 96 L44 60 Z" fill="#5B3418"/>
+<path d="M90 52 C92 80 84 92 80 96 L76 60 Z" fill="#5B3418"/>
+</sc-if>
+<circle cx="60" cy="50" r="28" fill="#FFD9B8"/>
+<sc-if value="{{isGirl}}" hint-placeholder-val="{{ false }}">
+<path d="M32 48 C32 26 48 20 60 20 C74 20 88 28 88 48 C78 40 66 36 52 38 C44 40 38 44 32 48 Z" fill="#5B3418"/>
+<circle cx="84" cy="30" r="6" fill="#E5533D"/>
+</sc-if>
+<sc-if value="{{isBoy}}" hint-placeholder-val="{{ true }}">
+<path d="M32 46 C30 26 46 20 60 20 C76 20 90 28 88 46 C84 38 76 34 70 36 L66 30 L60 36 L52 30 L46 38 C40 38 34 42 32 46 Z" fill="#2B2B3A"/>
+</sc-if>
+<circle cx="50" cy="54" r="3.5" fill="#1E2033"/>
+<circle cx="70" cy="54" r="3.5" fill="#1E2033"/>
+<path d="M53 64 Q60 69 67 64" fill="none" stroke="#1E2033" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="44" cy="62" r="4" fill="#F7A8A0" opacity="0.7"/>
+<circle cx="76" cy="62" r="4" fill="#F7A8A0" opacity="0.7"/>
+<rect x="98" y="60" width="5" height="48" rx="2" fill="#C9D3E3"/>
+<rect x="92" y="104" width="17" height="5" rx="2" fill="#8A5A00"/>
+</svg>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:12px">
+<button onClick="{{pickBoy}}" style="height:56px;border-radius:16px;border:3px solid {{boyBorder}};background:{{boyBg}};font-family:'Noto Sans SC',sans-serif;font-size:17px;font-weight:700;color:#1E2033">男勇士</button>
+<button onClick="{{pickGirl}}" style="height:56px;border-radius:16px;border:3px solid {{girlBorder}};background:{{girlBg}};font-family:'Noto Sans SC',sans-serif;font-size:17px;font-weight:700;color:#1E2033">女勇士</button>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<label for="heroName" style="font-size:14px;font-weight:700">勇士名字</label>
+<input id="heroName" value="小明" style="height:50px;border-radius:14px;border:2px solid #E2D3B5;background:#FFFFFF;padding:0 16px;font-family:'Noto Sans SC',sans-serif;font-size:17px;color:#1E2033">
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;font-weight:700">战袍颜色</span>
+<div style="display:flex;gap:14px">
+<sc-for list="{{colors}}" as="c" hint-placeholder-count="4">
+<button onClick="{{c.pick}}" aria-label="{{c.name}}" style="width:48px;height:48px;border-radius:50%;background:{{c.hex}};border:4px solid {{c.ring}};box-shadow:0 0 0 2px #FFF6E5 inset"></button>
+</sc-for>
+</div>
+</div>
+<div style="flex-grow:1"></div>
+<a href="Map.dc.html" style="height:56px;border-radius:28px;background:#FFB020;color:#1E2033;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;box-shadow:0 4px 0 #B7790A">开始冒险</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { girl: false, color: 0 }; }
+renderVals() {
+const list = [
+{ name: '蓝色', hex: '#2F7DE1' },
+{ name: '红色', hex: '#E5533D' },
+{ name: '绿色', hex: '#1FA39A' },
+{ name: '紫色', hex: '#8B4FD8' }
+];
+const s = this.state;
+const colors = list.map((c, i) => ({ ...c, ring: i === s.color ? '#1E2033' : 'transparent', pick: () => this.setState({ color: i }) }));
+return {
+isGirl: s.girl, isBoy: !s.girl,
+armor: list[s.color].hex,
+colors,
+pickBoy: () => this.setState({ girl: false }),
+pickGirl: () => this.setState({ girl: true }),
+boyBorder: s.girl ? '#E2D3B5' : '#2F7DE1', boyBg: s.girl ? '#FFFFFF' : '#EEF4FF',
+girlBorder: s.girl ? '#2F7DE1' : '#E2D3B5', girlBg: s.girl ? '#EEF4FF' : '#FFFFFF'
+};
+}
+}
+</script>
+</body>
+</html>

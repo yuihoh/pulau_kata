@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>出战准备 · 换组合</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#232A5C;font-family:'Noto Sans SC',sans-serif;color:#FFFFFF;display:flex;flex-direction:column;overflow:hidden">
+<div style="padding:40px 16px 12px;display:flex;flex-direction:column;gap:4px">
+<a href="Kingdom.dc.html" style="color:#FFFFFF;text-decoration:none;font-size:14px;font-weight:700;height:30px;display:flex;align-items:center">‹ 清洁城</a>
+<span style="font-size:12px;font-weight:700;color:#C9CDF2">Unit 4 · 关卡 3</span>
+<h1 style="margin:0;font-family:'ZCOOL KuaiLe',sans-serif;font-size:28px;font-weight:400">出战准备</h1>
+</div>
+<div style="margin:0 16px;background:#3D4580;border-radius:18px;padding:12px 14px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between"><span style="font-size:15px;font-weight:900">语法 · Penjodoh bilangan</span><span style="font-size:12px;color:#C9CDF2">10 题</span></div>
+<div style="display:flex;gap:6px;flex-wrap:wrap">
+<span style="font-size:12px;font-weight:700;background:#232A5C;border-radius:8px;padding:3px 8px">选词攻击</span>
+<span style="font-size:12px;font-weight:700;background:#232A5C;border-radius:8px;padding:3px 8px">每题计时</span>
+<span style="font-size:12px;font-weight:700;background:#232A5C;border-radius:8px;padding:3px 8px">敌人：量词小妖</span>
+</div>
+<div style="display:flex;gap:8px;align-items:flex-start;background:#FFF6E5;color:#1E2033;border-radius:12px;padding:8px 10px">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#B7790A" stroke-width="2" stroke-linecap="round" style="flex-shrink:0;margin-top:2px"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></svg>
+<span style="font-size:13px;line-height:1.5"><b>推荐：组合 2</b>。语法题要想规则，多几秒会更从容。</span>
+</div>
+</div>
+<div style="padding:14px 16px 0;display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:8px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="3">
+<button onClick="{{t.pick}}" style="height:56px;border-radius:14px;border:3px solid {{t.border}};background:{{t.bg}};color:{{t.ink}};font-family:'Noto Sans SC',sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0"><span style="font-size:12px;font-weight:700">组合 {{t.n}}</span><span style="font-size:14px;font-weight:900">{{t.name}}</span></button>
+</sc-for>
+</div>
+<div style="flex-grow:1;display:flex;align-items:center;justify-content:center;gap:18px;padding:0 16px">
+<svg width="132" height="176" viewBox="0 0 120 160" role="img" aria-label="勇士和当前武器">
+<ellipse cx="60" cy="152" rx="34" ry="6" fill="#000000" opacity="0.3"/>
+<rect x="45" y="116" width="12" height="30" rx="5" fill="#3A3F66"/><rect x="63" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="40" y="136" width="20" height="12" rx="4" fill="#1FA39A"/><rect x="60" y="136" width="20" height="12" rx="4" fill="#1FA39A"/>
+<rect x="34" y="76" width="52" height="48" rx="16" fill="{{p.robe}}"/>
+<circle cx="60" cy="50" r="28" fill="#FFD9B8"/>
+<path d="M32 46 C30 26 46 20 60 20 C76 20 90 28 88 46 C84 38 76 34 70 36 L66 30 L60 36 L52 30 L46 38 C40 38 34 42 32 46 Z" fill="#2B2B3A"/>
+<circle cx="50" cy="54" r="3.5" fill="#1E2033"/><circle cx="70" cy="54" r="3.5" fill="#1E2033"/>
+<path d="M53 64 Q60 69 67 64" fill="none" stroke="#1E2033" stroke-width="2.2" stroke-linecap="round"/>
+<sc-if value="{{p.sword}}" hint-placeholder-val="{{ true }}"><rect x="96" y="40" width="7" height="66" rx="2" fill="#E6EBF2" stroke="#8B4FD8" stroke-width="2"/><rect x="88" y="100" width="23" height="7" rx="2" fill="#8B4FD8"/></sc-if>
+<sc-if value="{{p.bow}}" hint-placeholder-val="{{ false }}"><path d="M98 36 Q122 80 98 124" fill="none" stroke="#B7790A" stroke-width="5" stroke-linecap="round"/><path d="M98 36 L98 124" stroke="#E6EBF2" stroke-width="1.5"/></sc-if>
+<sc-if value="{{p.hammer}}" hint-placeholder-val="{{ false }}"><rect x="99" y="58" width="6" height="56" rx="2" fill="#7A4A26"/><rect x="88" y="44" width="28" height="18" rx="4" fill="#8A93A6" stroke="#E6EBF2" stroke-width="2"/></sc-if>
+</svg>
+<div style="display:flex;flex-direction:column;gap:6px;min-width:150px">
+<span style="font-size:12px;color:#C9CDF2">武器</span>
+<span style="font-size:16px;font-weight:900">{{p.weapon}}</span>
+<span style="font-size:12px;color:#FFE3A3">{{p.perk}}</span>
+<span style="font-size:12px;color:#C9CDF2;margin-top:4px">其他</span>
+<span style="font-size:13px;line-height:1.5">{{p.gear}}</span>
+</div>
+</div>
+<div style="margin:0 16px;display:grid;grid-template-columns:repeat(5, minmax(0, 1fr));gap:6px;background:#3D4580;border-radius:16px;padding:10px 6px">
+<sc-for list="{{p.stats}}" as="s" hint-placeholder-count="5">
+<div style="display:flex;flex-direction:column;align-items:center;gap:1px"><span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:{{s.c}}">{{s.v}}</span><span style="font-size:11px;color:#C9CDF2">{{s.k}}</span></div>
+</sc-for>
+</div>
+<div style="padding:14px 16px 28px;display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:12px">
+<a href="Wardrobe.dc.html" style="height:52px;border-radius:26px;border:2px solid #FFFFFF;color:#FFFFFF;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700">去衣柜细调</a>
+<a href="Grammar.dc.html" style="height:52px;border-radius:26px;background:#FFB020;color:#1E2033;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;box-shadow:0 4px 0 #B7790A">出发！</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { sel: 1 }; }
+renderVals() {
+const presets = [
+{ name: '平常', type: 'sword', robe: '#2F7DE1', weapon: '词语之剑（史诗）', perk: '连对 3 题起 金币/经验 +50%', gear: '智慧头盔 · 勇气铠甲 · 时光手套', stats: ['4', '20s', '2', '2', '1'] },
+{ name: '慢慢想', type: 'bow', robe: '#1FA39A', weapon: '晨风之弓（稀有）', perk: '每题 +3 秒', gear: '智慧头盔 · 疾风靴 · 时光手套', stats: ['4', '23s', '2', '2', '1'] },
+{ name: 'Boss', type: 'hammer', robe: '#8B4FD8', weapon: '守护之锤（稀有）', perk: '开局自带 1 次护盾', gear: '勇气铠甲 · 守护盾 · 复活护符', stats: ['4', '20s', '2', '2', '2'] }
+];
+const sel = this.state.sel;
+const c = presets[sel];
+const keys = [['生命', '#F59A8B'], ['每题', '#9CC3FF'], ['提示', '#FFC94D'], ['暂停', '#9CC3FF'], ['护盾', '#7FD6CC']];
+const p = { ...c, sword: c.type === 'sword', bow: c.type === 'bow', hammer: c.type === 'hammer', stats: c.stats.map((v, i) => ({ v, k: keys[i][0], c: keys[i][1] })) };
+const tabs = presets.map((x, i) => ({ n: i + 1, name: x.name, border: i === sel ? '#FFC94D' : '#3D4580', bg: i === sel ? '#FFFFFF' : '#3D4580', ink: i === sel ? '#1E2033' : '#FFFFFF', pick: () => this.setState({ sel: i }) }));
+return { p, tabs };
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1644 @@
+{
+  "source": "Buku Teks Bahasa Melayu Tahun 4 SJK, KSSR Semakan 2017, DBP 2019 (168 pages)",
+  "note": "Facts only (titles, pages, grammar topics, single words). Do NOT copy passages, poems, lyrics or illustrations from the textbook. sample_words are verified to appear in the unit and are candidates for pack A; final packs A/B/C are curated by hand.",
+  "unit_structure": [
+    "1.x Mendengar dan Bertutur",
+    "2.x Membaca",
+    "3.x Menulis",
+    "4.x Seni Bahasa",
+    "5.x Tatabahasa"
+  ],
+  "end_of_tema": [
+    "Pemulihan",
+    "Pengayaan",
+    "Pengukuhan",
+    "Penilaian"
+  ],
+  "tema": [
+    {
+      "n": 1,
+      "ms": "Harmoni Sentiasa",
+      "pages": [
+        1,
+        20
+      ],
+      "kingdom": {
+        "zh": "和谐村",
+        "en": "Harmony Village",
+        "ms": "Kampung Harmoni"
+      },
+      "boss": {
+        "zh": "吵架怪",
+        "en": "Quarrel Monster",
+        "ms": "Raksasa Sengketa"
+      },
+      "set": {
+        "zh": "社区英雄套装",
+        "en": "Community Hero set"
+      },
+      "npc": "Chun Han",
+      "units": [
+        {
+          "n": 1,
+          "ms": "Tiga Sahabat",
+          "page": 2,
+          "grammar": "Kata nama am",
+          "seni": {
+            "type": "peribahasa_story",
+            "sp": "4.1.1",
+            "items": [
+              {
+                "ms": "bagai isi dengan kuku",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "关系非常亲密",
+                  "en": "inseparable, very close"
+                }
+              },
+              {
+                "ms": "bagai aur dengan tebing",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "互相帮助、互相依靠",
+                  "en": "helping and depending on each other"
+                }
+              }
+            ]
+          },
+          "sample_words": [
+            {
+              "ms": "pertandingan",
+              "zh": "比赛",
+              "en": "competition"
+            },
+            {
+              "ms": "berkumpulan",
+              "zh": "分组、集体",
+              "en": "in groups"
+            },
+            {
+              "ms": "berlatih",
+              "zh": "练习",
+              "en": "to practise"
+            },
+            {
+              "ms": "persediaan",
+              "zh": "准备",
+              "en": "preparation"
+            },
+            {
+              "ms": "bersetuju",
+              "zh": "同意",
+              "en": "to agree"
+            },
+            {
+              "ms": "penduduk",
+              "zh": "居民",
+              "en": "residents"
+            },
+            {
+              "ms": "suasana",
+              "zh": "气氛",
+              "en": "atmosphere"
+            },
+            {
+              "ms": "meriah",
+              "zh": "热闹",
+              "en": "lively"
+            },
+            {
+              "ms": "bekerjasama",
+              "zh": "合作",
+              "en": "to cooperate"
+            },
+            {
+              "ms": "sahabat",
+              "zh": "好朋友",
+              "en": "close friend"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "ms": "Jiran Sepakat",
+          "page": 7,
+          "grammar": "Kata nama khas",
+          "seni": {
+            "type": "sajak",
+            "sp": "4.2.1",
+            "items": [
+              {
+                "ms": "berganding bahu",
+                "kind": "simpulan bahasa",
+                "meaning": {
+                  "zh": "并肩合作",
+                  "en": "to work shoulder to shoulder"
+                }
+              },
+              {
+                "ms": "seia sekata",
+                "kind": "simpulan bahasa",
+                "meaning": {
+                  "zh": "同心一致",
+                  "en": "of one mind"
+                }
+              }
+            ]
+          },
+          "sample_words": [
+            {
+              "ms": "jiran",
+              "zh": "邻居",
+              "en": "neighbour"
+            },
+            {
+              "ms": "lorong",
+              "zh": "小巷",
+              "en": "lane"
+            },
+            {
+              "ms": "bergotong-royong",
+              "zh": "齐心劳动",
+              "en": "to work together (community clean-up)"
+            },
+            {
+              "ms": "kebersihan",
+              "zh": "清洁",
+              "en": "cleanliness"
+            },
+            {
+              "ms": "komuniti",
+              "zh": "社区",
+              "en": "community"
+            },
+            {
+              "ms": "kejiranan",
+              "zh": "邻里",
+              "en": "neighbourhood"
+            },
+            {
+              "ms": "menghias",
+              "zh": "装饰",
+              "en": "to decorate"
+            },
+            {
+              "ms": "seikhlas hati",
+              "zh": "真心",
+              "en": "sincerely"
+            },
+            {
+              "ms": "buah tangan",
+              "zh": "伴手礼",
+              "en": "small gift / souvenir"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "ms": "Misi Mulia",
+          "page": 12,
+          "grammar": "Kata ganti nama (beta/patik/tuanku; sini/situ/sana)",
+          "seni": {
+            "type": "lagu",
+            "sp": "4.2.2",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "orang kurang upaya",
+              "zh": "残障人士",
+              "en": "person with disabilities"
+            },
+            {
+              "ms": "laluan",
+              "zh": "通道",
+              "en": "pathway"
+            },
+            {
+              "ms": "mengubah suai",
+              "zh": "改装",
+              "en": "to modify"
+            },
+            {
+              "ms": "pesakit",
+              "zh": "病人",
+              "en": "patient"
+            },
+            {
+              "ms": "menghiburkan",
+              "zh": "逗乐",
+              "en": "to entertain"
+            },
+            {
+              "ms": "kerja amal",
+              "zh": "慈善工作",
+              "en": "charity work"
+            },
+            {
+              "ms": "kraf tangan",
+              "zh": "手工艺",
+              "en": "handicraft"
+            },
+            {
+              "ms": "hajat",
+              "zh": "心愿",
+              "en": "wish"
+            },
+            {
+              "ms": "berkongsi",
+              "zh": "分享",
+              "en": "to share"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ms": "Kebersihan dan Kesihatan",
+      "pages": [
+        21,
+        40
+      ],
+      "kingdom": {
+        "zh": "清洁城",
+        "en": "Clean Town",
+        "ms": "Bandar Bersih"
+      },
+      "boss": {
+        "zh": "蚊子王",
+        "en": "Mosquito King",
+        "ms": "Raja Aedes"
+      },
+      "set": {
+        "zh": "白衣卫士套装",
+        "en": "White Guardian set"
+      },
+      "npc": "Dinesh",
+      "units": [
+        {
+          "n": 4,
+          "ms": "Kesihatan Harus Dijaga",
+          "page": 22,
+          "grammar": "Penjodoh bilangan",
+          "seni": {
+            "type": "ubah_suai_sajak",
+            "sp": "4.3.1",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "postur",
+              "zh": "姿势",
+              "en": "posture"
+            },
+            {
+              "ms": "kesihatan",
+              "zh": "健康",
+              "en": "health"
+            },
+            {
+              "ms": "pemakanan",
+              "zh": "饮食",
+              "en": "diet / nutrition"
+            },
+            {
+              "ms": "penyakit",
+              "zh": "疾病",
+              "en": "disease"
+            },
+            {
+              "ms": "serat",
+              "zh": "纤维",
+              "en": "fibre"
+            },
+            {
+              "ms": "gigi",
+              "zh": "牙齿",
+              "en": "teeth"
+            },
+            {
+              "ms": "musim panas",
+              "zh": "炎热季节",
+              "en": "hot season"
+            },
+            {
+              "ms": "vitamin",
+              "zh": "维生素",
+              "en": "vitamin"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "ms": "Bersihnya Kami",
+          "page": 27,
+          "grammar": "Kata kerja aktif transitif / tak transitif",
+          "seni": {
+            "type": "ubah_suai_cerita",
+            "sp": "4.3.2",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "berus gigi",
+              "zh": "牙刷",
+              "en": "toothbrush"
+            },
+            {
+              "ms": "nyamuk",
+              "zh": "蚊子",
+              "en": "mosquito"
+            },
+            {
+              "ms": "denggi",
+              "zh": "骨痛热症",
+              "en": "dengue"
+            },
+            {
+              "ms": "air bertakung",
+              "zh": "积水",
+              "en": "stagnant water"
+            },
+            {
+              "ms": "mengelap",
+              "zh": "擦",
+              "en": "to wipe"
+            },
+            {
+              "ms": "berpenutup",
+              "zh": "有盖的",
+              "en": "covered (with a lid)"
+            },
+            {
+              "ms": "pencuci",
+              "zh": "清洁剂",
+              "en": "cleaner / detergent"
+            },
+            {
+              "ms": "gerai",
+              "zh": "摊位",
+              "en": "stall"
+            },
+            {
+              "ms": "periuk",
+              "zh": "锅",
+              "en": "pot"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "ms": "Amalan Bersih dan Sihat",
+          "page": 32,
+          "grammar": "Kata kerja pasif",
+          "seni": {
+            "type": "ubah_suai_lagu",
+            "sp": "4.3.3",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "berkhasiat",
+              "zh": "有营养",
+              "en": "nutritious"
+            },
+            {
+              "ms": "hidangan",
+              "zh": "餐点",
+              "en": "meal / dish"
+            },
+            {
+              "ms": "stoking",
+              "zh": "袜子",
+              "en": "socks"
+            },
+            {
+              "ms": "jadual",
+              "zh": "时间表",
+              "en": "schedule"
+            },
+            {
+              "ms": "kurangkan",
+              "zh": "减少",
+              "en": "reduce"
+            },
+            {
+              "ms": "gula",
+              "zh": "糖",
+              "en": "sugar"
+            },
+            {
+              "ms": "makanan ringan",
+              "zh": "零食",
+              "en": "snacks"
+            },
+            {
+              "ms": "risiko",
+              "zh": "风险",
+              "en": "risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ms": "Waspada Pasti Selamat",
+      "pages": [
+        41,
+        59
+      ],
+      "kingdom": {
+        "zh": "安全堡垒",
+        "en": "Safety Fortress",
+        "ms": "Kubu Selamat"
+      },
+      "boss": {
+        "zh": "火焰怪",
+        "en": "Fire Monster",
+        "ms": "Raksasa Api"
+      },
+      "set": {
+        "zh": "消防英雄套装",
+        "en": "Fire Hero set"
+      },
+      "npc": "Aidil",
+      "units": [
+        {
+          "n": 7,
+          "ms": "Waspada Amalan Kita",
+          "page": 42,
+          "grammar": "Kata adjektif cara + jarak",
+          "seni": null,
+          "sample_words": [
+            {
+              "ms": "kebakaran",
+              "zh": "火灾",
+              "en": "fire"
+            },
+            {
+              "ms": "bomba",
+              "zh": "消防员",
+              "en": "firefighters"
+            },
+            {
+              "ms": "pelan",
+              "zh": "平面图",
+              "en": "floor plan"
+            },
+            {
+              "ms": "ular",
+              "zh": "蛇",
+              "en": "snake"
+            },
+            {
+              "ms": "dapur",
+              "zh": "厨房",
+              "en": "kitchen"
+            },
+            {
+              "ms": "menelefon",
+              "zh": "打电话",
+              "en": "to phone"
+            },
+            {
+              "ms": "berkumpul",
+              "zh": "集合",
+              "en": "to gather"
+            },
+            {
+              "ms": "waspada",
+              "zh": "警惕",
+              "en": "alert / careful"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "ms": "Sekolah Kami Selamat",
+          "page": 46,
+          "grammar": "Kata adjektif ukuran",
+          "seni": {
+            "type": "jawi",
+            "sp": "4.4.1-4.4.2",
+            "items": [
+              {
+                "ms": "Malaysia",
+                "kind": "jawi",
+                "meaning": {
+                  "zh": "邮票上的爪夷文",
+                  "en": "Jawi on a stamp"
+                }
+              }
+            ]
+          },
+          "sample_words": [
+            {
+              "ms": "tangga",
+              "zh": "楼梯",
+              "en": "stairs"
+            },
+            {
+              "ms": "laluan",
+              "zh": "通道",
+              "en": "pathway"
+            },
+            {
+              "ms": "keselamatan",
+              "zh": "安全",
+              "en": "safety"
+            },
+            {
+              "ms": "berhati-hati",
+              "zh": "小心",
+              "en": "be careful"
+            },
+            {
+              "ms": "memakai",
+              "zh": "穿戴",
+              "en": "to wear"
+            },
+            {
+              "ms": "topi",
+              "zh": "帽子",
+              "en": "hat"
+            },
+            {
+              "ms": "kebun sekolah",
+              "zh": "学校园圃",
+              "en": "school garden"
+            },
+            {
+              "ms": "sarung tangan",
+              "zh": "手套",
+              "en": "gloves"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "ms": "Kamu Mampu Mengubahnya",
+          "page": 51,
+          "grammar": "Kata adjektif perasaan",
+          "seni": {
+            "type": "peribahasa_story",
+            "sp": "4.1.1",
+            "items": [
+              {
+                "ms": "malang tidak berbau",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "灾祸来时没有预兆",
+                  "en": "misfortune comes without warning"
+                }
+              },
+              {
+                "ms": "biar lambat asalkan selamat",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "宁可慢一点，也要安全",
+                  "en": "better slow but safe"
+                }
+              },
+              {
+                "ms": "lepas tangan",
+                "kind": "simpulan bahasa",
+                "meaning": {
+                  "zh": "撒手不管、不负责任",
+                  "en": "to wash one's hands of responsibility"
+                }
+              },
+              {
+                "ms": "ambil berat",
+                "kind": "simpulan bahasa",
+                "meaning": {
+                  "zh": "关心、在意",
+                  "en": "to care about"
+                }
+              }
+            ]
+          },
+          "sample_words": [
+            {
+              "ms": "lampu isyarat",
+              "zh": "红绿灯",
+              "en": "traffic light"
+            },
+            {
+              "ms": "melintas",
+              "zh": "过马路",
+              "en": "to cross"
+            },
+            {
+              "ms": "pejalan kaki",
+              "zh": "行人",
+              "en": "pedestrian"
+            },
+            {
+              "ms": "kenderaan",
+              "zh": "车辆",
+              "en": "vehicle"
+            },
+            {
+              "ms": "topi keledar",
+              "zh": "安全帽",
+              "en": "helmet"
+            },
+            {
+              "ms": "berhenti",
+              "zh": "停",
+              "en": "to stop"
+            },
+            {
+              "ms": "jalan raya",
+              "zh": "马路",
+              "en": "road"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "ms": "Indahnya Budaya, Halusnya Seni",
+      "pages": [
+        60,
+        80
+      ],
+      "kingdom": {
+        "zh": "文化谷",
+        "en": "Culture Valley",
+        "ms": "Lembah Budaya"
+      },
+      "boss": {
+        "zh": "褪色怪",
+        "en": "Fading Monster",
+        "ms": "Raksasa Pudar"
+      },
+      "set": {
+        "zh": "传统服饰",
+        "en": "Traditional attire"
+      },
+      "npc": "Mei Fung",
+      "units": [
+        {
+          "n": 10,
+          "ms": "Hidup Berbudaya",
+          "page": 61,
+          "grammar": "Kata adjektif pancaindera",
+          "seni": {
+            "type": "sajak",
+            "sp": "4.2.1",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "budaya",
+              "zh": "文化",
+              "en": "culture"
+            },
+            {
+              "ms": "perayaan",
+              "zh": "节庆",
+              "en": "festival"
+            },
+            {
+              "ms": "adat",
+              "zh": "习俗",
+              "en": "custom"
+            },
+            {
+              "ms": "warisan",
+              "zh": "遗产",
+              "en": "heritage"
+            },
+            {
+              "ms": "masyarakat",
+              "zh": "社会",
+              "en": "society"
+            },
+            {
+              "ms": "kaum",
+              "zh": "种族",
+              "en": "ethnic group"
+            },
+            {
+              "ms": "upacara",
+              "zh": "仪式",
+              "en": "ceremony"
+            },
+            {
+              "ms": "menghormati",
+              "zh": "尊敬",
+              "en": "to respect"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "ms": "Seni Penyeri Kehidupan",
+          "page": 66,
+          "grammar": "Kata hubung",
+          "seni": {
+            "type": "lagu",
+            "sp": "4.2.2",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "gamelan",
+              "zh": "甘美兰",
+              "en": "gamelan"
+            },
+            {
+              "ms": "ukiran kayu",
+              "zh": "木雕",
+              "en": "wood carving"
+            },
+            {
+              "ms": "kraf",
+              "zh": "工艺",
+              "en": "craft"
+            },
+            {
+              "ms": "perhiasan",
+              "zh": "饰品",
+              "en": "ornament / jewellery"
+            },
+            {
+              "ms": "tarian",
+              "zh": "舞蹈",
+              "en": "dance"
+            },
+            {
+              "ms": "topeng",
+              "zh": "面具",
+              "en": "mask"
+            },
+            {
+              "ms": "terompah",
+              "zh": "木屐",
+              "en": "wooden clogs"
+            },
+            {
+              "ms": "motif",
+              "zh": "图案",
+              "en": "motif / pattern"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "ms": "Cantik Menawan",
+          "page": 71,
+          "grammar": "Kata sendi nama",
+          "seni": {
+            "type": "ubah_suai_sajak",
+            "sp": "4.3.1",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "tempurung kelapa",
+              "zh": "椰壳",
+              "en": "coconut shell"
+            },
+            {
+              "ms": "pakaian tradisional",
+              "zh": "传统服装",
+              "en": "traditional clothing"
+            },
+            {
+              "ms": "busana",
+              "zh": "服饰",
+              "en": "attire"
+            },
+            {
+              "ms": "majlis perkahwinan",
+              "zh": "婚礼",
+              "en": "wedding"
+            },
+            {
+              "ms": "hiasan",
+              "zh": "装饰",
+              "en": "decoration"
+            },
+            {
+              "ms": "bakul",
+              "zh": "篮子",
+              "en": "basket"
+            },
+            {
+              "ms": "bunga manggar",
+              "zh": "椰花装饰",
+              "en": "palm-blossom decoration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ms": "Alam Bersih Hidup Sejahtera",
+      "pages": [
+        81,
+        100
+      ],
+      "kingdom": {
+        "zh": "绿森林",
+        "en": "Green Forest",
+        "ms": "Hutan Hijau"
+      },
+      "boss": {
+        "zh": "垃圾怪",
+        "en": "Trash Monster",
+        "ms": "Raksasa Sampah"
+      },
+      "set": {
+        "zh": "森林守护套装",
+        "en": "Forest Guardian set"
+      },
+      "npc": "Norah",
+      "units": [
+        {
+          "n": 13,
+          "ms": "Prihatin akan Alam",
+          "page": 82,
+          "grammar": "Kata nafi (tidak / bukan)",
+          "seni": {
+            "type": "ubah_suai_cerita",
+            "sp": "4.3.2",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "sukarelawan",
+              "zh": "志愿者",
+              "en": "volunteer"
+            },
+            {
+              "ms": "sampah",
+              "zh": "垃圾",
+              "en": "rubbish"
+            },
+            {
+              "ms": "kitar semula",
+              "zh": "回收",
+              "en": "recycle"
+            },
+            {
+              "ms": "sisa",
+              "zh": "废料",
+              "en": "waste"
+            },
+            {
+              "ms": "perangkap sampah",
+              "zh": "垃圾拦截网",
+              "en": "rubbish trap"
+            },
+            {
+              "ms": "tong",
+              "zh": "桶",
+              "en": "bin"
+            },
+            {
+              "ms": "plastik",
+              "zh": "塑料",
+              "en": "plastic"
+            },
+            {
+              "ms": "pepejal",
+              "zh": "固体",
+              "en": "solid"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "ms": "Bersikap Mesra Alam",
+          "page": 87,
+          "grammar": "Kata bilangan",
+          "seni": {
+            "type": "ubah_suai_lagu",
+            "sp": "4.3.3",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "mesra alam",
+              "zh": "环保",
+              "en": "eco-friendly"
+            },
+            {
+              "ms": "mengurangkan",
+              "zh": "减少",
+              "en": "to reduce"
+            },
+            {
+              "ms": "tisu",
+              "zh": "纸巾",
+              "en": "tissue"
+            },
+            {
+              "ms": "kertas",
+              "zh": "纸",
+              "en": "paper"
+            },
+            {
+              "ms": "penebangan",
+              "zh": "砍伐",
+              "en": "logging / cutting down"
+            },
+            {
+              "ms": "tadahan air hujan",
+              "zh": "雨水收集",
+              "en": "rainwater harvesting"
+            },
+            {
+              "ms": "pembuangan",
+              "zh": "丢弃",
+              "en": "disposal"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "ms": "Selamatkan Alam Kita",
+          "page": 92,
+          "grammar": "Kata berimbuhan awalan + akhiran",
+          "seni": null,
+          "sample_words": [
+            {
+              "ms": "panel solar",
+              "zh": "太阳能板",
+              "en": "solar panel"
+            },
+            {
+              "ms": "tenaga",
+              "zh": "能源",
+              "en": "energy"
+            },
+            {
+              "ms": "elektrik",
+              "zh": "电",
+              "en": "electricity"
+            },
+            {
+              "ms": "kumbahan",
+              "zh": "污水",
+              "en": "sewage"
+            },
+            {
+              "ms": "asap",
+              "zh": "烟",
+              "en": "smoke"
+            },
+            {
+              "ms": "udara",
+              "zh": "空气",
+              "en": "air"
+            },
+            {
+              "ms": "teknologi hijau",
+              "zh": "绿色科技",
+              "en": "green technology"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "ms": "Malaysia Bumi Bertuah",
+      "pages": [
+        101,
+        121
+      ],
+      "kingdom": {
+        "zh": "国旗之城",
+        "en": "Flag City",
+        "ms": "Kota Gemilang"
+      },
+      "boss": {
+        "zh": "海盗船长",
+        "en": "Pirate Captain",
+        "ms": "Kapten Lanun"
+      },
+      "set": {
+        "zh": "国旗之城套装",
+        "en": "Flag City set"
+      },
+      "npc": "Jofri",
+      "units": [
+        {
+          "n": 16,
+          "ms": "Bangganya Kami",
+          "page": 102,
+          "grammar": "Kata berimbuhan apitan",
+          "seni": {
+            "type": "jawi",
+            "sp": "4.4.1-4.4.2",
+            "items": [
+              {
+                "ms": "Bersekutu Bertambah Mutu",
+                "kind": "jawi",
+                "meaning": {
+                  "zh": "国徽上的格言",
+                  "en": "motto on the national coat of arms"
+                }
+              }
+            ]
+          },
+          "sample_words": [
+            {
+              "ms": "Jalur Gemilang",
+              "zh": "国旗",
+              "en": "national flag"
+            },
+            {
+              "ms": "bendera",
+              "zh": "旗帜",
+              "en": "flag"
+            },
+            {
+              "ms": "Jata Negara",
+              "zh": "国徽",
+              "en": "national coat of arms"
+            },
+            {
+              "ms": "kontinjen",
+              "zh": "代表团",
+              "en": "contingent"
+            },
+            {
+              "ms": "mengibarkan",
+              "zh": "挥旗",
+              "en": "to fly / wave (a flag)"
+            },
+            {
+              "ms": "rakyat",
+              "zh": "人民",
+              "en": "the people / citizens"
+            },
+            {
+              "ms": "maruah",
+              "zh": "尊严",
+              "en": "dignity"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "ms": "Malaysia Tercinta",
+          "page": 107,
+          "grammar": "Kata majmuk bebas",
+          "seni": {
+            "type": "peribahasa_story",
+            "sp": "4.1.1",
+            "items": [
+              {
+                "ms": "hujan emas di negeri orang, hujan batu di negeri sendiri, lebih baik di negeri sendiri",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "他乡再好不如家乡",
+                  "en": "there is no place like home"
+                }
+              },
+              {
+                "ms": "bagai ikan pulang ke lubuk",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "回到熟悉的地方很开心",
+                  "en": "happy to be back where one belongs"
+                }
+              },
+              {
+                "ms": "masuk kandang kambing mengembek, masuk kandang kerbau menguak",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "入乡随俗",
+                  "en": "when in Rome, do as the Romans do"
+                }
+              },
+              {
+                "ms": "bulat hati",
+                "kind": "simpulan bahasa",
+                "meaning": {
+                  "zh": "下定决心",
+                  "en": "determined"
+                }
+              },
+              {
+                "ms": "anak jati",
+                "kind": "simpulan bahasa",
+                "meaning": {
+                  "zh": "土生土长的人",
+                  "en": "a native"
+                }
+              }
+            ]
+          },
+          "sample_words": [
+            {
+              "ms": "patriotik",
+              "zh": "爱国的",
+              "en": "patriotic"
+            },
+            {
+              "ms": "semangat",
+              "zh": "精神",
+              "en": "spirit"
+            },
+            {
+              "ms": "anggota",
+              "zh": "成员",
+              "en": "member"
+            },
+            {
+              "ms": "perairan",
+              "zh": "水域",
+              "en": "waters"
+            },
+            {
+              "ms": "lanun",
+              "zh": "海盗",
+              "en": "pirate"
+            },
+            {
+              "ms": "negeri",
+              "zh": "州",
+              "en": "state"
+            },
+            {
+              "ms": "berbakti",
+              "zh": "奉献",
+              "en": "to serve"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "ms": "Negaraku Hebat",
+          "page": 112,
+          "grammar": "Kata majmuk mantap",
+          "seni": {
+            "type": "sajak",
+            "sp": "4.2.1",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "pasport",
+              "zh": "护照",
+              "en": "passport"
+            },
+            {
+              "ms": "warganegara",
+              "zh": "公民",
+              "en": "citizen"
+            },
+            {
+              "ms": "MyKid / MyKad",
+              "zh": "身份证",
+              "en": "identity card"
+            },
+            {
+              "ms": "kemudahan",
+              "zh": "设施",
+              "en": "facilities"
+            },
+            {
+              "ms": "rawatan",
+              "zh": "治疗",
+              "en": "treatment"
+            },
+            {
+              "ms": "antarabangsa",
+              "zh": "国际",
+              "en": "international"
+            },
+            {
+              "ms": "jabatan",
+              "zh": "部门",
+              "en": "department"
+            },
+            {
+              "ms": "bertuah",
+              "zh": "幸运",
+              "en": "fortunate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ms": "Kuasai Sains, Teknologi dan Inovasi",
+      "pages": [
+        122,
+        141
+      ],
+      "kingdom": {
+        "zh": "科技塔",
+        "en": "Science Tower",
+        "ms": "Menara Sains"
+      },
+      "boss": {
+        "zh": "生锈机器人",
+        "en": "Rusty Robot",
+        "ms": "Robot Karat"
+      },
+      "set": {
+        "zh": "科学家套装",
+        "en": "Scientist set"
+      },
+      "npc": "Gauri",
+      "units": [
+        {
+          "n": 19,
+          "ms": "Cerdik Sains",
+          "page": 123,
+          "grammar": "Kata ganda penuh / separa",
+          "seni": {
+            "type": "lagu",
+            "sp": "4.2.2",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "magnet",
+              "zh": "磁铁",
+              "en": "magnet"
+            },
+            {
+              "ms": "berkarat",
+              "zh": "生锈",
+              "en": "rusty"
+            },
+            {
+              "ms": "rantai",
+              "zh": "链子",
+              "en": "chain"
+            },
+            {
+              "ms": "cuaca",
+              "zh": "天气",
+              "en": "weather"
+            },
+            {
+              "ms": "akar",
+              "zh": "根",
+              "en": "root"
+            },
+            {
+              "ms": "udara",
+              "zh": "空气",
+              "en": "air"
+            },
+            {
+              "ms": "peti sejuk",
+              "zh": "冰箱",
+              "en": "refrigerator"
+            },
+            {
+              "ms": "terdedah",
+              "zh": "暴露",
+              "en": "exposed"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "ms": "Mesra Teknologi",
+          "page": 128,
+          "grammar": "Ayat tunggal / ayat majmuk",
+          "seni": {
+            "type": "ubah_suai_sajak",
+            "sp": "4.3.1",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "pintar",
+              "zh": "智能",
+              "en": "smart"
+            },
+            {
+              "ms": "tablet",
+              "zh": "平板",
+              "en": "tablet"
+            },
+            {
+              "ms": "pembersih vakum",
+              "zh": "吸尘器",
+              "en": "vacuum cleaner"
+            },
+            {
+              "ms": "peranti",
+              "zh": "设备",
+              "en": "device"
+            },
+            {
+              "ms": "ciptaan",
+              "zh": "发明",
+              "en": "invention"
+            },
+            {
+              "ms": "canggih",
+              "zh": "先进",
+              "en": "advanced"
+            },
+            {
+              "ms": "mesin",
+              "zh": "机器",
+              "en": "machine"
+            },
+            {
+              "ms": "imbas",
+              "zh": "扫描",
+              "en": "scan"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "ms": "Rekaan Inovatif",
+          "page": 133,
+          "grammar": "Ayat penyata",
+          "seni": {
+            "type": "ubah_suai_cerita",
+            "sp": "4.3.2",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "inovasi",
+              "zh": "创新",
+              "en": "innovation"
+            },
+            {
+              "ms": "terarium",
+              "zh": "玻璃生态瓶",
+              "en": "terrarium"
+            },
+            {
+              "ms": "balang kaca",
+              "zh": "玻璃罐",
+              "en": "glass jar"
+            },
+            {
+              "ms": "menghalau",
+              "zh": "驱赶",
+              "en": "to drive away"
+            },
+            {
+              "ms": "kalis",
+              "zh": "防（水等）",
+              "en": "-proof (e.g. waterproof)"
+            },
+            {
+              "ms": "perabot",
+              "zh": "家具",
+              "en": "furniture"
+            },
+            {
+              "ms": "kreativiti",
+              "zh": "创造力",
+              "en": "creativity"
+            },
+            {
+              "ms": "alat",
+              "zh": "工具",
+              "en": "tool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "ms": "Bijak Belanja Celik Wang",
+      "pages": [
+        142,
+        160
+      ],
+      "kingdom": {
+        "zh": "金币市集",
+        "en": "Coin Market",
+        "ms": "Pasar Syiling"
+      },
+      "boss": {
+        "zh": "浪费鬼",
+        "en": "Spendthrift Ghost",
+        "ms": "Hantu Boros"
+      },
+      "set": {
+        "zh": "小老板套装",
+        "en": "Little Boss set"
+      },
+      "npc": "Najwa",
+      "units": [
+        {
+          "n": 22,
+          "ms": "Belanja Berhemat",
+          "page": 143,
+          "grammar": "Ayat tanya",
+          "seni": {
+            "type": "ubah_suai_lagu",
+            "sp": "4.3.3",
+            "items": []
+          },
+          "sample_words": [
+            {
+              "ms": "berbelanja",
+              "zh": "花钱、购物",
+              "en": "to spend / shop"
+            },
+            {
+              "ms": "berjimat",
+              "zh": "节省",
+              "en": "to be thrifty"
+            },
+            {
+              "ms": "perbelanjaan",
+              "zh": "开销",
+              "en": "expenses"
+            },
+            {
+              "ms": "barangan",
+              "zh": "物品",
+              "en": "goods"
+            },
+            {
+              "ms": "bekal",
+              "zh": "便当",
+              "en": "packed food"
+            },
+            {
+              "ms": "cermat",
+              "zh": "谨慎",
+              "en": "careful (with money)"
+            },
+            {
+              "ms": "simpan",
+              "zh": "储存",
+              "en": "to keep / save"
+            },
+            {
+              "ms": "menjahit",
+              "zh": "缝",
+              "en": "to sew"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "ms": "Maju dan Berjaya",
+          "page": 148,
+          "grammar": "Ayat aktif",
+          "seni": {
+            "type": "peribahasa_story",
+            "sp": "4.1.1",
+            "items": [
+              {
+                "ms": "melentur buluh biarlah daripada rebungnya",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "教育要从小开始",
+                  "en": "teach them while they are young"
+                }
+              },
+              {
+                "ms": "berat sama dipikul, ringan sama dijinjing",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "同甘共苦",
+                  "en": "share both burdens and joys"
+                }
+              },
+              {
+                "ms": "di mana ada kemahuan, di situ ada jalan",
+                "kind": "peribahasa",
+                "meaning": {
+                  "zh": "有志者事竟成",
+                  "en": "where there's a will, there's a way"
+                }
+              },
+              {
+                "ms": "ringan tulang",
+                "kind": "simpulan bahasa",
+                "meaning": {
+                  "zh": "勤快、乐于帮忙",
+                  "en": "hardworking and helpful"
+                }
+              }
+            ]
+          },
+          "sample_words": [
+            {
+              "ms": "usahawan",
+              "zh": "企业家",
+              "en": "entrepreneur"
+            },
+            {
+              "ms": "perniagaan",
+              "zh": "生意",
+              "en": "business"
+            },
+            {
+              "ms": "pelanggan",
+              "zh": "顾客",
+              "en": "customer"
+            },
+            {
+              "ms": "gerai",
+              "zh": "摊位",
+              "en": "stall"
+            },
+            {
+              "ms": "berjaya",
+              "zh": "成功",
+              "en": "successful"
+            },
+            {
+              "ms": "taska",
+              "zh": "托儿所",
+              "en": "nursery"
+            },
+            {
+              "ms": "karnival",
+              "zh": "嘉年华",
+              "en": "carnival"
+            }
+          ]
+        },
+        {
+          "n": 24,
+          "ms": "Bijak Kewangan",
+          "page": 153,
+          "grammar": "Ayat susunan biasa / songsang",
+          "seni": {
+            "type": "jawi",
+            "sp": "4.4.1-4.4.2",
+            "items": [
+              {
+                "ms": "Bank Negara Malaysia",
+                "kind": "jawi",
+                "meaning": {
+                  "zh": "钞票上的爪夷文",
+                  "en": "Jawi on banknotes"
+                }
+              },
+              {
+                "ms": "Ringgit Malaysia",
+                "kind": "jawi",
+                "meaning": {
+                  "zh": "钞票上的爪夷文",
+                  "en": "Jawi on banknotes"
+                }
+              }
+            ]
+          },
+          "sample_words": [
+            {
+              "ms": "bank",
+              "zh": "银行",
+              "en": "bank"
+            },
+            {
+              "ms": "akaun",
+              "zh": "账户",
+              "en": "account"
+            },
+            {
+              "ms": "wang saku",
+              "zh": "零用钱",
+              "en": "pocket money"
+            },
+            {
+              "ms": "waranti",
+              "zh": "保修",
+              "en": "warranty"
+            },
+            {
+              "ms": "ringgit",
+              "zh": "令吉",
+              "en": "ringgit"
+            },
+            {
+              "ms": "ganjaran",
+              "zh": "奖励",
+              "en": "reward"
+            },
+            {
+              "ms": "simpanan",
+              "zh": "储蓄",
+              "en": "savings"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

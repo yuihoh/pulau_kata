@@ -1,0 +1,20 @@
+# textbook (copyrighted, reference only)
+reference/*.pdf
+reference/*.txt
+
+# node / build
+node_modules/
+dist/
+.vite/
+coverage/
+
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

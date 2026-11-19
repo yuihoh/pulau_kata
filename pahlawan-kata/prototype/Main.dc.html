@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>登入 · 选择勇士</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#232A5C;font-family:'Noto Sans SC',sans-serif;color:#FFFFFF;display:flex;flex-direction:column;padding:56px 24px 32px;gap:28px;overflow:hidden">
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+<svg width="72" height="72" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V6z" fill="#FFB020" stroke="#FFE3A3" stroke-width="1.2"/><path d="M9 12.5l2 2 4-4.5" fill="none" stroke="#232A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h1 style="margin:0;font-family:'ZCOOL KuaiLe',sans-serif;font-size:44px;font-weight:400;letter-spacing:2px">词语勇士</h1>
+<p style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:#FFC94D;letter-spacing:1px">PAHLAWAN KATA</p>
+<p style="margin:4px 0 0;font-size:14px;color:#C9CDF2">打怪升级，学会每一个生字</p>
+</div>
+<div style="background:#FFFFFF;border-radius:24px;padding:20px;display:flex;flex-direction:column;gap:16px;color:#1E2033">
+<h2 style="margin:0;font-size:18px;font-weight:700">谁要出发冒险？</h2>
+<div style="display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:12px">
+<a href="Map.dc.html" style="text-decoration:none;color:#1E2033;display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 4px;border-radius:16px;border:3px solid #2F7DE1;background:#EEF4FF">
+<div style="width:56px;height:56px;border-radius:50%;background:#2F7DE1;display:flex;align-items:center;justify-content:center;font-family:'ZCOOL KuaiLe',sans-serif;font-size:26px;color:#FFFFFF">明</div>
+<span style="font-size:14px;font-weight:700">小明</span>
+<span style="font-size:12px;color:#4A4F6A">Lv 5</span>
+</a>
+<a href="Map.dc.html" style="text-decoration:none;color:#1E2033;display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 4px;border-radius:16px;border:3px solid #E6E8F2;background:#FFFFFF">
+<div style="width:56px;height:56px;border-radius:50%;background:#C2410C;display:flex;align-items:center;justify-content:center;font-family:'ZCOOL KuaiLe',sans-serif;font-size:26px;color:#FFFFFF">慧</div>
+<span style="font-size:14px;font-weight:700">小慧</span>
+<span style="font-size:12px;color:#4A4F6A">Lv 3</span>
+</a>
+<a href="CharacterCreate.dc.html" style="text-decoration:none;color:#1E2033;display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 4px;border-radius:16px;border:3px dashed #B5BAD3;background:#FFFFFF">
+<div style="width:56px;height:56px;border-radius:50%;background:#F1F2F8;display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="#4A4F6A" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+<span style="font-size:14px;font-weight:700">新勇士</span>
+<span style="font-size:12px;color:#4A4F6A">创建</span>
+</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<span style="font-size:14px;font-weight:700">小明，点出你的图案密码</span>
+<div style="display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:10px">
+<button aria-label="星星" style="height:56px;border-radius:14px;border:2px solid #2F7DE1;background:#EEF4FF;display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z" fill="#FFB020"/></svg></button>
+<button aria-label="月亮" style="height:56px;border-radius:14px;border:2px solid #2F7DE1;background:#EEF4FF;display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z" fill="#6B5BD6"/></svg></button>
+<button aria-label="树" style="height:56px;border-radius:14px;border:2px dashed #B5BAD3;background:#FFFFFF"></button>
+<button aria-label="鱼" style="height:56px;border-radius:14px;border:2px dashed #B5BAD3;background:#FFFFFF"></button>
+</div>
+</div>
+</div>
+<div style="flex-grow:1"></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+<button style="width:100%;height:52px;border-radius:26px;border:2px solid #FFFFFF;background:transparent;color:#FFFFFF;font-family:'Noto Sans SC',sans-serif;font-size:15px;font-weight:700">家长登入（Google / 电邮）</button>
+<span style="font-size:12px;color:#C9CDF2">账号由家长建立，孩子用头像 + 图案密码登入</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

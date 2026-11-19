@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pahlawan Kata - one textbook Unit",
+  "type": "object",
+  "required": ["tema", "unit", "title", "grammar", "packs", "grammarQuestions", "sentences"],
+  "definitions": {
+    "i18n": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "properties": { "zh": { "type": "string" }, "en": { "type": "string" } }
+    },
+    "word": {
+      "type": "object",
+      "required": ["id", "word", "meaning", "example"],
+      "properties": {
+        "id": { "type": "string", "description": "t{tema}u{unit}-{slug}, e.g. t2u4-kesihatan" },
+        "word": { "type": "string", "description": "Bahasa Melayu word or phrase" },
+        "root": { "type": "string" },
+        "family": { "type": "array", "items": { "type": "string" }, "description": "Pack C: related forms (imbuhan)" },
+        "meaning": { "$ref": "#/definitions/i18n" },
+        "example": {
+          "type": "object",
+          "required": ["ms", "zh", "en"],
+          "properties": { "ms": { "type": "string" }, "zh": { "type": "string" }, "en": { "type": "string" } },
+          "description": "Example sentence written by us, NOT copied from the textbook"
+        },
+        "image": { "type": "string" },
+        "audio": { "type": "string" },
+        "imagePrompt": { "type": "string", "description": "English hint for generating the word card image" }
+      }
+    },
+    "choiceQuestion": {
+      "type": "object",
+      "required": ["id", "type", "prompt", "options", "answer", "rule"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "enum": ["choose", "classify", "forge", "transform"] },
+        "prompt": {
+          "type": "object",
+          "properties": {
+            "ms": { "type": "string", "description": "Sentence with ___ for the blank" },
+            "zh": { "type": "string" },
+            "en": { "type": "string" }
+          }
+        },
+        "options": { "type": "array", "items": { "type": "string" } },
+        "answer": { "type": "string" },
+        "rule": { "$ref": "#/definitions/i18n" },
+        "levels": { "type": "array", "items": { "enum": ["easy", "medium", "hard"] } }
+      }
+    }
+  },
+  "properties": {
+    "tema": { "type": "integer", "minimum": 1, "maximum": 8 },
+    "unit": { "type": "integer", "minimum": 1, "maximum": 24 },
+    "title": { "type": "string" },
+    "grammar": { "type": "string" },
+    "packs": {
+      "type": "object",
+      "required": ["A"],
+      "properties": {
+        "A": { "type": "array", "items": { "$ref": "#/definitions/word" }, "description": "Core, 12 words (Easy)" },
+        "B": { "type": "array", "items": { "$ref": "#/definitions/word" }, "description": "Extension, 12 words (Medium)" },
+        "C": { "type": "array", "items": { "$ref": "#/definitions/word" }, "description": "Word families + expressions, 12 entries (Hard)" }
+      }
+    },
+    "grammarQuestions": { "type": "array", "items": { "$ref": "#/definitions/choiceQuestion" } },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "ms", "zh", "en", "tiles"],
+        "properties": {
+          "id": { "type": "string" },
+          "ms": { "type": "string" },
+          "zh": { "type": "string" },
+          "en": { "type": "string" },
+          "tiles": { "type": "array", "items": { "type": "string" } },
+          "levels": { "type": "array", "items": { "enum": ["easy", "medium", "hard"] } }
+        }
+      }
+    },
+    "seni": {
+      "type": "object",
+      "properties": {
+        "type": { "enum": ["peribahasa_story", "sajak", "lagu", "ubah_suai_sajak", "ubah_suai_cerita", "ubah_suai_lagu", "jawi"] },
+        "pairs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "ms": { "type": "string" }, "kind": { "type": "string" }, "meaning": { "$ref": "#/definitions/i18n" } }
+          }
+        }
+      }
+    }
+  }
+}

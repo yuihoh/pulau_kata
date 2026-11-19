@@ -1,0 +1,125 @@
+{
+  "_status": "DRAFT sample to show the format. Pack A/B/C are incomplete (12 each in the real file). All example sentences are our own, not copied from the textbook. Please have a BM teacher review.",
+  "tema": 2,
+  "unit": 4,
+  "title": "Kesihatan Harus Dijaga",
+  "grammar": "Penjodoh bilangan",
+  "packs": {
+    "A": [
+      {
+        "id": "t2u4-kesihatan", "word": "kesihatan", "root": "sihat",
+        "meaning": { "zh": "健康", "en": "health" },
+        "example": { "ms": "Kita mesti menjaga kesihatan diri.", "zh": "我们必须照顾自己的健康。", "en": "We must take care of our health." },
+        "imagePrompt": "a happy child exercising, eating fruit and drinking water"
+      },
+      {
+        "id": "t2u4-penyakit", "word": "penyakit", "root": "sakit",
+        "meaning": { "zh": "疾病", "en": "disease" },
+        "example": { "ms": "Nyamuk boleh membawa penyakit.", "zh": "蚊子会传播疾病。", "en": "Mosquitoes can spread disease." },
+        "imagePrompt": "a cartoon germ next to a sick child resting in bed, not scary"
+      },
+      {
+        "id": "t2u4-pemakanan", "word": "pemakanan", "root": "makan",
+        "meaning": { "zh": "饮食", "en": "diet / nutrition" },
+        "example": { "ms": "Pemakanan yang seimbang baik untuk badan.", "zh": "均衡的饮食对身体有益。", "en": "A balanced diet is good for the body." },
+        "imagePrompt": "a balanced plate with rice, vegetables, fish and fruit"
+      },
+      {
+        "id": "t2u4-gigi", "word": "gigi", "root": "gigi",
+        "meaning": { "zh": "牙齿", "en": "teeth" },
+        "example": { "ms": "Saya memberus gigi dua kali sehari.", "zh": "我一天刷两次牙。", "en": "I brush my teeth twice a day." },
+        "imagePrompt": "a big shiny cartoon tooth smiling"
+      },
+      {
+        "id": "t2u4-postur", "word": "postur", "root": "postur",
+        "meaning": { "zh": "姿势", "en": "posture" },
+        "example": { "ms": "Duduk dengan postur yang betul.", "zh": "用正确的姿势坐。", "en": "Sit with the correct posture." },
+        "imagePrompt": "a child sitting upright at a desk with a straight back"
+      },
+      {
+        "id": "t2u4-sihat", "word": "sihat", "root": "sihat",
+        "meaning": { "zh": "健康的", "en": "healthy" },
+        "example": { "ms": "Adik makan sayur supaya badannya sihat.", "zh": "弟弟吃蔬菜，身体才会健康。", "en": "My little brother eats vegetables to stay healthy." },
+        "imagePrompt": "a strong cheerful child flexing arms next to vegetables"
+      }
+    ],
+    "B": [
+      {
+        "id": "t2u4-serat", "word": "serat", "root": "serat",
+        "meaning": { "zh": "纤维", "en": "fibre" },
+        "example": { "ms": "Buah-buahan mengandungi banyak serat.", "zh": "水果含有很多纤维。", "en": "Fruits contain a lot of fibre." },
+        "imagePrompt": "fruits and vegetables with wholegrain bread"
+      },
+      {
+        "id": "t2u4-vitamin", "word": "vitamin", "root": "vitamin",
+        "meaning": { "zh": "维生素", "en": "vitamin" },
+        "example": { "ms": "Oren kaya dengan vitamin C.", "zh": "橙子富含维生素 C。", "en": "Oranges are rich in vitamin C." },
+        "imagePrompt": "a halved orange with sparkles"
+      }
+    ],
+    "C": [
+      {
+        "id": "t2u4-menyihatkan", "word": "menyihatkan", "root": "sihat",
+        "family": ["sihat", "kesihatan", "menyihatkan"],
+        "meaning": { "zh": "使健康", "en": "to make healthy" },
+        "example": { "ms": "Bersenam menyihatkan badan.", "zh": "运动使身体健康。", "en": "Exercise makes the body healthy." },
+        "imagePrompt": "a family jogging together in a park"
+      },
+      {
+        "id": "t2u4-sakit", "word": "sakit", "root": "sakit",
+        "family": ["sakit", "penyakit", "pesakit"],
+        "meaning": { "zh": "生病、痛（sihat 的反义词）", "en": "sick / painful (opposite of sihat)" },
+        "example": { "ms": "Dia tidak datang ke sekolah kerana sakit.", "zh": "他因为生病没有来上学。", "en": "He did not come to school because he was sick." },
+        "imagePrompt": "a child with a thermometer resting in bed"
+      }
+    ]
+  },
+  "grammarQuestions": [
+    {
+      "id": "t2u4-g1", "type": "choose",
+      "prompt": { "ms": "Ali membeli dua ___ berus gigi.", "zh": "Ali 买了两支牙刷。", "en": "Ali bought two toothbrushes." },
+      "options": ["biji", "batang", "helai", "ekor"], "answer": "batang",
+      "rule": { "zh": "batang 用于长条形的东西，例如 berus gigi、pensel、pokok。", "en": "Use batang for long thin things, e.g. berus gigi, pensel, pokok." },
+      "levels": ["easy", "medium", "hard"]
+    },
+    {
+      "id": "t2u4-g2", "type": "choose",
+      "prompt": { "ms": "Ibu membeli tiga ___ epal.", "zh": "妈妈买了三颗苹果。", "en": "Mother bought three apples." },
+      "options": ["helai", "ekor", "biji", "batang"], "answer": "biji",
+      "rule": { "zh": "biji 用于小而圆的东西，例如 epal、telur、bola。", "en": "Use biji for small round things, e.g. epal, telur, bola." },
+      "levels": ["easy", "medium", "hard"]
+    },
+    {
+      "id": "t2u4-g3", "type": "choose",
+      "prompt": { "ms": "Cikgu memberi saya dua ___ kertas.", "zh": "老师给了我两张纸。", "en": "The teacher gave me two sheets of paper." },
+      "options": ["helai", "biji", "batang", "ekor"], "answer": "helai",
+      "rule": { "zh": "helai 用于薄薄的东西，例如 kertas、baju、daun。", "en": "Use helai for thin flat things, e.g. kertas, baju, daun." },
+      "levels": ["easy", "medium", "hard"]
+    },
+    {
+      "id": "t2u4-g4", "type": "choose",
+      "prompt": { "ms": "Ada lima ___ nyamuk di dapur.", "zh": "厨房里有五只蚊子。", "en": "There are five mosquitoes in the kitchen." },
+      "options": ["batang", "ekor", "helai", "biji"], "answer": "ekor",
+      "rule": { "zh": "ekor 用于动物，例如 nyamuk、kucing、ikan。", "en": "Use ekor for animals, e.g. nyamuk, kucing, ikan." },
+      "levels": ["easy", "medium", "hard"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "t2u4-s1", "ms": "Saya duduk dengan postur yang betul.",
+      "zh": "我用正确的姿势坐。", "en": "I sit with the correct posture.",
+      "tiles": ["Saya", "duduk", "dengan", "postur", "yang", "betul."],
+      "levels": ["easy"]
+    },
+    {
+      "id": "t2u4-s2", "ms": "Ali membeli dua batang berus gigi.",
+      "zh": "Ali 买了两支牙刷。", "en": "Ali bought two toothbrushes.",
+      "tiles": ["Ali", "membeli", "dua", "batang", "berus", "gigi."],
+      "levels": ["easy", "medium"]
+    }
+  ],
+  "seni": {
+    "type": "ubah_suai_sajak",
+    "pairs": []
+  }
+}

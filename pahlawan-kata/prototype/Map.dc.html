@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>世界地图 · 8 个 Tema 王国</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#BFE6F2;font-family:'Noto Sans SC',sans-serif;color:#1E2033;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:#232A5C;color:#FFFFFF;padding:44px 16px 12px;display:flex;align-items:center;gap:12px">
+<div style="width:46px;height:46px;border-radius:50%;background:#2F7DE1;border:3px solid #FFC94D;display:flex;align-items:center;justify-content:center;font-family:'ZCOOL KuaiLe',sans-serif;font-size:22px">明</div>
+<div style="flex-grow:1;display:flex;flex-direction:column;gap:5px">
+<div style="display:flex;justify-content:space-between;font-size:13px;font-weight:700"><span>小明 · Lv 6</span><span style="color:#C9CDF2">XP 40 / 550</span></div>
+<div style="height:10px;border-radius:5px;background:#3D4580;overflow:hidden"><div style="width:8%;height:10px;background:#FFC94D"></div></div>
+</div>
+<div style="display:flex;align-items:center;gap:5px;background:#3D4580;border-radius:16px;padding:6px 10px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#FFC23D" stroke="#B7790A" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="#B7790A" stroke-width="2"/></svg>1,290</div>
+</div>
+<div style="padding:10px 16px 0;display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px">
+<a href="Boss.dc.html" style="text-decoration:none;background:#FFFFFF;border-radius:14px;padding:9px 12px;display:flex;align-items:center;justify-content:space-between;color:#1E2033;border-bottom:4px solid #E5533D">
+<span style="display:flex;flex-direction:column"><span style="font-size:12px;font-weight:700;color:#B4321F">今日待复习</span><span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;line-height:1.1">6 字</span></span><span style="font-size:18px;font-weight:900">›</span>
+</a>
+<div style="background:#FFFFFF;border-radius:14px;padding:9px 12px;display:flex;flex-direction:column;gap:4px;border-bottom:4px solid #1FA39A">
+<span style="font-size:12px;font-weight:700;color:#0F766E">学校进度</span>
+<span style="font-size:13px;font-weight:700">正在教 Tema 2</span>
+</div>
+</div>
+<div style="position:relative;flex-grow:1">
+<svg width="390" height="560" viewBox="0 0 390 560" aria-hidden="true" style="position:absolute;left:0;top:0">
+<path d="M61 41 L231 105 L61 169 L231 233 L61 297 L231 361 L61 425 L231 489" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-dasharray="2 12" stroke-linecap="round"/>
+</svg>
+<sc-for list="{{temas}}" as="t" hint-placeholder-count="8">
+<a href="{{t.href}}" style="position:absolute;left:{{t.x}};top:{{t.y}};width:180px;height:58px;display:flex;align-items:center;gap:10px;text-decoration:none;color:#1E2033;opacity:{{t.op}}">
+<span style="width:54px;height:54px;flex-shrink:0;border-radius:50%;background:{{t.bg}};border:4px solid {{t.ring}};box-shadow:{{t.glow}};display:flex;align-items:center;justify-content:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:{{t.ink}}">{{t.mark}}</span>
+<span style="display:flex;flex-direction:column;gap:1px;min-width:0;overflow:hidden">
+<span style="font-size:11px;font-weight:700;color:#3A3F66">TEMA {{t.n}} · {{t.status}}</span>
+<span style="font-size:15px;font-weight:900;white-space:nowrap">{{t.zh}}</span>
+<span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:11px;color:#3A3F66;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{t.bm}}</span>
+</span>
+</a>
+</sc-for>
+</div>
+<nav style="background:#FFFFFF;display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));padding:8px 8px 22px;border-top:1px solid #E6E8F2">
+<a href="Map.dc.html" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#2F7DE1;font-size:12px;font-weight:700"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#2F7DE1" stroke-width="2" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>地图</a>
+<a href="Wardrobe.dc.html" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#4A4F6A;font-size:12px;font-weight:700"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#4A4F6A" stroke-width="2" stroke-linejoin="round"><path d="M8 4l-5 3 2 4 2-1v10h10V10l2 1 2-4-5-3c-.5 1.5-2 2.5-4 2.5S8.5 5.5 8 4z"/></svg>衣柜</a>
+<a href="Inventory.dc.html" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#4A4F6A;font-size:12px;font-weight:700"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#4A4F6A" stroke-width="2" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V6z"/></svg>装备</a>
+<a href="Shop.dc.html" style="height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#4A4F6A;font-size:12px;font-weight:700"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#4A4F6A" stroke-width="2" stroke-linejoin="round"><path d="M4 9h16l-1.5 11h-13z"/><path d="M8 9V7a4 4 0 018 0v2"/></svg>商店</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+const list = [
+['和谐村', 'Harmoni Sentiasa', 'done', '★ 32/36'],
+['清洁城', 'Kebersihan dan Kesihatan', 'now', '进行中'],
+['安全堡垒', 'Waspada Pasti Selamat', 'lock', '未解锁'],
+['文化谷', 'Indahnya Budaya, Halusnya Seni', 'lock', '未解锁'],
+['绿森林', 'Alam Bersih Hidup Sejahtera', 'lock', '未解锁'],
+['国旗之城', 'Malaysia Bumi Bertuah', 'lock', '未解锁'],
+['科技塔', 'Kuasai Sains, Teknologi…', 'lock', '未解锁'],
+['金币市集', 'Bijak Belanja Celik Wang', 'lock', '未解锁']
+];
+const temas = list.map((r, i) => {
+const st = r[2];
+return {
+n: i + 1, zh: r[0], bm: r[1], status: r[3],
+x: (i % 2 === 0 ? 30 : 200) + 'px', y: (12 + i * 64) + 'px',
+href: st === 'lock' ? 'Map.dc.html' : 'Kingdom.dc.html',
+mark: st === 'lock' ? '' + (i + 1) : (st === 'done' ? '✓' : '' + (i + 1)),
+bg: st === 'done' ? '#7CC66A' : (st === 'now' ? '#FFC94D' : '#D5DAE3'),
+ring: st === 'done' ? '#4E9A3E' : (st === 'now' ? '#B7790A' : '#9AA2B4'),
+ink: st === 'done' ? '#FFFFFF' : (st === 'now' ? '#1E2033' : '#4A4F6A'),
+glow: st === 'now' ? '0 0 0 6px rgba(255,255,255,0.7)' : 'none',
+op: st === 'lock' ? '0.72' : '1'
+};
+});
+return { temas };
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>阶级外观 · 徽章墙</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#FFF6E5;font-family:'Noto Sans SC',sans-serif;color:#1E2033;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:#232A5C;color:#FFFFFF;padding:40px 16px 14px;display:flex;flex-direction:column;gap:4px">
+<a href="Map.dc.html" style="color:#FFFFFF;text-decoration:none;font-size:14px;font-weight:700;height:30px;display:flex;align-items:center">‹ 地图</a>
+<h1 style="margin:0;font-family:'ZCOOL KuaiLe',sans-serif;font-size:28px;font-weight:400">我的阶级</h1>
+<span style="font-size:13px;color:#C9CDF2">阶级标记加在角色身上，衣柜换的装照样看得到</span>
+</div>
+<div style="padding:12px 12px 0;display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:8px">
+<button onClick="{{pickB}}" style="border-radius:18px;border:3px solid {{bBorder}};background:#FFFFFF;padding:0 0 8px;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:4px;font-family:'Noto Sans SC',sans-serif;color:#1E2033">
+<span style="width:100%;height:150px;background:#2E3466;display:flex;align-items:flex-end;justify-content:center">
+<svg width="96" height="128" viewBox="0 0 120 160" role="img" aria-label="见习勇士：胸前铜徽章">
+<ellipse cx="60" cy="152" rx="34" ry="6" fill="#000000" opacity="0.3"/>
+<rect x="45" y="116" width="12" height="30" rx="5" fill="#3A3F66"/><rect x="63" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="34" y="76" width="52" height="48" rx="16" fill="#2F7DE1"/>
+<circle cx="60" cy="94" r="9" fill="#C07A3E" stroke="#8A5226" stroke-width="2.5"/>
+<circle cx="60" cy="50" r="28" fill="#FFD9B8"/>
+<path d="M32 46 C30 26 46 20 60 20 C76 20 90 28 88 46 C84 38 76 34 70 36 L66 30 L60 36 L52 30 L46 38 C40 38 34 42 32 46 Z" fill="#2B2B3A"/>
+<circle cx="50" cy="54" r="3.5" fill="#1E2033"/><circle cx="70" cy="54" r="3.5" fill="#1E2033"/>
+<path d="M53 64 Q60 69 67 64" fill="none" stroke="#1E2033" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="96" y="40" width="7" height="66" rx="2" fill="#E6EBF2" stroke="#8B4FD8" stroke-width="2"/>
+</svg>
+</span>
+<span style="border:2px solid #C07A3E;border-radius:8px;padding:0 8px;font-size:12px;font-weight:700">小明</span>
+<span style="font-size:14px;font-weight:900">见习勇士</span>
+<span style="font-size:11px;color:#4A4F6A">铜徽章</span>
+<span style="font-size:11px;font-weight:700;color:#0F766E">已解锁</span>
+</button>
+<button onClick="{{pickS}}" style="border-radius:18px;border:3px solid {{sBorder}};background:#FFFFFF;padding:0 0 8px;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:4px;font-family:'Noto Sans SC',sans-serif;color:#1E2033">
+<span style="width:100%;height:150px;background:#2E3466;display:flex;align-items:flex-end;justify-content:center">
+<svg width="96" height="128" viewBox="0 0 120 160" role="img" aria-label="骑士：银徽章、银色肩甲、脚下蓝光">
+<ellipse cx="60" cy="150" rx="46" ry="10" fill="#7FB8FF" opacity="0.55"/>
+<rect x="45" y="116" width="12" height="30" rx="5" fill="#3A3F66"/><rect x="63" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="34" y="76" width="52" height="48" rx="16" fill="#2F7DE1"/>
+<rect x="26" y="74" width="22" height="14" rx="7" fill="#C9D3E3" stroke="#5F6B80" stroke-width="2"/>
+<rect x="72" y="74" width="22" height="14" rx="7" fill="#C9D3E3" stroke="#5F6B80" stroke-width="2"/>
+<circle cx="60" cy="96" r="9" fill="#9AA4B5" stroke="#5F6B80" stroke-width="2.5"/>
+<circle cx="60" cy="50" r="28" fill="#FFD9B8"/>
+<path d="M32 46 C30 26 46 20 60 20 C76 20 90 28 88 46 C84 38 76 34 70 36 L66 30 L60 36 L52 30 L46 38 C40 38 34 42 32 46 Z" fill="#2B2B3A"/>
+<circle cx="50" cy="54" r="3.5" fill="#1E2033"/><circle cx="70" cy="54" r="3.5" fill="#1E2033"/>
+<path d="M53 64 Q60 69 67 64" fill="none" stroke="#1E2033" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="96" y="40" width="7" height="66" rx="2" fill="#E6EBF2" stroke="#8B4FD8" stroke-width="2"/>
+</svg>
+</span>
+<span style="border:2px solid #9AA4B5;border-radius:8px;padding:0 8px;font-size:12px;font-weight:700;background:#F1F2F8">小明</span>
+<span style="font-size:14px;font-weight:900">骑士</span>
+<span style="font-size:11px;color:#4A4F6A">银徽章 · 肩甲 · 蓝光</span>
+<span style="font-size:11px;font-weight:700;color:#0F766E">已解锁</span>
+</button>
+<button onClick="{{pickG}}" style="border-radius:18px;border:3px solid {{gBorder}};background:#FFFFFF;padding:0 0 8px;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:4px;font-family:'Noto Sans SC',sans-serif;color:#1E2033">
+<span style="width:100%;height:150px;background:#2E3466;display:flex;align-items:flex-end;justify-content:center;position:relative">
+<svg width="96" height="128" viewBox="0 0 120 160" role="img" aria-label="传奇勇者：金徽章、金色肩甲、金冠、金色光点（未解锁）" style="opacity:0.55">
+<ellipse cx="60" cy="150" rx="48" ry="10" fill="#FFC94D" opacity="0.6"/>
+<path d="M14 40l2 5 5 2-5 2-2 5-2-5-5-2 5-2z M104 22l2 5 5 2-5 2-2 5-2-5-5-2 5-2z M108 120l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z" fill="#FFE07A"/>
+<rect x="45" y="116" width="12" height="30" rx="5" fill="#3A3F66"/><rect x="63" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="34" y="76" width="52" height="48" rx="16" fill="#2F7DE1"/>
+<rect x="26" y="74" width="22" height="14" rx="7" fill="#FFC94D" stroke="#9A6B00" stroke-width="2"/>
+<rect x="72" y="74" width="22" height="14" rx="7" fill="#FFC94D" stroke="#9A6B00" stroke-width="2"/>
+<circle cx="60" cy="96" r="9" fill="#E0A200" stroke="#9A6B00" stroke-width="2.5"/>
+<circle cx="60" cy="50" r="28" fill="#FFD9B8"/>
+<path d="M32 46 C30 26 46 20 60 20 C76 20 90 28 88 46 C84 38 76 34 70 36 L66 30 L60 36 L52 30 L46 38 C40 38 34 42 32 46 Z" fill="#2B2B3A"/>
+<path d="M42 22 L46 6 L54 16 L60 2 L66 16 L74 6 L78 22 Z" fill="#FFC94D" stroke="#9A6B00" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="50" cy="54" r="3.5" fill="#1E2033"/><circle cx="70" cy="54" r="3.5" fill="#1E2033"/>
+<path d="M53 64 Q60 69 67 64" fill="none" stroke="#1E2033" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="96" y="40" width="7" height="66" rx="2" fill="#E6EBF2" stroke="#8B4FD8" stroke-width="2"/>
+</svg>
+<span style="position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;background:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#4A4F6A" stroke-width="2.4"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span>
+</span>
+<span style="border:2px solid #E0A200;border-radius:8px;padding:0 8px;font-size:12px;font-weight:700;background:#FFF1C9">小明</span>
+<span style="font-size:14px;font-weight:900">传奇勇者</span>
+<span style="font-size:11px;color:#4A4F6A">金徽章 · 金冠 · 光点</span>
+<span style="font-size:11px;font-weight:700;color:#6B7088">用高级完成 1 个 Tema</span>
+</button>
+</div>
+<div style="margin:10px 12px 0;background:#FFFFFF;border-radius:14px;padding:9px 12px;border:2px solid #F0E3C8;display:flex;justify-content:space-between;align-items:center;gap:8px">
+<span style="font-size:13px">现在显示：<b>{{shown}}</b></span>
+<sc-if value="{{msgOn}}" hint-placeholder-val="{{ false }}"><span style="font-size:12px;font-weight:700;color:#B4321F">{{msg}}</span></sc-if>
+</div>
+<div style="padding:14px 12px 0;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:16px;font-weight:900">徽章墙</span><span style="font-size:12px;color:#4A4F6A">1 / 8 个 Tema 完成</span></div>
+<div style="display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:8px">
+<sc-for list="{{wall}}" as="m" hint-placeholder-count="8">
+<div style="display:flex;flex-direction:column;align-items:center;gap:3px">
+<span style="width:54px;height:54px;border-radius:50%;background:{{m.fill}};border:3px {{m.style}} {{m.edge}};display:flex;align-items:center;justify-content:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:18px;color:{{m.ink}}">{{m.n}}</span>
+<span style="font-size:11px;font-weight:700">{{m.name}}</span>
+<span style="font-size:11px;color:{{m.subInk}}">{{m.sub}}</span>
+</div>
+</sc-for>
+</div>
+</div>
+<div style="flex-grow:1"></div>
+<div style="margin:0 12px 24px;background:#232A5C;color:#FFFFFF;border-radius:16px;padding:10px 12px;font-size:12px;line-height:1.6">
+完成 Tema：初级 → 铜，中级 → 银，高级 → 金。<br>用更高难度重打，徽章会升级。选了难度不会直接拿到外观。
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { shown: 1, msg: '' }; }
+renderVals() {
+const s = this.state;
+const names = ['见习勇士', '骑士', '传奇勇者'];
+const sel = (i) => (s.shown === i ? '#FFB020' : '#F0E3C8');
+const wallData = [
+['和谐村', 'silver', '银 · 中级'], ['清洁城', 'now', '进行中'], ['安全堡垒', 'none', '—'], ['文化谷', 'none', '—'],
+['绿森林', 'none', '—'], ['国旗之城', 'none', '—'], ['科技塔', 'none', '—'], ['金币市集', 'none', '—']
+];
+const wall = wallData.map((w, i) => {
+const st = w[1];
+return {
+n: i + 1, name: w[0], sub: w[2],
+fill: st === 'silver' ? '#C9D3E3' : (st === 'now' ? '#FFF6E5' : '#ECE7DC'),
+edge: st === 'silver' ? '#5F6B80' : (st === 'now' ? '#B7790A' : '#C9C2B2'),
+style: st === 'now' ? 'dashed' : 'solid',
+ink: st === 'none' ? '#8A8F98' : '#1E2033',
+subInk: st === 'silver' ? '#4A5568' : (st === 'now' ? '#8A5A00' : '#8A8F98')
+};
+});
+return {
+bBorder: sel(0), sBorder: sel(1), gBorder: sel(2),
+shown: names[s.shown], wall,
+msgOn: !!s.msg, msg: s.msg,
+pickB: () => this.setState({ shown: 0, msg: '' }),
+pickS: () => this.setState({ shown: 1, msg: '' }),
+pickG: () => this.setState({ msg: '还没解锁' })
+};
+}
+}
+</script>
+</body>
+</html>

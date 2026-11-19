@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>时间暂停 + 提示</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#1C3F66;font-family:'Noto Sans SC',sans-serif;color:#FFFFFF;display:flex;flex-direction:column;overflow:hidden">
+<div style="padding:44px 16px 0;display:flex;align-items:center;gap:10px">
+<div style="display:flex;gap:3px" role="img" aria-label="生命 3 / 3">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+</div>
+<div style="flex-grow:1;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px">第 6 / 10 题</div>
+<div style="display:flex;align-items:center;gap:6px;background:#BFE6F2;color:#123A5E;border-radius:16px;padding:6px 12px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#123A5E" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v20M4 6l16 12M20 6L4 18"/></svg>4s</div>
+</div>
+<div style="margin:16px 16px 0;border-radius:20px;background:#BFE6F2;color:#123A5E;padding:16px;display:flex;align-items:center;gap:14px;border:3px solid #FFFFFF">
+<svg width="44" height="44" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#2F7DE1" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M3.5 7l17 10M20.5 7l-17 10M9 3.5l3 2 3-2M9 20.5l3-2 3 2"/></svg>
+<div style="display:flex;flex-direction:column;gap:2px">
+<span style="font-family:'ZCOOL KuaiLe',sans-serif;font-size:24px">时间暂停！</span>
+<span style="font-size:13px;font-weight:700">时光手套：计时器冻结 10 秒，慢慢想</span>
+</div>
+<span style="margin-left:auto;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:32px">8</span>
+</div>
+<div style="height:150px;display:flex;align-items:center;justify-content:center;gap:40px;opacity:0.55">
+<svg width="70" height="94" viewBox="0 0 120 160" aria-hidden="true"><rect x="34" y="76" width="52" height="48" rx="16" fill="#2F7DE1"/><circle cx="60" cy="50" r="28" fill="#FFD9B8"/><path d="M30 46 C30 20 46 14 60 14 C74 14 90 20 90 46 L84 40 C78 30 42 30 36 40 Z" fill="#8A93A6"/></svg>
+<svg width="110" height="90" viewBox="0 0 160 130" aria-hidden="true"><path d="M18 116 C8 64 46 14 80 14 C114 14 152 64 142 116 Z" fill="#6CCB5F"/><circle cx="60" cy="66" r="11" fill="#FFFFFF"/><circle cx="100" cy="66" r="11" fill="#FFFFFF"/></svg>
+</div>
+<div style="flex-grow:1;background:#FFFFFF;border-radius:28px 28px 0 0;color:#1E2033;padding:20px 16px 24px;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;align-items:center;gap:12px">
+<button aria-label="再听一次" style="width:56px;height:56px;border-radius:50%;border:none;background:#232A5C;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z" fill="#FFFFFF"/><path d="M16.5 8.5a5 5 0 010 7M19 6a8.5 8.5 0 010 12"/></svg></button>
+<div style="display:flex;flex-direction:column;gap:2px">
+<span style="font-size:12px;font-weight:700;color:#4A4F6A">听音选字</span>
+<span style="font-size:20px;font-weight:900">你听到的是哪个字？</span>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;background:#FFF6E5;border-radius:12px;padding:8px 12px;font-size:13px;font-weight:700;color:#8A5A00"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#B7790A" stroke-width="2" stroke-linecap="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></svg>已用提示：删去两个错误选项（此字会标记"需复习"）</div>
+<div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px">
+<button disabled style="height:64px;border-radius:16px;border:2px dashed #C9CCD8;background:#F5F6FA;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:#8A8F98;text-decoration:line-through">kebun</button>
+<a href="Sentence.dc.html" style="height:64px;box-sizing:border-box;border-radius:16px;border:3px solid #E6E8F2;background:#FFFFFF;display:flex;align-items:center;justify-content:center;text-decoration:none;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:#1E2033;box-shadow:0 4px 0 #E6E8F2">menyiram</a>
+<a href="Sentence.dc.html" style="height:64px;box-sizing:border-box;border-radius:16px;border:3px solid #E6E8F2;background:#FFFFFF;display:flex;align-items:center;justify-content:center;text-decoration:none;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:#1E2033;box-shadow:0 4px 0 #E6E8F2">menyapu</a>
+<button disabled style="height:64px;border-radius:16px;border:2px dashed #C9CCD8;background:#F5F6FA;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:#8A8F98;text-decoration:line-through">udara</button>
+</div>
+<div style="flex-grow:1"></div>
+<div style="display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:8px">
+<button disabled style="height:62px;border-radius:14px;border:2px dashed #C9CCD8;background:#FFFFFF;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#6B7088">提示 ×1</button>
+<button disabled style="height:62px;border-radius:14px;border:2px solid #2F7DE1;background:#2F7DE1;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#FFFFFF">暂停中</button>
+<button style="height:62px;border-radius:14px;border:2px solid #1FA39A;background:#E3F3F1;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#1E2033">护盾 ×1</button>
+<button disabled style="height:62px;border-radius:14px;border:2px dashed #C9CCD8;background:#FFFFFF;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#6B7088">药水 ×0</button>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

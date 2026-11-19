@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>分级测验结果 · 选择难度</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#FFF6E5;font-family:'Noto Sans SC','Baloo 2',sans-serif;color:#1E2033;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:#232A5C;color:#FFFFFF;padding:44px 16px 16px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:center;justify-content:space-between">
+<span style="font-size:13px;font-weight:700;color:#C9CDF2">{{t.step}}</span>
+<div role="group" aria-label="Language" style="display:flex;background:#3D4580;border-radius:12px;padding:3px;gap:3px">
+<button onClick="{{toZh}}" style="height:36px;min-width:52px;border-radius:9px;border:none;background:{{zhBg}};color:{{zhInk}};font-family:'Noto Sans SC',sans-serif;font-size:13px;font-weight:700">中文</button>
+<button onClick="{{toEn}}" style="height:36px;min-width:52px;border-radius:9px;border:none;background:{{enBg}};color:{{enInk}};font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:800">EN</button>
+</div>
+</div>
+<h1 style="margin:0;font-family:'ZCOOL KuaiLe','Baloo 2',sans-serif;font-size:28px;font-weight:400;line-height:1.2">{{t.title}}</h1>
+<div style="display:flex;align-items:center;gap:12px;background:#3D4580;border-radius:16px;padding:10px 12px">
+<span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:30px;line-height:1">11<span style="font-size:16px;color:#C9CDF2"> / 15</span></span>
+<span style="font-size:13px;line-height:1.4;white-space:pre-line">{{t.score}}</span>
+</div>
+</div>
+<div style="padding:14px 14px 0;display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{levels}}" as="l" hint-placeholder-count="3">
+<button onClick="{{l.pick}}" style="border-radius:18px;border:3px solid {{l.border}};background:#FFFFFF;box-shadow:0 0 0 3px {{l.ring}};padding:10px 12px;display:flex;align-items:center;gap:12px;text-align:left;font-family:'Noto Sans SC','Baloo 2',sans-serif;color:#1E2033">
+<span style="width:50px;height:50px;flex-shrink:0;border-radius:50%;background:{{l.medal}};border:3px solid {{l.edge}};display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V6z" fill="#FFFFFF" opacity="0.9"/></svg></span>
+<span style="flex-grow:1;display:flex;flex-direction:column;gap:3px;min-width:0">
+<span style="display:flex;align-items:center;gap:6px"><span style="font-size:16px;font-weight:900">{{l.name}}</span><sc-if value="{{l.rec}}" hint-placeholder-val="{{ false }}"><span style="font-size:11px;font-weight:700;background:#1FA39A;color:#FFFFFF;border-radius:8px;padding:1px 7px">{{t.recTag}}</span></sc-if></span>
+<span style="font-size:12px;color:#4A4F6A">{{l.line1}}</span>
+<span style="font-size:12px;color:#4A4F6A">{{l.line2}}</span>
+</span>
+<span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;color:{{l.xpInk}}">XP ×{{l.xp}}</span>
+</button>
+</sc-for>
+</div>
+<div style="padding:14px 14px 0;display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;font-weight:900">{{t.meaningLabel}}</span>
+<div style="display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:6px;background:#EFE8D8;border-radius:14px;padding:4px">
+<sc-for list="{{meanings}}" as="m" hint-placeholder-count="3">
+<button onClick="{{m.pick}}" style="height:40px;border-radius:10px;border:none;background:{{m.bg}};font-family:'Noto Sans SC','Baloo 2',sans-serif;font-size:13px;font-weight:700;color:#1E2033">{{m.label}}</button>
+</sc-for>
+</div>
+<div style="display:flex;align-items:center;gap:10px;background:#FFFFFF;border-radius:14px;padding:8px 12px;border:2px solid #F0E3C8">
+<span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px">dapur</span>
+<span style="font-size:14px;color:#4A4F6A">→ {{sample}}</span>
+</div>
+</div>
+<div style="flex-grow:1"></div>
+<span style="padding:0 18px 10px;font-size:12px;color:#4A4F6A;line-height:1.5">{{t.note}}</span>
+<div style="padding:0 14px 26px">
+<a href="Map.dc.html" style="height:54px;border-radius:27px;background:#FFB020;color:#1E2033;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:900;box-shadow:0 4px 0 #B7790A">{{t.go}}</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { lang: 'zh', level: 1, meaning: 2 }; }
+renderVals() {
+const s = this.state;
+const zh = s.lang === 'zh';
+const T = zh ? {
+step: '分级小测验 · 完成', title: '选择你的勇士之路', score: '你答对了 11 题！\n系统建议：骑士（中级）',
+recTag: '建议', meaningLabel: '生字意思显示', note: '每个 Tema 都可以改难度，进度不会丢失。阶级外观要完成一个 Tema 才会解锁。', go: '确认，出发！'
+} : {
+step: 'Placement test · Done', title: 'Choose your hero path', score: 'You got 11 right!\nWe suggest: Knight (Medium)',
+recTag: 'Suggested', meaningLabel: 'Show word meanings in', note: 'You can change the level for every Tema without losing progress. Rank looks unlock when you finish a Tema.', go: 'Confirm, let’s go!'
+};
+const L = [
+{ zh: ['见习勇士 · 初级', '每个 Unit 12 个字 · 每题 20 秒', '有图片提示 · 排词块造句'], en: ['Squire · Easy', '12 words per Unit · 20s per question', 'Picture hints · tile sentences'], medal: '#C07A3E', edge: '#8A5226', xp: '1', xpInk: '#8A5226' },
+{ zh: ['骑士 · 中级', '每个 Unit 24 个字 · 每题 15 秒', '没有图片提示 · 句子填空'], en: ['Knight · Medium', '24 words per Unit · 15s per question', 'No picture hints · fill the blank'], medal: '#9AA4B5', edge: '#5F6B80', xp: '1.5', xpInk: '#4A5568', rec: true },
+{ zh: ['传奇勇者 · 高级', '每个 Unit 36 个字（含词族）· 每题 12 秒', '拼写、听音打字 · 自己造句'], en: ['Legend · Hard', '36 words per Unit (with word families) · 12s', 'Spelling, listen & type · own sentences'], medal: '#E0A200', edge: '#9A6B00', xp: '2', xpInk: '#8A5A00' }
+];
+const levels = L.map((x, i) => {
+const tx = zh ? x.zh : x.en;
+return { name: tx[0], line1: tx[1], line2: tx[2], medal: x.medal, edge: x.edge, xp: x.xp, xpInk: x.xpInk, rec: !!x.rec,
+border: i === s.level ? '#FFB020' : '#F0E3C8', ring: i === s.level ? '#FFE3A3' : 'transparent', pick: () => this.setState({ level: i }) };
+});
+const ML = zh ? ['中文', 'English', '中英双语'] : ['中文', 'English', 'Both'];
+const SM = ['厨房', 'kitchen', '厨房 · kitchen'];
+const meanings = ML.map((label, i) => ({ label, bg: i === s.meaning ? '#FFFFFF' : 'transparent', pick: () => this.setState({ meaning: i }) }));
+return {
+t: T, levels, meanings, sample: SM[s.meaning],
+zhBg: zh ? '#FFFFFF' : 'transparent', zhInk: zh ? '#1E2033' : '#FFFFFF',
+enBg: zh ? 'transparent' : '#FFFFFF', enInk: zh ? '#FFFFFF' : '#1E2033',
+toZh: () => this.setState({ lang: 'zh' }), toEn: () => this.setState({ lang: 'en' })
+};
+}
+}
+</script>
+</body>
+</html>

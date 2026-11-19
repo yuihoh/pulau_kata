@@ -1,0 +1,236 @@
+{
+"v": 3,
+"createdOnFiles": {
+"v": 1,
+"at": "2026-11-18T14:10:00Z"
+},
+"title": "词语勇士 Pahlawan Kata — 手机原型",
+"launch": {
+"view": "canvas"
+},
+"pages": [],
+"boards": {
+"Main.dc.html": {
+"x": 0,
+"y": 0,
+"w": 390,
+"h": 844,
+"title": "1 登入 · 选择勇士",
+"is_interactive": true
+},
+"CharacterCreate.dc.html": {
+"x": 470,
+"y": 0,
+"w": 390,
+"h": 844,
+"title": "2 创建角色",
+"is_interactive": true
+},
+"Map.dc.html": {
+"x": 940,
+"y": 0,
+"w": 390,
+"h": 844,
+"title": "3 世界地图 · 8 个 Tema 王国",
+"is_interactive": true
+},
+"Kingdom.dc.html": {
+"x": 1410,
+"y": 0,
+"w": 390,
+"h": 844,
+"title": "4 Tema 王国 · 3 Unit + 4P 结局",
+"is_interactive": true
+},
+"Learn.dc.html": {
+"x": 1880,
+"y": 0,
+"w": 390,
+"h": 844,
+"title": "5 关卡1 认字 · 翻卡",
+"is_interactive": true
+},
+"Quiz.dc.html": {
+"x": 0,
+"y": 1240,
+"w": 390,
+"h": 844,
+"title": "6 关卡2 测验 · 战斗",
+"is_interactive": true
+},
+"QuizFreeze.dc.html": {
+"x": 470,
+"y": 1240,
+"w": 390,
+"h": 844,
+"title": "7 时间暂停 + 提示",
+"is_interactive": true
+},
+"Sentence.dc.html": {
+"x": 940,
+"y": 1240,
+"w": 390,
+"h": 844,
+"title": "8 关卡3 造句 · 词块排序",
+"is_interactive": true
+},
+"Boss.dc.html": {
+"x": 1410,
+"y": 1240,
+"w": 390,
+"h": 844,
+"title": "9 Tema Boss（Penilaian）",
+"is_interactive": true
+},
+"Result.dc.html": {
+"x": 1880,
+"y": 1240,
+"w": 390,
+"h": 844,
+"title": "10 结算",
+"is_interactive": true
+},
+"Chest.dc.html": {
+"x": 0,
+"y": 2480,
+"w": 390,
+"h": 844,
+"title": "11 开宝箱 · 获得装备",
+"is_interactive": true
+},
+"LevelUp.dc.html": {
+"x": 470,
+"y": 2480,
+"w": 390,
+"h": 844,
+"title": "12 升级 · 分配属性点",
+"is_interactive": true
+},
+"Inventory.dc.html": {
+"x": 940,
+"y": 2480,
+"w": 390,
+"h": 844,
+"title": "13 装备背包（可进衣柜）",
+"is_interactive": true
+},
+"Shop.dc.html": {
+"x": 1410,
+"y": 2480,
+"w": 390,
+"h": 844,
+"title": "14 商店",
+"is_interactive": true
+},
+"Parent.dc.html": {
+"x": 1880,
+"y": 2480,
+"w": 390,
+"h": 844,
+"title": "15 家长面板",
+"is_interactive": true
+},
+"Loadout.dc.html": {
+"x": 0,
+"y": 3720,
+"w": 390,
+"h": 844,
+"title": "16 出战准备 · 换组合",
+"is_interactive": true
+},
+"Grammar.dc.html": {
+"x": 470,
+"y": 3720,
+"w": 390,
+"h": 844,
+"title": "17 关卡3 语法 · Penjodoh bilangan",
+"is_interactive": true
+},
+"SeniBahasa.dc.html": {
+"x": 940,
+"y": 3720,
+"w": 390,
+"h": 844,
+"title": "18 秘境 Seni Bahasa · 谚语配对",
+"is_interactive": true
+},
+"Wardrobe.dc.html": {
+"x": 1410,
+"y": 3720,
+"w": 390,
+"h": 844,
+"title": "19 衣柜 · 换装",
+"is_interactive": true
+},
+"Difficulty.dc.html": {
+"x": 1880,
+"y": 3720,
+"w": 390,
+"h": 844,
+"title": "20 选择难度 · 中文 / EN",
+"is_interactive": true
+},
+"Ranks.dc.html": {
+"x": 2350,
+"y": 3720,
+"w": 390,
+"h": 844,
+"title": "21 阶级外观 · 徽章墙",
+"is_interactive": true
+}
+},
+"order": [
+"Main.dc.html",
+"CharacterCreate.dc.html",
+"Map.dc.html",
+"Kingdom.dc.html",
+"Learn.dc.html",
+"Quiz.dc.html",
+"QuizFreeze.dc.html",
+"Sentence.dc.html",
+"Boss.dc.html",
+"Result.dc.html",
+"Chest.dc.html",
+"LevelUp.dc.html",
+"Inventory.dc.html",
+"Shop.dc.html",
+"Parent.dc.html",
+"Loadout.dc.html",
+"Grammar.dc.html",
+"SeniBahasa.dc.html",
+"Wardrobe.dc.html",
+"Difficulty.dc.html",
+"Ranks.dc.html"
+],
+"notes": {
+"row1": {
+"x": 0,
+"y": -300,
+"text": "① 入门 · 地图 · 认字",
+"kind": "title1",
+"maxW": 2270
+},
+"row2": {
+"x": 0,
+"y": 940,
+"text": "② 战斗：测验 · 造句 · 复习 Boss",
+"kind": "title1",
+"maxW": 2270
+},
+"row3": {
+"x": 0,
+"y": 2180,
+"text": "③ 奖励与成长 · 家长",
+"kind": "title1",
+"maxW": 2270
+},
+"row4": {
+"x": 0,
+"y": 3420,
+"text": "④ v0.2–v0.3 新增：语法 · 秘境 · 换装 · 难度 · 阶级",
+"kind": "title1",
+"maxW": 2740
+}
+},
+"designSystems": []
+}

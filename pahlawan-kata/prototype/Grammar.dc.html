@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>语法关 · Penjodoh bilangan</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#2E2552;font-family:'Noto Sans SC',sans-serif;color:#FFFFFF;display:flex;flex-direction:column;overflow:hidden">
+<div style="padding:44px 16px 0;display:flex;align-items:center;gap:10px">
+<div style="display:flex;gap:3px" role="img" aria-label="生命 4 / 4">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+</div>
+<div style="flex-grow:1;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px">第 {{qn}} / 10 题</div>
+<div style="display:flex;align-items:center;gap:6px;background:#4A3D80;border-radius:16px;padding:6px 12px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#FFC94D" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>21s</div>
+</div>
+<div style="height:200px;display:flex;align-items:center;justify-content:space-between;padding:0 28px">
+<svg width="90" height="120" viewBox="0 0 120 160" role="img" aria-label="拿弓的勇士">
+<ellipse cx="60" cy="152" rx="34" ry="6" fill="#000000" opacity="0.3"/>
+<rect x="45" y="116" width="12" height="30" rx="5" fill="#3A3F66"/><rect x="63" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="34" y="76" width="52" height="48" rx="16" fill="#1FA39A"/>
+<circle cx="60" cy="50" r="28" fill="#FFD9B8"/>
+<path d="M32 46 C30 26 46 20 60 20 C76 20 90 28 88 46 C84 38 76 34 70 36 L66 30 L60 36 L52 30 L46 38 C40 38 34 42 32 46 Z" fill="#2B2B3A"/>
+<circle cx="50" cy="54" r="3.5" fill="#1E2033"/><circle cx="70" cy="54" r="3.5" fill="#1E2033"/>
+<path d="M98 36 Q122 80 98 124" fill="none" stroke="#B7790A" stroke-width="5" stroke-linecap="round"/><path d="M98 36 L98 124" stroke="#E6EBF2" stroke-width="1.5"/>
+</svg>
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+<span style="font-size:13px;font-weight:700">量词小妖</span>
+<div style="width:130px;height:12px;border-radius:6px;background:#4A3D80;overflow:hidden"><div style="width:{{hpPct}};height:12px;background:#E5533D"></div></div>
+<svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="紫色小妖，手里拿着数字牌">
+<ellipse cx="60" cy="114" rx="40" ry="6" fill="#000000" opacity="0.3"/>
+<path d="M34 30 L42 6 L52 28 M86 30 L78 6 L68 28" fill="#B892F0" stroke="#B892F0" stroke-width="4" stroke-linejoin="round"/>
+<rect x="24" y="24" width="72" height="86" rx="34" fill="#B892F0"/>
+<circle cx="48" cy="58" r="9" fill="#FFFFFF"/><circle cx="72" cy="58" r="9" fill="#FFFFFF"/>
+<circle cx="50" cy="60" r="4" fill="#1E2033"/><circle cx="70" cy="60" r="4" fill="#1E2033"/>
+<path d="M50 82 Q60 76 70 82" fill="none" stroke="#1E2033" stroke-width="3" stroke-linecap="round"/>
+<rect x="84" y="70" width="30" height="24" rx="5" fill="#FFC94D" stroke="#B7790A" stroke-width="2"/>
+<text x="99" y="88" text-anchor="middle" font-family="Baloo 2, sans-serif" font-weight="800" font-size="16" fill="#1E2033">3</text>
+</svg>
+</div>
+</div>
+<div style="flex-grow:1;background:#FFFFFF;border-radius:28px 28px 0 0;color:#1E2033;padding:20px 16px 24px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:center;gap:8px">
+<span style="font-size:12px;font-weight:700;color:#4A4F6A">选词攻击 · 选正确的量词</span>
+<span style="font-size:11px;font-weight:700;background:#F3ECFC;color:#6A35B0;border-radius:8px;padding:2px 8px">Penjodoh bilangan</span>
+</div>
+<div style="background:#F7F8FC;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:6px">
+<span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:21px;line-height:1.4">{{q.pre}} <span style="display:inline-block;min-width:76px;border-bottom:3px solid #8B4FD8;text-align:center;color:#6A35B0">{{blank}}</span> {{q.post}}</span>
+<span style="font-size:14px;color:#4A4F6A">{{q.zh}}</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px">
+<sc-for list="{{opts}}" as="o" hint-placeholder-count="4">
+<button onClick="{{o.pick}}" style="height:58px;border-radius:16px;border:3px solid {{o.border}};background:{{o.bg}};font-family:'Baloo 2',sans-serif;font-weight:800;font-size:21px;color:#1E2033;box-shadow:0 4px 0 {{o.shadow}}">{{o.w}}</button>
+</sc-for>
+</div>
+<sc-if value="{{answered}}" hint-placeholder-val="{{ false }}">
+<div style="border-radius:16px;background:{{ruleBg}};padding:10px 12px;display:flex;flex-direction:column;gap:4px">
+<span style="font-size:14px;font-weight:900">{{verdict}}</span>
+<span style="font-size:13px;line-height:1.5"><b>规则：</b>{{q.rule}}</span>
+<button onClick="{{next}}" style="align-self:flex-end;height:40px;padding:0 16px;border-radius:20px;border:none;background:#232A5C;color:#FFFFFF;font-family:'Noto Sans SC',sans-serif;font-size:14px;font-weight:700">下一题 ›</button>
+</div>
+</sc-if>
+<div style="flex-grow:1"></div>
+<div style="display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:8px">
+<button style="height:54px;border-radius:14px;border:2px solid #FFB020;background:#FFF6E5;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#1E2033">提示 ×2</button>
+<button style="height:54px;border-radius:14px;border:2px solid #2F7DE1;background:#EEF4FF;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#1E2033">暂停 ×2</button>
+<button style="height:54px;border-radius:14px;border:2px solid #1FA39A;background:#E3F3F1;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#1E2033">护盾 ×1</button>
+<a href="Result.dc.html" style="height:54px;box-sizing:border-box;border-radius:14px;border:2px dashed #C9CCD8;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:12px;font-weight:700;color:#4A4F6A">跳到结算</a>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { q: 0, picked: null }; }
+renderVals() {
+const Q = [
+{ pre: 'Ali membeli dua', post: 'berus gigi.', zh: 'Ali 买了两支牙刷。', ans: 'batang', opts: ['biji', 'batang', 'helai', 'ekor'], rule: 'batang 用于长条形的东西，例如 berus gigi、pensel、pokok。' },
+{ pre: 'Ibu membeli tiga', post: 'epal.', zh: '妈妈买了三颗苹果。', ans: 'biji', opts: ['helai', 'ekor', 'biji', 'batang'], rule: 'biji 用于小而圆的东西，例如 epal、telur、bola。' },
+{ pre: 'Cikgu memberi saya dua', post: 'kertas.', zh: '老师给了我两张纸。', ans: 'helai', opts: ['helai', 'biji', 'batang', 'ekor'], rule: 'helai 用于薄薄的东西，例如 kertas、baju、daun。' },
+{ pre: 'Ada lima', post: 'nyamuk di dapur.', zh: '厨房里有五只蚊子。', ans: 'ekor', opts: ['batang', 'ekor', 'helai', 'biji'], rule: 'ekor 用于动物，例如 nyamuk、kucing、ikan。' }
+];
+const s = this.state;
+const q = Q[s.q];
+const p = s.picked;
+const right = p === q.ans;
+const opts = q.opts.map((w) => {
+let border = '#E6E8F2', bg = '#FFFFFF', shadow = '#E6E8F2';
+if (p && w === q.ans) { border = '#1FA39A'; bg = '#E3F3F1'; shadow = '#0F766E'; }
+else if (p === w) { border = '#E5533D'; bg = '#FDE7E3'; shadow = '#B4321F'; }
+return { w, border, bg, shadow, pick: () => { if (!this.state.picked) this.setState({ picked: w }); } };
+});
+const done = s.q + (p && right ? 1 : 0);
+return {
+q, opts, qn: s.q + 3,
+blank: p ? q.ans : '?',
+answered: !!p,
+verdict: right ? '答对了！小妖掉血' : '差一点，正确答案是 ' + q.ans,
+ruleBg: right ? '#E3F3F1' : '#FDE7E3',
+hpPct: (80 - done * 10) + '%',
+next: () => this.setState({ q: (s.q + 1) % Q.length, picked: null })
+};
+}
+}
+</script>
+</body>
+</html>

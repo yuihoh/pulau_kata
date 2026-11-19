@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>测验 · 战斗</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#232A5C;font-family:'Noto Sans SC',sans-serif;color:#FFFFFF;display:flex;flex-direction:column;overflow:hidden">
+<div style="padding:44px 16px 0;display:flex;align-items:center;gap:10px">
+<div style="display:flex;gap:3px" role="img" aria-label="生命 2 / 3">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg>
+<sc-if value="{{heart3}}" hint-placeholder-val="{{ true }}"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="#E5533D"/></svg></sc-if>
+<sc-if value="{{heartLost}}" hint-placeholder-val="{{ false }}"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.4-1.3C5.4 14.5 2 11.4 2 7.6 2 4.5 4.4 2 7.5 2c1.7 0 3.4.8 4.5 2.1C13.1 2.8 14.8 2 16.5 2 19.6 2 22 4.5 22 7.6c0 3.8-3.4 6.9-8.6 11.6L12 20.5z" fill="none" stroke="#6B73B0" stroke-width="2"/></svg></sc-if>
+</div>
+<div style="flex-grow:1;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px">第 5 / 10 题</div>
+<div style="display:flex;align-items:center;gap:6px;background:#3D4580;border-radius:16px;padding:6px 12px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#FFC94D" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>12s</div>
+</div>
+<div style="padding:8px 16px 0"><div style="height:6px;border-radius:3px;background:#3D4580;overflow:hidden"><div style="width:68%;height:6px;background:#FFC94D"></div></div></div>
+<div style="position:relative;height:270px">
+<div style="position:absolute;right:28px;top:16px;width:180px;display:flex;flex-direction:column;align-items:center;gap:6px">
+<span style="font-size:13px;font-weight:700">遗忘史莱姆</span>
+<div style="width:150px;height:12px;border-radius:6px;background:#3D4580;overflow:hidden"><div style="width:{{hpPct}};height:12px;background:#E5533D"></div></div>
+<span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:12px;color:#C9CDF2">HP {{hp}} / 10</span>
+<svg width="150" height="122" viewBox="0 0 160 130" role="img" aria-label="绿色史莱姆怪物">
+<ellipse cx="80" cy="122" rx="62" ry="7" fill="#000000" opacity="0.25"/>
+<path d="M18 116 C8 64 46 14 80 14 C114 14 152 64 142 116 Z" fill="#6CCB5F"/>
+<path d="M40 50 C50 32 64 26 76 26" fill="none" stroke="#A8E39C" stroke-width="6" stroke-linecap="round"/>
+<circle cx="60" cy="66" r="11" fill="#FFFFFF"/><circle cx="100" cy="66" r="11" fill="#FFFFFF"/>
+<circle cx="62" cy="68" r="5" fill="#1E2033"/><circle cx="98" cy="68" r="5" fill="#1E2033"/>
+<path d="M62 92 Q80 104 98 92" fill="none" stroke="#1E2033" stroke-width="4" stroke-linecap="round"/>
+</svg>
+</div>
+<div style="position:absolute;left:28px;bottom:6px">
+<svg width="96" height="128" viewBox="0 0 120 160" role="img" aria-label="勇士">
+<ellipse cx="60" cy="152" rx="34" ry="6" fill="#000000" opacity="0.25"/>
+<rect x="45" y="116" width="12" height="30" rx="5" fill="#3A3F66"/><rect x="63" y="116" width="12" height="30" rx="5" fill="#3A3F66"/>
+<rect x="41" y="138" width="18" height="10" rx="4" fill="#7A4A26"/><rect x="61" y="138" width="18" height="10" rx="4" fill="#7A4A26"/>
+<rect x="34" y="76" width="52" height="48" rx="16" fill="#2F7DE1"/>
+<rect x="16" y="80" width="26" height="34" rx="10" fill="#C9D3E3" stroke="#8A93A6" stroke-width="3"/>
+<circle cx="60" cy="50" r="28" fill="#FFD9B8"/>
+<path d="M30 46 C30 20 46 14 60 14 C74 14 90 20 90 46 L84 40 C78 30 42 30 36 40 Z" fill="#8A93A6"/>
+<rect x="56" y="10" width="8" height="12" rx="3" fill="#E5533D"/>
+<circle cx="50" cy="54" r="3.5" fill="#1E2033"/><circle cx="70" cy="54" r="3.5" fill="#1E2033"/>
+<path d="M53 64 Q60 69 67 64" fill="none" stroke="#1E2033" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="98" y="54" width="6" height="54" rx="2" fill="#E6EBF2"/><rect x="91" y="104" width="20" height="6" rx="2" fill="#B7790A"/>
+</svg>
+</div>
+</div>
+<div style="flex-grow:1;background:#FFFFFF;border-radius:28px 28px 0 0;color:#1E2033;padding:20px 16px 24px;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-size:12px;font-weight:700;color:#4A4F6A">看意思选字</span>
+<span style="font-size:22px;font-weight:900">「干净」的马来文是？</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px">
+<sc-for list="{{opts}}" as="o" hint-placeholder-count="4">
+<button onClick="{{o.pick}}" style="height:64px;border-radius:16px;border:3px solid {{o.border}};background:{{o.bg}};font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:#1E2033;box-shadow:0 4px 0 {{o.shadow}}">{{o.word}}</button>
+</sc-for>
+</div>
+<sc-if value="{{showMsg}}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;align-items:center;justify-content:space-between;background:{{msgBg}};border-radius:14px;padding:10px 14px">
+<span style="font-size:14px;font-weight:700">{{msg}}</span>
+<a href="QuizFreeze.dc.html" style="font-size:14px;font-weight:700;color:#1E2033">下一题 ›</a>
+</div>
+</sc-if>
+<div style="flex-grow:1"></div>
+<div style="display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:8px">
+<button style="height:62px;border-radius:14px;border:2px solid #FFB020;background:#FFF6E5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#1E2033"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#B7790A" stroke-width="2" stroke-linecap="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></svg>提示 ×2</button>
+<a href="QuizFreeze.dc.html" style="height:62px;box-sizing:border-box;border-radius:14px;border:2px solid #2F7DE1;background:#EEF4FF;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;font-size:12px;font-weight:700;color:#1E2033"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.5" fill="#2F7DE1"/><rect x="14" y="5" width="4" height="14" rx="1.5" fill="#2F7DE1"/></svg>暂停 ×1</a>
+<button style="height:62px;border-radius:14px;border:2px solid #1FA39A;background:#E3F3F1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#1E2033"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0F766E" stroke-width="2" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V6z"/></svg>护盾 ×1</button>
+<button disabled style="height:62px;border-radius:14px;border:2px dashed #C9CCD8;background:#FFFFFF;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;color:#6B7088"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#8A8F98" stroke-width="2" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 9a2 2 0 001.8 3h10.4a2 2 0 001.8-3l-5-9V3"/></svg>药水 ×0</button>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { picked: null }; }
+renderVals() {
+const words = ['rajin', 'bersih', 'sampah', 'sungai'];
+const answer = 'bersih';
+const p = this.state.picked;
+const opts = words.map((w) => {
+let border = '#E6E8F2', bg = '#FFFFFF', shadow = '#E6E8F2';
+if (p && w === answer) { border = '#1FA39A'; bg = '#E3F3F1'; shadow = '#0F766E'; }
+else if (p === w) { border = '#E5533D'; bg = '#FDE7E3'; shadow = '#B4321F'; }
+return { word: w, border, bg, shadow, pick: () => { if (!this.state.picked) this.setState({ picked: w }); } };
+});
+const right = p === answer;
+const hp = p ? (right ? 3 : 4) : 4;
+return {
+opts, hp, hpPct: (hp * 10) + '%',
+showMsg: !!p,
+msg: right ? '答对了！勇士发动攻击 −1 HP' : '答错了，史莱姆反击！正确答案：bersih',
+msgBg: right ? '#E3F3F1' : '#FDE7E3',
+heart3: !(p && !right), heartLost: !!(p && !right)
+};
+}
+}
+</script>
+</body>
+</html>

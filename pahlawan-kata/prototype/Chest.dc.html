@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>开宝箱 · 获得装备</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2F7DE1}a:hover{color:#1F5FB0}
+</style>
+</helmet>
+<div style="width:390px;height:844px;box-sizing:border-box;background:#14204A;font-family:'Noto Sans SC',sans-serif;color:#FFFFFF;display:flex;flex-direction:column;align-items:center;padding:64px 20px 28px;gap:18px;overflow:hidden">
+<span style="font-size:14px;font-weight:700;color:#9CC3FF;letter-spacing:2px">稀有宝箱</span>
+<sc-if value="{{closed}}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;flex-direction:column;align-items:center;gap:18px;padding-top:60px">
+<button onClick="{{open}}" aria-label="点击打开宝箱" style="border:none;background:transparent;padding:0;cursor:pointer">
+<svg width="220" height="190" viewBox="0 0 220 190" aria-hidden="true">
+<ellipse cx="110" cy="178" rx="90" ry="10" fill="#000000" opacity="0.35"/>
+<rect x="24" y="84" width="172" height="90" rx="12" fill="#2F7DE1" stroke="#9CC3FF" stroke-width="5"/>
+<path d="M24 92 C24 40 196 40 196 92 Z" fill="#3E8EF0" stroke="#9CC3FF" stroke-width="5" stroke-linejoin="round"/>
+<rect x="96" y="80" width="28" height="36" rx="6" fill="#FFC94D" stroke="#B7790A" stroke-width="3"/>
+<rect x="24" y="120" width="172" height="10" fill="#9CC3FF"/>
+</svg>
+</button>
+<span style="font-family:'ZCOOL KuaiLe',sans-serif;font-size:28px">点一下开宝箱！</span>
+</div>
+</sc-if>
+<sc-if value="{{opened}}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;flex-direction:column;align-items:center;gap:16px;width:100%">
+<div style="width:200px;height:200px;border-radius:50%;background:#1E3A7A;border:6px solid #2F7DE1;box-shadow:0 0 0 12px rgba(47,125,225,0.25);display:flex;align-items:center;justify-content:center">
+<svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="时光手套">
+<path d="M34 104 L34 56 C34 50 44 50 44 56 L44 40 C44 33 54 33 54 40 L54 34 C54 27 64 27 64 34 L64 38 C64 31 74 31 74 38 L74 64 L80 56 C86 50 94 56 90 64 L78 92 C74 100 70 104 62 104 Z" fill="#9CC3FF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+<rect x="30" y="100" width="52" height="14" rx="4" fill="#2F7DE1" stroke="#FFFFFF" stroke-width="3"/>
+<circle cx="58" cy="76" r="13" fill="#14204A" stroke="#FFC94D" stroke-width="3"/>
+<path d="M58 69v7l5 3" fill="none" stroke="#FFC94D" stroke-width="3" stroke-linecap="round"/>
+</svg>
+</div>
+<span style="font-size:13px;font-weight:700;background:#2F7DE1;border-radius:10px;padding:3px 12px">稀有 · 手套</span>
+<h1 style="margin:0;font-family:'ZCOOL KuaiLe',sans-serif;font-size:36px;font-weight:400">时光手套</h1>
+<span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:16px;color:#9CC3FF">Sarung Tangan Masa</span>
+<div style="width:100%;background:#FFFFFF;color:#1E2033;border-radius:20px;padding:16px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;align-items:center;gap:10px"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.5" fill="#2F7DE1"/><rect x="14" y="5" width="4" height="14" rx="1.5" fill="#2F7DE1"/></svg><span style="font-size:15px;font-weight:700">每场 2 次时间暂停（冻结 10 秒）</span></div>
+<div style="display:flex;align-items:center;gap:10px;font-size:13px;color:#4A4F6A"><span>目前装备：皮手套（普通 · 1 次）</span><span style="margin-left:auto;color:#0F766E;font-weight:700">+1 次</span></div>
+</div>
+</div>
+</sc-if>
+<div style="flex-grow:1"></div>
+<div style="width:100%;display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:12px">
+<a href="LevelUp.dc.html" style="height:52px;border-radius:26px;border:2px solid #FFFFFF;color:#FFFFFF;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700">放入背包</a>
+<a href="LevelUp.dc.html" style="height:52px;border-radius:26px;background:#FFB020;color:#1E2033;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;box-shadow:0 4px 0 #B7790A">立即装备</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { open: true }; }
+renderVals() {
+const o = this.state.open;
+return { opened: o, closed: !o, open: () => this.setState({ open: true }) };
+}
+}
+</script>
+</body>
+</html>
