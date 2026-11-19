@@ -20,7 +20,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "validate-content": "tsx scripts/validate-content.ts",
-    "gen-audio": "tsx scripts/gen-audio.ts"
+    "gen-audio": "tsx scripts/gen-audio.ts",
+    "optimise-images": "tsx scripts/optimise-images.ts"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -29,6 +30,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^17.14.0",
     "prettier": "^3.10.1",
+    "sharp": "^0.35.5",
     "tsx": "^4.23.15",
     "typescript-eslint": "^8.72.2"
   }
