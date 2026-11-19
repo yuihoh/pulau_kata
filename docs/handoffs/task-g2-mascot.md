@@ -41,3 +41,12 @@ All 3 findings were valid and are fixed. Codex found no screen-reader, import or
 | 3 | P3: white gaps enclosed by the outline (between the raised wings and the head in `cheer`, beside the beak in `think`) stayed opaque | Per-pose `"clear"` points in `mascot-prompts.json`; `scripts/mascot-to-webp.py` fills from them too and **self-checks** (every named gap transparent, the bird > 30 % opaque) because the web tests cannot decode WebP. Checked visually on blue: gaps gone, eyes/belly/tail intact. (In `wave` I found no enclosed gap; the measured white regions there are the eyes.) |
 
 Re-run: prettier, eslint, typecheck, **197 web + 37 Worker unit tests**, validate-content (0 errors), build, **e2e 20/20**. (The tree also contains the G-3 Home map work, checked by the same run; it has its own handoff.)
+
+## Fix: extra eye on the beak (18 Nov 2026, Yang's report)
+All 8 Codex poses had a second eye (and eyebrow) painted on the yellow beak, beside the correct eye on the black head. Removed in every pose by painting the area with the beak's own yellow (smooth fill from the surrounding beak colour; the beak crease line and the smile are kept). Regenerated `apps/web/src/assets/mascot/*.webp` with `py -I scripts/mascot-to-webp.py`.
+- Fixed masters: `assets-src/mascot/<pose>.png`. Originals kept in `assets-src/mascot/originals-before-eye-fix/`.
+- `mascot-prompts.json` style now says one eye, on the black head only, never a mark on the beak or casque, so poses generated later do not repeat it.
+- Checked by eye on every pose (full face and zoomed), then lint, typecheck, unit tests and build.
+
+### Nostril (18 Nov 2026, Yang's request)
+Added one small dark oval nostril slit on the upper beak near its base, in all 8 poses (drawn on the eye-fixed masters, same spot relative to the head in each pose, tilted 20 degrees to follow the beak). Layers kept in `assets-src/mascot/`: `originals-before-eye-fix/` (Codex originals) -> `eye-fixed/` (extra eye removed) -> `<pose>.png` (with nostril, what the WebPs are built from). `mascot-prompts.json` now describes the nostril so new poses include it.
